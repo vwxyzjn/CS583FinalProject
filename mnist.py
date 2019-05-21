@@ -21,6 +21,9 @@ from torch.autograd import Variable
 
 BATCH_SIZE = 32
 
+#-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
+
 def load_mnist_training_set(verbose : bool = False):
 	X_train , y_train = loadlocal_mnist(
 		images_path='./data/MNIST/raw/train-images-idx3-ubyte' , 
@@ -54,6 +57,8 @@ def load_mnist_test_set(verbose : bool = False):
 
 	return tuple([X_test , y_test])
 
+#-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 
 def load_fashion_mnist_training_set(verbose : bool = False):
 	X_train , y_train = loadlocal_mnist(
