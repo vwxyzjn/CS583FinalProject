@@ -54,6 +54,40 @@ def load_mnist_test_set(verbose : bool = False):
 
 	return tuple([X_test , y_test])
 
+
+def load_fashion_mnist_training_set(verbose : bool = False):
+	X_train , y_train = loadlocal_mnist(
+		images_path='./data/Fashion_MNIST/raw/train-images-idx3-ubyte' , 
+		labels_path='./data/Fashion_MNIST/raw/train-labels-idx1-ubyte')
+	
+	train_class_labels = np.unique(y_train)
+	train_class_dist = np.bincount(y_train)
+	
+	if verbose:
+		print("\nTraining Data Shape: %s" % str(X_train.shape))
+		print("Training Labels Shape: %s" % str(y_train.shape))
+		print("Class Labels: %s" % train_class_labels)
+		print("Class Distributions: %s" % train_class_dist)
+
+	return tuple([X_train , y_train])
+
+
+def load_fashion_mnist_test_set(verbose : bool = False):
+	X_test , y_test = loadlocal_mnist(
+		images_path='./data/Fashion_MNIST/raw/t10k-images-idx3-ubyte' ,
+		labels_path='./data/Fashion_MNIST/raw/t10k-labels-idx1-ubyte')
+	
+	test_class_labels = np.unique(y_test)
+	test_class_dist = np.bincount(y_test)
+	
+	if verbose:
+		print("\nTest Data Shape: %s" % str(X_test.shape))
+		print("Test Labels Shape: %s" % str(y_test.shape))
+		print("Class Labels: %s" % test_class_labels)
+		print("Class Distributions: %s" % test_class_dist)
+
+	return tuple([X_test , y_test])
+
 #-------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------
 
@@ -145,6 +179,8 @@ if __name__ == "__main__":
 	X_train , y_train = load_mnist_training_set()
 	X_test , y_test = load_mnist_test_set()
 
+	X_train , y_train = load_fashion_mnist_training_set()
+	X_test , y_test = load_fashion_mnist_test_set()
 
 	# Converts the dataset into PyTorch LongTensor(s)
 	torch_X_train = torch.from_numpy(X_train).type(torch.LongTensor)
