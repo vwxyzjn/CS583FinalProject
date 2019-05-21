@@ -10,6 +10,7 @@
 ## Citation
 
 [1]: Simonyan, Karen; Vedaldi, Andrea; Zisserman, Andrew. *Deep Inside Convolutional Networks: Visualizing Image Classification Models and Saliency Maps*. ICLR, 2013.
+[2]: Yu, Fisher and Koltun, Vladlen. *Multi-scale context aggregation by dilated convolutions*. ICLR, 2016.
  
 ## Existing Implementation
 
@@ -24,7 +25,7 @@ We hope essentially replicate their process on the MNIST dataset. [kaggle]
 
 ## Abstract
 
-There has been extensive research done in visualizing saliency maps to give human researchers (and tech enthusiasts) a better understanding what exactly a computer expects to appear in an image known to be linked to a class label [1]. Sophisticated convolutional neural networks are able to create filtered representations of image content at various resolutions in order to learn the 'high-level' and 'low-level' features that contribute to forming an image class label. While there has been a fair amount of attention paid to visualizing at the by-pixel basis given a certain class value, it is unclear if there has been any work comparing filters using different dilation factors and the impact of tuning on final class saliency maps. Our work aims to apply established procedures for generating class saliency maps at different kernel dilations.
+There has been extensive research done in visualizing saliency maps to give human researchers (and tech enthusiasts) a better understanding what exactly a computer expects to appear in an image known to be linked to a class label [1]. Sophisticated convolutional neural networks are able to create filtered representations of image content at various resolutions in order to learn the 'high-level' and 'low-level' features that contribute to forming an image class label. While there has been a fair amount of attention paid to visualizing at the by-pixel basis given a certain class value, it is unclear if there has been any work comparing filters using different dilation factors and the impact of tuning on final class saliency maps. One possible outcome of using higher dilation factor would produce less blurry saliency maps since CNN with higher dilation factor preserves more spatial and structural information [2]. Our work aims to apply established procedures for generating class saliency maps at different kernel dilations.
 
 ## Requirements
 
