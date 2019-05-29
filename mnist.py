@@ -236,8 +236,11 @@ if __name__ == "__main__":
     # utilities scripts
     img_idx = 0
     plt.imshow(torch_X_train[img_idx][0]) # visualize the original image
+    plt.show()
+
     plt.imshow(to_grayscale(
         cnn.conv1(torch_X_train[img_idx:img_idx+1]).squeeze(0)).detach().numpy()) # first convolutional layer
+    plt.show()
     
     # saliency maps
     original_img = Variable(torch_X_train[img_idx:img_idx+1], requires_grad=True)
@@ -246,3 +249,5 @@ if __name__ == "__main__":
     grads = original_img.grad.clamp(min=0)
     grads.squeeze_()
     plt.imshow(grads)
+
+    plt.show()
