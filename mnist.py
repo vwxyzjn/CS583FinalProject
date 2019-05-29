@@ -4,6 +4,8 @@
 #  Date		    : May 21, 2019
 
 ## Note		    : RUN THIS SCRIPT USING PYTHON 3 NOT PYTHON 2!!!!!!!!!!!!!!
+
+# References: https://github.com/sar-gupta/convisualize_nb/blob/master/cnn-visualize.ipynb
 import argparse
 import typing
 import numpy as np
@@ -184,6 +186,14 @@ def evaluate(model):
         correct += (predicted == test_labels).sum()
     print("Test accuracy:{:.3f}% ".format( float(correct) / (len(test_loader)*BATCH_SIZE)))
 
+def to_grayscale(image):
+    """
+    input is (d,w,h)
+    converts 3D image tensor to grayscale images corresponding to each channel
+    """
+    image = torch.sum(image, dim=0)
+    image = torch.div(image, image.shape[0])
+    return image
 #-------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------
 
@@ -224,4 +234,15 @@ if __name__ == "__main__":
     evaluate(cnn)
     
     # utilities scripts
-    plt.imshow(torch_X_train[2][0])
+    img_idx = 0
+    plt.imshow(torch_X_train[img_idx][0]) # visualize the original image
+    plt.imshow(to_grayscale(
+        cnn.conv1(torch_X_train[img_idx:img_idx+1]).squeeze(0)).detach().numpy()) # first convolutional layer
+    
+    # saliency maps
+    original_img = Variable(torch_X_train[img_idx:img_idx+1], requires_grad=True)
+    torch.argmax(cnn.forward(torch_X_train[img_idx:img_idx+1]))
+    cnn.forward(original_img)[0][torch_y_train[img_idx]].backward()
+    grads = original_img.grad.clamp(min=0)
+    grads.squeeze_()
+    plt.imshow(grads)
