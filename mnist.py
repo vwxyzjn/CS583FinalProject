@@ -204,11 +204,11 @@ def to_grayscale(image):
 if __name__ == "__main__":
 
     # Loads the datasets from file
-    X_train , y_train = load_mnist_training_set()
-    X_test , y_test = load_mnist_test_set()
+    #X_train , y_train = load_mnist_training_set(True)
+    #X_test , y_test = load_mnist_test_set(True)
 
-    X_train , y_train = load_fashion_mnist_training_set()
-    X_test , y_test = load_fashion_mnist_test_set()
+    X_train , y_train = load_fashion_mnist_training_set(True)
+    X_test , y_test = load_fashion_mnist_test_set(True)
 
     # Converts the dataset into PyTorch LongTensor(s)
     torch_X_train = torch.from_numpy(X_train).type(torch.LongTensor)
@@ -244,7 +244,7 @@ if __name__ == "__main__":
         cnn.eval()
     
     # utilities scripts
-    img_idx = 0
+    img_idx = 27
     plt.imshow(torch_X_train[img_idx][0]) # visualize the original image
     plt.show()
 
@@ -327,5 +327,5 @@ if __name__ == "__main__":
         plt.imshow(x[0][0].detach())
         plt.show()
         
-    for i in range(32):
+    for i in range(len(np.unique(y_train))):
         visualize_class_model(i)
