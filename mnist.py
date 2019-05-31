@@ -6,10 +6,13 @@
 ## Note		    : RUN THIS SCRIPT USING PYTHON 3 NOT PYTHON 2!!!!!!!!!!!!!!
 
 # References: https://github.com/sar-gupta/convisualize_nb/blob/master/cnn-visualize.ipynb
+# https://github.com/utkuozbulak/pytorch-cnn-visualizations/blob/master/src/cnn_layer_visualization.py
+# https://arxiv.org/pdf/1312.6034.pdf
 import argparse
 import typing
 import numpy as np
 import pandas as pd
+import cv2
 
 import matplotlib.pyplot as plt
 from mlxtend.data import loadlocal_mnist
@@ -139,8 +142,7 @@ class CNN(nn.Module):
         #x = F.dropout(x, p=0.5, training=self.training)
         x = F.relu(F.max_pool2d(self.conv2(x), 2))
         x = F.dropout(x, p=0.5, training=self.training)
-        x = F.relu(F.max_pool2d(self.conv3(x),2))
-        x = F.dropout(x, p=0.5, training=self.training)
+        x = self.conv3(x)
         return x
 
 #-------------------------------------------------------------------------------
@@ -229,15 +231,15 @@ if __name__ == "__main__":
 
     cnn = CNN()
     print(cnn)
-
-    # training.
-    # fit(cnn, train_loader)
-    # torch.save(cnn.state_dict(), "trained_cnn.pt")
-
-    # now just load the trained model every time.
-    cnn.load_state_dict(torch.load("trained_cnn.pt"))
-    cnn.eval()
-    # evaluate(cnn)
+    
+    train = False
+    if train:
+        fit(cnn, train_loader)
+        torch.save(cnn.state_dict(), "trained_cnn.pt")
+        evaluate(cnn)
+    else:
+        cnn.load_state_dict(torch.load("trained_cnn.pt"))
+        cnn.eval()
     
     # utilities scripts
     img_idx = 0
@@ -255,5 +257,63 @@ if __name__ == "__main__":
     grads = original_img.grad.clamp(min=0)
     grads.squeeze_()
     plt.imshow(grads)
-
     plt.show()
+    
+    # class model visualisation
+    # https://github.com/utkuozbulak/pytorch-cnn-visualizations/blob/master/src/cnn_layer_visualization.py
+    # The idea is to find an image such that
+    def visualize_filter(filter_idx):
+        upscaling_factor = 4
+        random_img = np.uint8(np.random.uniform(150, 180, (1, 1, 28, 28)))
+        # Assign create image to a variable
+        x = Variable(torch.Tensor(random_img), requires_grad=True)
+        optimizer = torch.optim.Adam([x], lr=0.2, weight_decay=1e-6)
+        for i in range(1, 30):
+            optimizer.zero_grad()
+            output = cnn.conv1(x)
+            # Loss function is the mean of the output of the selected layer/filter
+            # We try to minimize the mean of the output of that specific filter
+            loss = -torch.mean(output[0, filter_idx])
+            #print('Iteration:', str(i), 'Loss:', "{0:.2f}".format(loss.data.numpy()))
+            # Backward
+            loss.backward()
+            # Update image
+            optimizer.step()
+    
+        #print("show random image")
+        #plt.imshow(random_img[0][0])
+        #plt.show()
+        print(f"visualize the filter at {filter_idx}")
+        sz = int(upscaling_factor * 28)  # calculate new image size
+        img = x[0][0].detach().numpy()
+        img = cv2.resize(img, (sz, sz), interpolation = cv2.INTER_CUBIC)  # scale image up
+        img = cv2.blur(img,(5,5))  # blur image to reduce high frequency patterns
+        plt.imshow(img)
+        plt.show()
+        
+    for i in range(32):
+        visualize_filter(i)
+    
+#    class_idx = 0
+#    random_img = np.uint8(np.random.uniform(150, 180, (1, 1, 28, 28)))
+#    # Assign create image to a variable
+#    x = Variable(torch.Tensor(random_img), requires_grad=True)
+#    optimizer = torch.optim.Adam([x], lr=0.1)
+#    for i in range(1, 31):
+#        optimizer.zero_grad()
+#        output = cnn.forward(x)
+#        # Loss function is the mean of the output of the selected layer/filter
+#        # We try to minimize the mean of the output of that specific filter
+#        loss = -output[0][class_idx]
+#        print('Iteration:', str(i), 'Loss:', "{0:.2f}".format(loss.data.numpy()))
+#        # Backward
+#        loss.backward()
+#        # Update image
+#        optimizer.step()
+#    
+#    print("show random image")
+#    plt.imshow(random_img[0][0])
+#    plt.show()
+#    print(f"show the image that maximizes prediction on class {class_idx}")
+#    plt.imshow(x[0][0].detach())
+#    plt.show()
