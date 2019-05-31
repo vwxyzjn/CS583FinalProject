@@ -210,6 +210,14 @@ if __name__ == "__main__":
     X_train , y_train = load_fashion_mnist_training_set(True)
     X_test , y_test = load_fashion_mnist_test_set(True)
 
+    for y_class in np.unique(y_train):
+        class_idx = np.where(y_train == y_class)
+        print("Class '%s' Indices : '%s'" % (y_class , str(class_idx)))
+        class_sum = np.average(X_train[class_idx] , axis=0).reshape(28,28)
+        #print(class_sum.shape)
+        plt.imshow(class_sum)
+        plt.show()
+
     # Converts the dataset into PyTorch LongTensor(s)
     torch_X_train = torch.from_numpy(X_train).type(torch.LongTensor)
     torch_y_train = torch.from_numpy(y_train).type(torch.LongTensor)
