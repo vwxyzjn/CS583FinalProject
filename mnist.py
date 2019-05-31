@@ -1,5 +1,5 @@
 ### File		: mnist.py
-#  Author	    : David Grethlein
+#  Author(s)	: David Grethlein , Costa Huang
 #  Organization : Drexel University
 #  Date		    : May 21, 2019
 
