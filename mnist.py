@@ -230,8 +230,14 @@ if __name__ == "__main__":
     cnn = CNN()
     print(cnn)
 
-    fit(cnn, train_loader)
-    evaluate(cnn)
+    # training.
+    # fit(cnn, train_loader)
+    # torch.save(cnn.state_dict(), "trained_cnn.pt")
+
+    # now just load the trained model every time.
+    cnn.load_state_dict(torch.load("trained_cnn.pt"))
+    cnn.eval()
+    # evaluate(cnn)
     
     # utilities scripts
     img_idx = 0
