@@ -8,6 +8,8 @@
 # References: https://github.com/sar-gupta/convisualize_nb/blob/master/cnn-visualize.ipynb
 # https://github.com/utkuozbulak/pytorch-cnn-visualizations/blob/master/src/cnn_layer_visualization.py
 # https://arxiv.org/pdf/1312.6034.pdf
+# https://github.com/artvandelay/Deep_Inside_Convolutional_Networks/blob/master/visualize.py
+# https://greenelab.github.io/deep-review/
 import argparse
 import typing
 import numpy as np
@@ -261,7 +263,6 @@ if __name__ == "__main__":
     
     # class model visualisation
     # https://github.com/utkuozbulak/pytorch-cnn-visualizations/blob/master/src/cnn_layer_visualization.py
-    # The idea is to find an image such that
     def visualize_filter(filter_idx: int):
         upscaling_factor = 4
         random_img = np.uint8(np.random.uniform(150, 180, (1, 1, 28, 28)))
@@ -270,12 +271,14 @@ if __name__ == "__main__":
         optimizer = torch.optim.Adam([x], lr=0.2, weight_decay=1e-6)
         for i in range(1, 30):
             optimizer.zero_grad()
+            # !!!! CRUCIAL COMMENTS HERE
+            # We try to modify the image such that 
+            # the mean of the output of that specific filter is *maximized*.
+            # Therefore we could produce the image that will trigger the most of
+            # of the selected CNN filter.
             output = cnn.conv1(x)
-            # Loss function is the mean of the output of the selected layer/filter
-            # We try to minimize the mean of the output of that specific filter
             loss = -torch.mean(output[0, filter_idx])
             #print('Iteration:', str(i), 'Loss:', "{0:.2f}".format(loss.data.numpy()))
-            # Backward
             loss.backward()
             # Update image
             optimizer.step()
@@ -304,18 +307,16 @@ if __name__ == "__main__":
         labels[0, class_idx] = 1
         for i in range(1, 31):
             opt.zero_grad()
+            # !!!! CRUCIAL COMMENTS HERE
+            # We try to modify the image such that 
+            # the probability of making classification to `class_idx` is *maximized* 
             output = cnn.forward(x)
-            
             loss = -output[0, class_idx]
             #print('Iteration:', str(i), 'Loss:', "{0:.2f}".format(loss.data.numpy()))
-            # Backward
             loss.backward()
             # Update image
             opt.step()
         
-    #    print("show random image")
-    #    plt.imshow(zero_img[0][0])
-    #    plt.show()
         print(f"show the image that maximizes prediction on class {class_idx}")
         sz = int(upscaling_factor * 28)  # calculate new image size
         img = x[0][0].detach().numpy()
