@@ -210,14 +210,6 @@ if __name__ == "__main__":
     X_train , y_train = load_fashion_mnist_training_set(True)
     X_test , y_test = load_fashion_mnist_test_set(True)
 
-    for y_class in np.unique(y_train):
-        class_idx = np.where(y_train == y_class)
-        print("Class '%s' Indices : '%s'" % (y_class , str(class_idx)))
-        class_sum = np.average(X_train[class_idx] , axis=0).reshape(28,28)
-        #print(class_sum.shape)
-        plt.imshow(class_sum)
-        plt.show()
-
     # Converts the dataset into PyTorch LongTensor(s)
     torch_X_train = torch.from_numpy(X_train).type(torch.LongTensor)
     torch_y_train = torch.from_numpy(y_train).type(torch.LongTensor)
@@ -251,6 +243,26 @@ if __name__ == "__main__":
         cnn.load_state_dict(torch.load("trained_cnn.pt"))
         cnn.eval()
     
+
+    for y_class in np.unique(y_train):
+        # Grabs the class indices for all relevant training samples 
+        class_idx = np.where(y_train == y_class)
+        #print("Class '%s' Indices : '%s'" % (y_class , str(class_idx)))
+
+        # Composes the average of all training instances that represent the given class
+        class_sum = np.average(X_train[class_idx] , axis=0).reshape(28,28)
+        #print(class_sum.shape)
+        
+        plt.imshow(class_sum)
+        plt.title("Training Set Average for Class : '%s'" % str(y_class))
+        plt.show()
+
+        #print(torch_X_train[class_idx[0]][0].squeeze().shape)
+
+        plt.imshow(torch_X_train[class_idx[0]][0].squeeze())
+        plt.title("Class '%s' first sample in training set" % str(y_class))
+        plt.show()
+
     # utilities scripts
     img_idx = 27
     plt.imshow(torch_X_train[img_idx][0]) # visualize the original image
