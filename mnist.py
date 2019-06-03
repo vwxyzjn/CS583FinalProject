@@ -210,7 +210,7 @@ def to_grayscale(image):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='CNN with different dilation factors')
-    parser.add_argument('--dilation', type=int, default=2,
+    parser.add_argument('--dilation', type=int, default=1,
                        help='an integer for the accumulator')
     parser.add_argument('--model-path', type=str, default="models",
                        help='path to save or load the model')
@@ -220,6 +220,8 @@ if __name__ == "__main__":
                        help='path to store the outputs')
     parser.add_argument('--show-average-class', type=bool, default=True,
                        help='whether to show the average image of classes')
+    parser.add_argument('--subplots-specs', type=tuple, default=(3, 4, .5, .4),
+                       help='the specs of subplots (rows, cols, hspace, wspace)')
     args = parser.parse_args()
 
     # Loads the datasets from file
@@ -267,10 +269,10 @@ if __name__ == "__main__":
         evaluate(cnn)
     
     if args.show_average_class:
-        fig1, axes1 = plt.subplots(nrows=3,ncols=4)
-        fig1.subplots_adjust(hspace=.5,wspace=0.4)
-        fig2, axes2 = plt.subplots(nrows=3,ncols=4)
-        fig2.subplots_adjust(hspace=.5,wspace=0.4)
+        fig1, axes1 = plt.subplots(nrows=args.subplots_specs[0],ncols=args.subplots_specs[1])
+        fig1.subplots_adjust(hspace=args.subplots_specs[2],wspace=args.subplots_specs[3])
+        fig2, axes2 = plt.subplots(nrows=args.subplots_specs[0],ncols=args.subplots_specs[1])
+        fig2.subplots_adjust(hspace=args.subplots_specs[2],wspace=args.subplots_specs[3])
         axes = list(zip(axes1.flatten(), axes2.flatten()))
         [ax1.set_axis_off() for (ax1, ax2) in axes]
         [ax2.set_axis_off() for (ax1, ax2) in axes]
@@ -380,15 +382,15 @@ if __name__ == "__main__":
         # plt.show()
         return img, prob
     
-    fig, axes = plt.subplots(nrows=3,ncols=4)
-    fig.subplots_adjust(hspace=.5,wspace=0.4)
+    fig, axes = plt.subplots(nrows=args.subplots_specs[0], ncols=args.subplots_specs[1])
+    fig.subplots_adjust(hspace=args.subplots_specs[2],wspace=args.subplots_specs[3])
     axes_f = axes.flatten()
     [ax.set_axis_off() for ax in axes_f]
     for i in range(len(np.unique(y_train))):
         class_model_img, prob = visualize_class_model(i)
         imgplot = axes_f[i].imshow(class_model_img)
         axes_f[i].axis('off')
-        axes_f[i].set_title("class {}, {:.2f}".format(i, prob))
+        axes_f[i].set_title("c={}, {:.2f}".format(i, prob), )
     title = f"Class Models with dilation factor of {args.dilation}.svg"
     fig.suptitle(title)
     fig.subplots_adjust(wspace=0.2)
