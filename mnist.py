@@ -20,6 +20,8 @@ import cv2
 import matplotlib.pyplot as plt
 from mlxtend.data import loadlocal_mnist
 
+from plot_confusion_matrix import *
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -28,6 +30,41 @@ from torch.autograd import Variable
 
 
 BATCH_SIZE = 32
+
+
+# class model visualisation
+# https://github.com/utkuozbulak/pytorch-cnn-visualizations/blob/master/src/cnn_layer_visualization.py
+def visualize_filter(filter_idx: int):
+    upscaling_factor = 4
+    random_img = np.uint8(np.random.uniform(150, 180, (1, 1, 28, 28)))
+    # Assign create image to a variable
+    x = Variable(torch.Tensor(random_img), requires_grad=True)
+    optimizer = torch.optim.Adam([x], lr=0.2, weight_decay=1e-6)
+    for i in range(1, 30):
+        optimizer.zero_grad()
+        # !!!! CRUCIAL COMMENTS HERE
+        # We try to modify the image such that 
+        # the mean of the output of that specific filter is *maximized*.
+        # Therefore we could produce the image that will trigger the most of
+        # of the selected CNN filter.
+        output = cnn.conv1(x)
+        loss = -torch.mean(output[0, filter_idx])
+        #print('Iteration:', str(i), 'Loss:', "{0:.2f}".format(loss.data.numpy()))
+        loss.backward()
+        # Update image
+        optimizer.step()
+
+    #print("show random image")
+    #plt.imshow(random_img[0][0])
+    #plt.show()
+    print(f"visualize the filter at {filter_idx}")
+    sz = int(upscaling_factor * 28)  # calculate new image size
+    img = x[0][0].detach().numpy()
+    img = cv2.resize(img, (sz, sz), interpolation = cv2.INTER_CUBIC)  # scale image up
+    img = cv2.blur(img,(5,5))  # blur image to reduce high frequency patterns
+    plt.imshow(img)
+    plt.show()
+
 
 #-------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------
@@ -189,13 +226,26 @@ def fit(model, train_loader):
 
 def evaluate(model):
     correct = 0 
+    
+    all_predictions = np.array([])
+    all_true_values = np.array([])
+
     for test_imgs, test_labels in test_loader:
         #print(test_imgs.shape)
         test_imgs = Variable(test_imgs).float()
         output = model(test_imgs)
         predicted = torch.max(output,1)[1]
+
+        all_predictions = np.append(all_predictions , predicted.detach().numpy())
+        all_true_values = np.append(all_true_values , test_labels)
+
         correct += (predicted == test_labels).sum()
+
+    plot_confusion_matrix(all_true_values , all_predictions , [0 , 1, 2 , 3 , 4 , 5 , 6 ,7 , 8 ,9] , 
+        normalize=False , title=f"Dataset_{args.dataset}_Dilation_{args.dilation}")
+
     print("Test accuracy:{:.3f}% ".format( float(correct) / (len(test_loader)*BATCH_SIZE)))
+
 
 def to_grayscale(image):
     """
@@ -263,6 +313,7 @@ if __name__ == "__main__":
         cnn.forward(torch_X_train[0:0+1])
         cnn.load_state_dict(torch.load(path))
         cnn.eval()
+        evaluate(cnn)
     else:
         fit(cnn, train_loader)
         torch.save(cnn.state_dict(), path)
@@ -296,59 +347,7 @@ if __name__ == "__main__":
         fig1.savefig(os.path.join(args.output_path, args.dataset, "Training Set Average for Class.svg"))
         fig2.savefig(os.path.join(args.output_path, args.dataset, "First Samples in Training Set.svg"))
 
-#    # utilities scripts
-#    img_idx = 27
-#    plt.imshow(torch_X_train[img_idx][0]) # visualize the original image
-#    plt.show()
-#
-#    plt.imshow(to_grayscale(
-#        cnn.conv1(torch_X_train[img_idx:img_idx+1]).squeeze(0)).detach().numpy()) # first convolutional layer
-#    plt.show()
-#    
-#    # saliency maps
-#    original_img = Variable(torch_X_train[img_idx:img_idx+1], requires_grad=True)
-#    torch.argmax(cnn.forward(torch_X_train[img_idx:img_idx+1]))
-#    cnn.forward(original_img)[0][torch_y_train[img_idx]].backward()
-#    grads = original_img.grad.clamp(min=0)
-#    grads.squeeze_()
-#    plt.imshow(grads)
-#    plt.show()
-    
-    # class model visualisation
-    # https://github.com/utkuozbulak/pytorch-cnn-visualizations/blob/master/src/cnn_layer_visualization.py
-    def visualize_filter(filter_idx: int):
-        upscaling_factor = 4
-        random_img = np.uint8(np.random.uniform(150, 180, (1, 1, 28, 28)))
-        # Assign create image to a variable
-        x = Variable(torch.Tensor(random_img), requires_grad=True)
-        optimizer = torch.optim.Adam([x], lr=0.2, weight_decay=1e-6)
-        for i in range(1, 30):
-            optimizer.zero_grad()
-            # !!!! CRUCIAL COMMENTS HERE
-            # We try to modify the image such that 
-            # the mean of the output of that specific filter is *maximized*.
-            # Therefore we could produce the image that will trigger the most of
-            # of the selected CNN filter.
-            output = cnn.conv1(x)
-            loss = -torch.mean(output[0, filter_idx])
-            #print('Iteration:', str(i), 'Loss:', "{0:.2f}".format(loss.data.numpy()))
-            loss.backward()
-            # Update image
-            optimizer.step()
-    
-        #print("show random image")
-        #plt.imshow(random_img[0][0])
-        #plt.show()
-        print(f"visualize the filter at {filter_idx}")
-        sz = int(upscaling_factor * 28)  # calculate new image size
-        img = x[0][0].detach().numpy()
-        img = cv2.resize(img, (sz, sz), interpolation = cv2.INTER_CUBIC)  # scale image up
-        img = cv2.blur(img,(5,5))  # blur image to reduce high frequency patterns
-        plt.imshow(img)
-        plt.show()
-        
-#    for i in range(32):
-#        visualize_filter(i)
+
     
     def visualize_class_model(class_idx: int):
         upscaling_factor = 4
@@ -395,3 +394,4 @@ if __name__ == "__main__":
     fig.suptitle(title)
     fig.subplots_adjust(wspace=0.2)
     plt.savefig(os.path.join(args.output_path, args.dataset, title))
+
