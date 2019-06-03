@@ -12,6 +12,7 @@
 # https://greenelab.github.io/deep-review/
 import argparse
 import typing
+import os
 import numpy as np
 import pandas as pd
 import cv2
@@ -118,11 +119,11 @@ class MLP(nn.Module):
 
 
 class CNN(nn.Module):
-    def __init__(self):
+    def __init__(self, dilation:int=1):
         super(CNN, self).__init__()
-        self.conv1 = nn.Conv2d(1, 32, kernel_size=5)
-        self.conv2 = nn.Conv2d(32, 32, kernel_size=5)
-        self.conv3 = nn.Conv2d(32,64, kernel_size=5)
+        self.conv1 = nn.Conv2d(1, 32, kernel_size=5, dilation=dilation)
+        self.conv2 = nn.Conv2d(32, 32, kernel_size=5, dilation=dilation)
+        self.conv3 = nn.Conv2d(32,64, kernel_size=5, dilation=dilation)
         self.fc1 = nn.Linear(3*3*64, 256)
         self.fc2 = nn.Linear(256, 10)
 
@@ -202,6 +203,16 @@ def to_grayscale(image):
 #-------------------------------------------------------------------------------
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='CNN with different dilation factors')
+    parser.add_argument('--dilation', type=int, default=1,
+                       help='an integer for the accumulator')
+    parser.add_argument('--model-path', type=str, default="models",
+                       help='path to save or load the model')
+    parser.add_argument('--output-path', type=str, default="outputs",
+                       help='path to store the outputs')
+    parser.add_argument('--show-average-class', type=bool, default=False,
+                       help='whether to show the average image of classes')
+    args = parser.parse_args()
 
     # Loads the datasets from file
     #X_train , y_train = load_mnist_training_set(True)
@@ -218,7 +229,7 @@ if __name__ == "__main__":
     torch_y_test = torch.from_numpy(y_test).type(torch.LongTensor)
 
     # Reshape flattened images (784,) to square (28,28) 
-    torch_X_train = torch_X_train.view(-1, 1,28,28).float()
+    torch_X_train = torch_X_train.view(-1,1,28,28).float()
     torch_X_test = torch_X_test.view(-1,1,28,28).float()
     #X_train = X_train.reshape(X_train.shape[0] , 28 , 28 , 1) 
     #X_test = X_test.reshape(X_test.shape[0] , 28 , 28 , 1)
@@ -231,55 +242,65 @@ if __name__ == "__main__":
     test_loader = torch.utils.data.DataLoader(test , batch_size=BATCH_SIZE, shuffle=False)
 
 
-    cnn = CNN()
+    cnn = CNN(dilation=args.dilation)
     print(cnn)
     
-    train = False
-    if train:
-        fit(cnn, train_loader)
-        torch.save(cnn.state_dict(), "trained_cnn.pt")
-        evaluate(cnn)
-    else:
-        cnn.load_state_dict(torch.load("trained_cnn.pt"))
+    # check if the trained model exists
+    filename = f"trained_cnn_dilation_{args.dilation}.pt"
+    path = os.path.join(args.model_path, filename)
+    if os.path.exists(path):
+        cnn.load_state_dict(torch.load(path))
         cnn.eval()
+    else:
+        fit(cnn, train_loader)
+        torch.save(cnn.state_dict(), path)
+        evaluate(cnn)
     
-
-    for y_class in np.unique(y_train):
-        # Grabs the class indices for all relevant training samples 
-        class_idx = np.where(y_train == y_class)
-        #print("Class '%s' Indices : '%s'" % (y_class , str(class_idx)))
-
-        # Composes the average of all training instances that represent the given class
-        class_sum = np.average(X_train[class_idx] , axis=0).reshape(28,28)
-        #print(class_sum.shape)
-        
-        plt.imshow(class_sum)
-        plt.title("Training Set Average for Class : '%s'" % str(y_class))
-        plt.show()
-
-        #print(torch_X_train[class_idx[0]][0].squeeze().shape)
-
-        plt.imshow(torch_X_train[class_idx[0]][0].squeeze())
-        plt.title("Class '%s' first sample in training set" % str(y_class))
-        plt.show()
-
-    # utilities scripts
-    img_idx = 27
-    plt.imshow(torch_X_train[img_idx][0]) # visualize the original image
-    plt.show()
-
-    plt.imshow(to_grayscale(
-        cnn.conv1(torch_X_train[img_idx:img_idx+1]).squeeze(0)).detach().numpy()) # first convolutional layer
-    plt.show()
+    if args.show_average_class:
+        fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+        fig1.subplots_adjust(hspace=.5,wspace=0.4)
+        fig2, axes2 = plt.subplots(nrows=3,ncols=4)
+        fig2.subplots_adjust(hspace=.5,wspace=0.4)
+        axes = list(zip(axes1.flatten(), axes2.flatten()))
+        [ax1.set_axis_off() for (ax1, ax2) in axes]
+        [ax2.set_axis_off() for (ax1, ax2) in axes]
+        for y_class in np.unique(y_train):
+            # Grabs the class indices for all relevant training samples 
+            class_idx = np.where(y_train == y_class)
+            #print("Class '%s' Indices : '%s'" % (y_class , str(class_idx)))
     
-    # saliency maps
-    original_img = Variable(torch_X_train[img_idx:img_idx+1], requires_grad=True)
-    torch.argmax(cnn.forward(torch_X_train[img_idx:img_idx+1]))
-    cnn.forward(original_img)[0][torch_y_train[img_idx]].backward()
-    grads = original_img.grad.clamp(min=0)
-    grads.squeeze_()
-    plt.imshow(grads)
-    plt.show()
+            # Composes the average of all training instances that represent the given class
+            class_sum = np.average(X_train[class_idx] , axis=0).reshape(28,28)
+            #print(class_sum.shape)
+            
+            ax1, ax2 = axes[y_class]
+            ax1.imshow(class_sum)
+            ax1.set_title(f"class {y_class}")
+            ax2.imshow(torch_X_train[class_idx[0]][0].squeeze())
+            ax2.set_title(f"class {y_class}")
+
+        fig1.suptitle("Training Set Average for Class")
+        fig2.suptitle("First sample in training set")
+        fig1.savefig(os.path.join(args.output_path, "Training Set Average for Class.svg"))
+        fig2.savefig(os.path.join(args.output_path, "First Samples in Training Set.svg"))
+
+#    # utilities scripts
+#    img_idx = 27
+#    plt.imshow(torch_X_train[img_idx][0]) # visualize the original image
+#    plt.show()
+#
+#    plt.imshow(to_grayscale(
+#        cnn.conv1(torch_X_train[img_idx:img_idx+1]).squeeze(0)).detach().numpy()) # first convolutional layer
+#    plt.show()
+#    
+#    # saliency maps
+#    original_img = Variable(torch_X_train[img_idx:img_idx+1], requires_grad=True)
+#    torch.argmax(cnn.forward(torch_X_train[img_idx:img_idx+1]))
+#    cnn.forward(original_img)[0][torch_y_train[img_idx]].backward()
+#    grads = original_img.grad.clamp(min=0)
+#    grads.squeeze_()
+#    plt.imshow(grads)
+#    plt.show()
     
     # class model visualisation
     # https://github.com/utkuozbulak/pytorch-cnn-visualizations/blob/master/src/cnn_layer_visualization.py
@@ -314,8 +335,8 @@ if __name__ == "__main__":
         plt.imshow(img)
         plt.show()
         
-    for i in range(32):
-        visualize_filter(i)
+#    for i in range(32):
+#        visualize_filter(i)
     
     def visualize_class_model(class_idx: int):
         upscaling_factor = 4
@@ -342,10 +363,22 @@ if __name__ == "__main__":
         img = x[0][0].detach().numpy()
         img = cv2.resize(img, (sz, sz), interpolation = cv2.INTER_CUBIC)  # scale image up
         img = cv2.blur(img,(5,5))  # blur image to reduce high frequency patterns
-        plt.imshow(img)
-        plt.show()
-        plt.imshow(x[0][0].detach())
-        plt.show()
-        
+        # plt.imshow(img)
+        # plt.show()
+        # plt.imshow(x[0][0].detach())
+        # plt.show()
+        return img
+    
+    fig, axes = plt.subplots(nrows=3,ncols=4)
+    fig.subplots_adjust(hspace=.5,wspace=0.4)
+    axes_f = axes.flatten()
+    [ax.set_axis_off() for ax in axes_f]
     for i in range(len(np.unique(y_train))):
-        visualize_class_model(i)
+        class_model_img = visualize_class_model(i)
+        imgplot = axes_f[i].imshow(class_model_img)
+        axes_f[i].axis('off')
+        axes_f[i].set_title(f"class {i}")
+    title = f"Class Models with dilation factor of {args.dilation}.svg"
+    fig.suptitle(title)
+    fig.subplots_adjust(wspace=0.2)
+    plt.savefig(os.path.join(args.output_path, title))
