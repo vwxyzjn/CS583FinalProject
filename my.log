@@ -1,0 +1,3036 @@
+nohup: ignoring input
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [5923 6742 5958 6131 5842 5421 5918 6265 5851 5949]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [ 980 1135 1032 1010  982  892  958 1028  974 1009]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Epoch : 0 [0/60000 (0%)]	Loss: 10.250347	 Accuracy:3.125%
+Epoch : 0 [1600/60000 (3%)]	Loss: 2.263988	 Accuracy:13.480%
+Epoch : 0 [3200/60000 (5%)]	Loss: 1.624378	 Accuracy:21.132%
+Epoch : 0 [4800/60000 (8%)]	Loss: 1.582654	 Accuracy:29.180%
+Epoch : 0 [6400/60000 (11%)]	Loss: 0.969732	 Accuracy:36.007%
+Epoch : 0 [8000/60000 (13%)]	Loss: 0.741654	 Accuracy:41.360%
+Epoch : 0 [9600/60000 (16%)]	Loss: 0.632320	 Accuracy:45.691%
+Epoch : 0 [11200/60000 (19%)]	Loss: 0.763829	 Accuracy:49.635%
+Epoch : 0 [12800/60000 (21%)]	Loss: 0.708123	 Accuracy:52.533%
+Epoch : 0 [14400/60000 (24%)]	Loss: 0.736184	 Accuracy:55.294%
+Epoch : 0 [16000/60000 (27%)]	Loss: 1.034892	 Accuracy:57.479%
+Epoch : 0 [17600/60000 (29%)]	Loss: 0.680505	 Accuracy:59.398%
+Epoch : 0 [19200/60000 (32%)]	Loss: 0.649138	 Accuracy:61.200%
+Epoch : 0 [20800/60000 (35%)]	Loss: 0.613402	 Accuracy:62.831%
+Epoch : 0 [22400/60000 (37%)]	Loss: 0.410196	 Accuracy:64.065%
+Epoch : 0 [24000/60000 (40%)]	Loss: 0.512095	 Accuracy:65.221%
+Epoch : 0 [25600/60000 (43%)]	Loss: 0.545234	 Accuracy:66.292%
+Epoch : 0 [27200/60000 (45%)]	Loss: 0.306787	 Accuracy:67.307%
+Epoch : 0 [28800/60000 (48%)]	Loss: 0.365123	 Accuracy:68.174%
+Epoch : 0 [30400/60000 (51%)]	Loss: 0.566898	 Accuracy:68.924%
+Epoch : 0 [32000/60000 (53%)]	Loss: 0.548208	 Accuracy:69.627%
+Epoch : 0 [33600/60000 (56%)]	Loss: 0.786484	 Accuracy:70.272%
+Epoch : 0 [35200/60000 (59%)]	Loss: 0.512966	 Accuracy:71.103%
+Epoch : 0 [36800/60000 (61%)]	Loss: 0.468179	 Accuracy:71.769%
+Epoch : 0 [38400/60000 (64%)]	Loss: 0.317417	 Accuracy:72.320%
+Epoch : 0 [40000/60000 (67%)]	Loss: 0.464582	 Accuracy:72.884%
+Epoch : 0 [41600/60000 (69%)]	Loss: 0.616966	 Accuracy:73.393%
+Epoch : 0 [43200/60000 (72%)]	Loss: 0.359384	 Accuracy:73.839%
+Epoch : 0 [44800/60000 (75%)]	Loss: 0.709747	 Accuracy:74.340%
+Epoch : 0 [46400/60000 (77%)]	Loss: 1.040397	 Accuracy:74.759%
+Epoch : 0 [48000/60000 (80%)]	Loss: 0.550251	 Accuracy:75.181%
+Epoch : 0 [49600/60000 (83%)]	Loss: 0.210125	 Accuracy:75.566%
+Epoch : 0 [51200/60000 (85%)]	Loss: 0.435443	 Accuracy:75.915%
+Epoch : 0 [52800/60000 (88%)]	Loss: 0.799508	 Accuracy:76.297%
+Epoch : 0 [54400/60000 (91%)]	Loss: 0.257798	 Accuracy:76.661%
+Epoch : 0 [56000/60000 (93%)]	Loss: 0.290056	 Accuracy:77.035%
+Epoch : 0 [57600/60000 (96%)]	Loss: 0.431841	 Accuracy:77.375%
+Epoch : 0 [59200/60000 (99%)]	Loss: 0.300670	 Accuracy:77.759%
+Epoch : 1 [0/60000 (0%)]	Loss: 0.215095	 Accuracy:93.750%
+Epoch : 1 [1600/60000 (3%)]	Loss: 0.409371	 Accuracy:87.623%
+Epoch : 1 [3200/60000 (5%)]	Loss: 0.755656	 Accuracy:88.985%
+Epoch : 1 [4800/60000 (8%)]	Loss: 0.596860	 Accuracy:89.218%
+Epoch : 1 [6400/60000 (11%)]	Loss: 0.590418	 Accuracy:89.179%
+Epoch : 1 [8000/60000 (13%)]	Loss: 0.258269	 Accuracy:88.944%
+Epoch : 1 [9600/60000 (16%)]	Loss: 0.385439	 Accuracy:88.673%
+Epoch : 1 [11200/60000 (19%)]	Loss: 0.526476	 Accuracy:88.738%
+Epoch : 1 [12800/60000 (21%)]	Loss: 0.575342	 Accuracy:88.817%
+Epoch : 1 [14400/60000 (24%)]	Loss: 0.167809	 Accuracy:88.893%
+Epoch : 1 [16000/60000 (27%)]	Loss: 0.489785	 Accuracy:88.991%
+Epoch : 1 [17600/60000 (29%)]	Loss: 0.062104	 Accuracy:88.986%
+Epoch : 1 [19200/60000 (32%)]	Loss: 0.393962	 Accuracy:89.138%
+Epoch : 1 [20800/60000 (35%)]	Loss: 0.276723	 Accuracy:89.171%
+Epoch : 1 [22400/60000 (37%)]	Loss: 0.084987	 Accuracy:89.243%
+Epoch : 1 [24000/60000 (40%)]	Loss: 0.293961	 Accuracy:89.289%
+Epoch : 1 [25600/60000 (43%)]	Loss: 0.288066	 Accuracy:89.353%
+Epoch : 1 [27200/60000 (45%)]	Loss: 0.258182	 Accuracy:89.410%
+Epoch : 1 [28800/60000 (48%)]	Loss: 0.331400	 Accuracy:89.439%
+Epoch : 1 [30400/60000 (51%)]	Loss: 0.181050	 Accuracy:89.383%
+Epoch : 1 [32000/60000 (53%)]	Loss: 0.315338	 Accuracy:89.326%
+Epoch : 1 [33600/60000 (56%)]	Loss: 0.360692	 Accuracy:89.341%
+Epoch : 1 [35200/60000 (59%)]	Loss: 0.417754	 Accuracy:89.419%
+Epoch : 1 [36800/60000 (61%)]	Loss: 0.305658	 Accuracy:89.512%
+Epoch : 1 [38400/60000 (64%)]	Loss: 0.299472	 Accuracy:89.480%
+Epoch : 1 [40000/60000 (67%)]	Loss: 0.228073	 Accuracy:89.493%
+Epoch : 1 [41600/60000 (69%)]	Loss: 0.475324	 Accuracy:89.537%
+Epoch : 1 [43200/60000 (72%)]	Loss: 0.554426	 Accuracy:89.478%
+Epoch : 1 [44800/60000 (75%)]	Loss: 0.240569	 Accuracy:89.536%
+Epoch : 1 [46400/60000 (77%)]	Loss: 0.685845	 Accuracy:89.527%
+Epoch : 1 [48000/60000 (80%)]	Loss: 0.441927	 Accuracy:89.524%
+Epoch : 1 [49600/60000 (83%)]	Loss: 0.372523	 Accuracy:89.551%
+Epoch : 1 [51200/60000 (85%)]	Loss: 0.262554	 Accuracy:89.557%
+Epoch : 1 [52800/60000 (88%)]	Loss: 0.851779	 Accuracy:89.595%
+Epoch : 1 [54400/60000 (91%)]	Loss: 0.140775	 Accuracy:89.615%
+Epoch : 1 [56000/60000 (93%)]	Loss: 0.233036	 Accuracy:89.701%
+Epoch : 1 [57600/60000 (96%)]	Loss: 0.264553	 Accuracy:89.750%
+Epoch : 1 [59200/60000 (99%)]	Loss: 0.064580	 Accuracy:89.857%
+Epoch : 2 [0/60000 (0%)]	Loss: 0.308798	 Accuracy:93.750%
+Epoch : 2 [1600/60000 (3%)]	Loss: 0.224444	 Accuracy:91.667%
+Epoch : 2 [3200/60000 (5%)]	Loss: 0.182559	 Accuracy:92.389%
+Epoch : 2 [4800/60000 (8%)]	Loss: 0.070543	 Accuracy:91.950%
+Epoch : 2 [6400/60000 (11%)]	Loss: 0.275541	 Accuracy:91.729%
+Epoch : 2 [8000/60000 (13%)]	Loss: 0.279636	 Accuracy:91.272%
+Epoch : 2 [9600/60000 (16%)]	Loss: 0.180825	 Accuracy:91.186%
+Epoch : 2 [11200/60000 (19%)]	Loss: 0.243505	 Accuracy:91.355%
+Epoch : 2 [12800/60000 (21%)]	Loss: 0.437977	 Accuracy:91.295%
+Epoch : 2 [14400/60000 (24%)]	Loss: 0.216776	 Accuracy:91.200%
+Epoch : 2 [16000/60000 (27%)]	Loss: 0.585489	 Accuracy:91.074%
+Epoch : 2 [17600/60000 (29%)]	Loss: 0.126885	 Accuracy:91.124%
+Epoch : 2 [19200/60000 (32%)]	Loss: 0.219859	 Accuracy:91.322%
+Epoch : 2 [20800/60000 (35%)]	Loss: 0.051850	 Accuracy:91.359%
+Epoch : 2 [22400/60000 (37%)]	Loss: 0.078883	 Accuracy:91.463%
+Epoch : 2 [24000/60000 (40%)]	Loss: 0.224286	 Accuracy:91.499%
+Epoch : 2 [25600/60000 (43%)]	Loss: 0.091146	 Accuracy:91.557%
+Epoch : 2 [27200/60000 (45%)]	Loss: 0.552199	 Accuracy:91.495%
+Epoch : 2 [28800/60000 (48%)]	Loss: 0.323889	 Accuracy:91.482%
+Epoch : 2 [30400/60000 (51%)]	Loss: 0.307295	 Accuracy:91.437%
+Epoch : 2 [32000/60000 (53%)]	Loss: 0.237158	 Accuracy:91.331%
+Epoch : 2 [33600/60000 (56%)]	Loss: 0.297487	 Accuracy:91.300%
+Epoch : 2 [35200/60000 (59%)]	Loss: 0.201614	 Accuracy:91.363%
+Epoch : 2 [36800/60000 (61%)]	Loss: 0.104701	 Accuracy:91.421%
+Epoch : 2 [38400/60000 (64%)]	Loss: 0.379406	 Accuracy:91.398%
+Epoch : 2 [40000/60000 (67%)]	Loss: 0.145701	 Accuracy:91.434%
+Epoch : 2 [41600/60000 (69%)]	Loss: 0.359326	 Accuracy:91.437%
+Epoch : 2 [43200/60000 (72%)]	Loss: 0.360033	 Accuracy:91.421%
+Epoch : 2 [44800/60000 (75%)]	Loss: 0.215799	 Accuracy:91.461%
+Epoch : 2 [46400/60000 (77%)]	Loss: 0.674796	 Accuracy:91.396%
+Epoch : 2 [48000/60000 (80%)]	Loss: 0.128252	 Accuracy:91.414%
+Epoch : 2 [49600/60000 (83%)]	Loss: 0.315805	 Accuracy:91.389%
+Epoch : 2 [51200/60000 (85%)]	Loss: 0.408842	 Accuracy:91.390%
+Epoch : 2 [52800/60000 (88%)]	Loss: 0.686050	 Accuracy:91.424%
+Epoch : 2 [54400/60000 (91%)]	Loss: 0.067260	 Accuracy:91.457%
+Epoch : 2 [56000/60000 (93%)]	Loss: 0.210636	 Accuracy:91.510%
+Epoch : 2 [57600/60000 (96%)]	Loss: 0.217849	 Accuracy:91.531%
+Epoch : 2 [59200/60000 (99%)]	Loss: 0.042674	 Accuracy:91.624%
+Epoch : 3 [0/60000 (0%)]	Loss: 0.213411	 Accuracy:96.875%
+Epoch : 3 [1600/60000 (3%)]	Loss: 0.115497	 Accuracy:93.444%
+Epoch : 3 [3200/60000 (5%)]	Loss: 0.049792	 Accuracy:93.379%
+Epoch : 3 [4800/60000 (8%)]	Loss: 0.326200	 Accuracy:93.502%
+Epoch : 3 [6400/60000 (11%)]	Loss: 0.252542	 Accuracy:93.081%
+Epoch : 3 [8000/60000 (13%)]	Loss: 0.365971	 Accuracy:92.742%
+Epoch : 3 [9600/60000 (16%)]	Loss: 0.196524	 Accuracy:92.566%
+Epoch : 3 [11200/60000 (19%)]	Loss: 0.286299	 Accuracy:92.655%
+Epoch : 3 [12800/60000 (21%)]	Loss: 0.209506	 Accuracy:92.620%
+Epoch : 3 [14400/60000 (24%)]	Loss: 0.124931	 Accuracy:92.572%
+Epoch : 3 [16000/60000 (27%)]	Loss: 0.152311	 Accuracy:92.484%
+Epoch : 3 [17600/60000 (29%)]	Loss: 0.161870	 Accuracy:92.417%
+Epoch : 3 [19200/60000 (32%)]	Loss: 0.073177	 Accuracy:92.466%
+Epoch : 3 [20800/60000 (35%)]	Loss: 0.154024	 Accuracy:92.473%
+Epoch : 3 [22400/60000 (37%)]	Loss: 0.153223	 Accuracy:92.555%
+Epoch : 3 [24000/60000 (40%)]	Loss: 0.216024	 Accuracy:92.568%
+Epoch : 3 [25600/60000 (43%)]	Loss: 0.262724	 Accuracy:92.560%
+Epoch : 3 [27200/60000 (45%)]	Loss: 0.501436	 Accuracy:92.520%
+Epoch : 3 [28800/60000 (48%)]	Loss: 0.321095	 Accuracy:92.512%
+Epoch : 3 [30400/60000 (51%)]	Loss: 0.232899	 Accuracy:92.514%
+Epoch : 3 [32000/60000 (53%)]	Loss: 0.168224	 Accuracy:92.429%
+Epoch : 3 [33600/60000 (56%)]	Loss: 0.613975	 Accuracy:92.430%
+Epoch : 3 [35200/60000 (59%)]	Loss: 0.189416	 Accuracy:92.425%
+Epoch : 3 [36800/60000 (61%)]	Loss: 0.142596	 Accuracy:92.463%
+Epoch : 3 [38400/60000 (64%)]	Loss: 0.162306	 Accuracy:92.459%
+Epoch : 3 [40000/60000 (67%)]	Loss: 0.152225	 Accuracy:92.464%
+Epoch : 3 [41600/60000 (69%)]	Loss: 0.454416	 Accuracy:92.472%
+Epoch : 3 [43200/60000 (72%)]	Loss: 0.395615	 Accuracy:92.482%
+Epoch : 3 [44800/60000 (75%)]	Loss: 0.415754	 Accuracy:92.521%
+Epoch : 3 [46400/60000 (77%)]	Loss: 0.554713	 Accuracy:92.481%
+Epoch : 3 [48000/60000 (80%)]	Loss: 0.358217	 Accuracy:92.468%
+Epoch : 3 [49600/60000 (83%)]	Loss: 0.200387	 Accuracy:92.444%
+Epoch : 3 [51200/60000 (85%)]	Loss: 0.308913	 Accuracy:92.425%
+Epoch : 3 [52800/60000 (88%)]	Loss: 1.046336	 Accuracy:92.410%
+Epoch : 3 [54400/60000 (91%)]	Loss: 0.056277	 Accuracy:92.398%
+Epoch : 3 [56000/60000 (93%)]	Loss: 0.168579	 Accuracy:92.415%
+Epoch : 3 [57600/60000 (96%)]	Loss: 0.489205	 Accuracy:92.449%
+Epoch : 3 [59200/60000 (99%)]	Loss: 0.084485	 Accuracy:92.504%
+Epoch : 4 [0/60000 (0%)]	Loss: 0.417889	 Accuracy:87.500%
+Epoch : 4 [1600/60000 (3%)]	Loss: 0.249938	 Accuracy:91.605%
+Epoch : 4 [3200/60000 (5%)]	Loss: 0.154843	 Accuracy:92.543%
+Epoch : 4 [4800/60000 (8%)]	Loss: 0.254823	 Accuracy:92.136%
+Epoch : 4 [6400/60000 (11%)]	Loss: 0.229556	 Accuracy:92.118%
+Epoch : 4 [8000/60000 (13%)]	Loss: 0.141275	 Accuracy:92.131%
+Epoch : 4 [9600/60000 (16%)]	Loss: 0.212387	 Accuracy:92.141%
+Epoch : 4 [11200/60000 (19%)]	Loss: 0.516816	 Accuracy:92.325%
+Epoch : 4 [12800/60000 (21%)]	Loss: 0.146773	 Accuracy:92.300%
+Epoch : 4 [14400/60000 (24%)]	Loss: 0.040667	 Accuracy:92.323%
+Epoch : 4 [16000/60000 (27%)]	Loss: 0.135514	 Accuracy:92.340%
+Epoch : 4 [17600/60000 (29%)]	Loss: 0.089035	 Accuracy:92.326%
+Epoch : 4 [19200/60000 (32%)]	Loss: 0.112334	 Accuracy:92.362%
+Epoch : 4 [20800/60000 (35%)]	Loss: 0.103206	 Accuracy:92.468%
+Epoch : 4 [22400/60000 (37%)]	Loss: 0.126636	 Accuracy:92.502%
+Epoch : 4 [24000/60000 (40%)]	Loss: 0.284867	 Accuracy:92.535%
+Epoch : 4 [25600/60000 (43%)]	Loss: 0.026411	 Accuracy:92.615%
+Epoch : 4 [27200/60000 (45%)]	Loss: 0.200547	 Accuracy:92.612%
+Epoch : 4 [28800/60000 (48%)]	Loss: 0.075795	 Accuracy:92.640%
+Epoch : 4 [30400/60000 (51%)]	Loss: 0.189224	 Accuracy:92.593%
+Epoch : 4 [32000/60000 (53%)]	Loss: 0.251844	 Accuracy:92.582%
+Epoch : 4 [33600/60000 (56%)]	Loss: 0.135301	 Accuracy:92.653%
+Epoch : 4 [35200/60000 (59%)]	Loss: 0.552824	 Accuracy:92.711%
+Epoch : 4 [36800/60000 (61%)]	Loss: 0.074687	 Accuracy:92.767%
+Epoch : 4 [38400/60000 (64%)]	Loss: 0.267754	 Accuracy:92.790%
+Epoch : 4 [40000/60000 (67%)]	Loss: 0.194906	 Accuracy:92.803%
+Epoch : 4 [41600/60000 (69%)]	Loss: 0.492068	 Accuracy:92.811%
+Epoch : 4 [43200/60000 (72%)]	Loss: 0.133518	 Accuracy:92.836%
+Epoch : 4 [44800/60000 (75%)]	Loss: 0.089580	 Accuracy:92.914%
+Epoch : 4 [46400/60000 (77%)]	Loss: 0.504803	 Accuracy:92.884%
+Epoch : 4 [48000/60000 (80%)]	Loss: 0.209574	 Accuracy:92.913%
+Epoch : 4 [49600/60000 (83%)]	Loss: 0.137229	 Accuracy:92.912%
+Epoch : 4 [51200/60000 (85%)]	Loss: 0.324931	 Accuracy:92.874%
+Epoch : 4 [52800/60000 (88%)]	Loss: 0.558184	 Accuracy:92.872%
+Epoch : 4 [54400/60000 (91%)]	Loss: 0.011606	 Accuracy:92.887%
+Epoch : 4 [56000/60000 (93%)]	Loss: 0.222243	 Accuracy:92.925%
+Epoch : 4 [57600/60000 (96%)]	Loss: 0.145523	 Accuracy:92.955%
+Epoch : 4 [59200/60000 (99%)]	Loss: 0.032217	 Accuracy:93.022%
+Test accuracy:0.937% 
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [5923 6742 5958 6131 5842 5421 5918 6265 5851 5949]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [ 980 1135 1032 1010  982  892  958 1028  974 1009]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(2, 2))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [5923 6742 5958 6131 5842 5421 5918 6265 5851 5949]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [ 980 1135 1032 1010  982  892  958 1028  974 1009]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(3, 3))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Epoch : 0 [0/60000 (0%)]	Loss: 12.463971	 Accuracy:9.375%
+Epoch : 0 [1600/60000 (3%)]	Loss: 2.194534	 Accuracy:13.725%
+Epoch : 0 [3200/60000 (5%)]	Loss: 1.980438	 Accuracy:23.608%
+Epoch : 0 [4800/60000 (8%)]	Loss: 1.579982	 Accuracy:31.705%
+Epoch : 0 [6400/60000 (11%)]	Loss: 1.128121	 Accuracy:37.578%
+Epoch : 0 [8000/60000 (13%)]	Loss: 0.950060	 Accuracy:42.094%
+Epoch : 0 [9600/60000 (16%)]	Loss: 0.935548	 Accuracy:46.096%
+Epoch : 0 [11200/60000 (19%)]	Loss: 1.050149	 Accuracy:49.537%
+Epoch : 0 [12800/60000 (21%)]	Loss: 0.762477	 Accuracy:51.855%
+Epoch : 0 [14400/60000 (24%)]	Loss: 0.794624	 Accuracy:53.859%
+Epoch : 0 [16000/60000 (27%)]	Loss: 1.411347	 Accuracy:55.813%
+Epoch : 0 [17600/60000 (29%)]	Loss: 0.828025	 Accuracy:57.747%
+Epoch : 0 [19200/60000 (32%)]	Loss: 0.885758	 Accuracy:59.250%
+Epoch : 0 [20800/60000 (35%)]	Loss: 0.726535	 Accuracy:60.724%
+Epoch : 0 [22400/60000 (37%)]	Loss: 0.545773	 Accuracy:62.152%
+Epoch : 0 [24000/60000 (40%)]	Loss: 0.588887	 Accuracy:63.307%
+Epoch : 0 [25600/60000 (43%)]	Loss: 0.481038	 Accuracy:64.423%
+Epoch : 0 [27200/60000 (45%)]	Loss: 0.834757	 Accuracy:65.482%
+Epoch : 0 [28800/60000 (48%)]	Loss: 0.442260	 Accuracy:66.360%
+Epoch : 0 [30400/60000 (51%)]	Loss: 0.642086	 Accuracy:67.074%
+Epoch : 0 [32000/60000 (53%)]	Loss: 0.397058	 Accuracy:67.767%
+Epoch : 0 [33600/60000 (56%)]	Loss: 0.544534	 Accuracy:68.375%
+Epoch : 0 [35200/60000 (59%)]	Loss: 0.527959	 Accuracy:69.071%
+Epoch : 0 [36800/60000 (61%)]	Loss: 0.887961	 Accuracy:69.755%
+Epoch : 0 [38400/60000 (64%)]	Loss: 0.549806	 Accuracy:70.270%
+Epoch : 0 [40000/60000 (67%)]	Loss: 0.642041	 Accuracy:70.848%
+Epoch : 0 [41600/60000 (69%)]	Loss: 0.332997	 Accuracy:71.387%
+Epoch : 0 [43200/60000 (72%)]	Loss: 0.502540	 Accuracy:71.776%
+Epoch : 0 [44800/60000 (75%)]	Loss: 0.556944	 Accuracy:72.319%
+Epoch : 0 [46400/60000 (77%)]	Loss: 0.799284	 Accuracy:72.689%
+Epoch : 0 [48000/60000 (80%)]	Loss: 0.403902	 Accuracy:73.064%
+Epoch : 0 [49600/60000 (83%)]	Loss: 0.382854	 Accuracy:73.428%
+Epoch : 0 [51200/60000 (85%)]	Loss: 0.471446	 Accuracy:73.731%
+Epoch : 0 [52800/60000 (88%)]	Loss: 0.968967	 Accuracy:74.078%
+Epoch : 0 [54400/60000 (91%)]	Loss: 0.108071	 Accuracy:74.423%
+Epoch : 0 [56000/60000 (93%)]	Loss: 0.246978	 Accuracy:74.777%
+Epoch : 0 [57600/60000 (96%)]	Loss: 0.455238	 Accuracy:75.066%
+Epoch : 0 [59200/60000 (99%)]	Loss: 0.053690	 Accuracy:75.446%
+Epoch : 1 [0/60000 (0%)]	Loss: 0.464189	 Accuracy:84.375%
+Epoch : 1 [1600/60000 (3%)]	Loss: 0.475715	 Accuracy:87.868%
+Epoch : 1 [3200/60000 (5%)]	Loss: 0.656205	 Accuracy:88.366%
+Epoch : 1 [4800/60000 (8%)]	Loss: 0.423213	 Accuracy:87.748%
+Epoch : 1 [6400/60000 (11%)]	Loss: 0.480249	 Accuracy:87.422%
+Epoch : 1 [8000/60000 (13%)]	Loss: 0.436512	 Accuracy:87.251%
+Epoch : 1 [9600/60000 (16%)]	Loss: 0.243015	 Accuracy:86.836%
+Epoch : 1 [11200/60000 (19%)]	Loss: 0.468854	 Accuracy:87.144%
+Epoch : 1 [12800/60000 (21%)]	Loss: 0.344969	 Accuracy:87.001%
+Epoch : 1 [14400/60000 (24%)]	Loss: 0.288865	 Accuracy:86.883%
+Epoch : 1 [16000/60000 (27%)]	Loss: 0.707730	 Accuracy:86.739%
+Epoch : 1 [17600/60000 (29%)]	Loss: 0.304853	 Accuracy:86.836%
+Epoch : 1 [19200/60000 (32%)]	Loss: 0.151294	 Accuracy:87.079%
+Epoch : 1 [20800/60000 (35%)]	Loss: 0.229772	 Accuracy:87.140%
+Epoch : 1 [22400/60000 (37%)]	Loss: 0.195551	 Accuracy:87.224%
+Epoch : 1 [24000/60000 (40%)]	Loss: 0.215570	 Accuracy:87.217%
+Epoch : 1 [25600/60000 (43%)]	Loss: 0.332077	 Accuracy:87.360%
+Epoch : 1 [27200/60000 (45%)]	Loss: 0.531237	 Accuracy:87.360%
+Epoch : 1 [28800/60000 (48%)]	Loss: 0.244337	 Accuracy:87.479%
+Epoch : 1 [30400/60000 (51%)]	Loss: 0.359436	 Accuracy:87.428%
+Epoch : 1 [32000/60000 (53%)]	Loss: 0.441144	 Accuracy:87.403%
+Epoch : 1 [33600/60000 (56%)]	Loss: 0.649166	 Accuracy:87.449%
+Epoch : 1 [35200/60000 (59%)]	Loss: 0.280970	 Accuracy:87.565%
+Epoch : 1 [36800/60000 (61%)]	Loss: 0.381783	 Accuracy:87.636%
+Epoch : 1 [38400/60000 (64%)]	Loss: 0.517444	 Accuracy:87.547%
+Epoch : 1 [40000/60000 (67%)]	Loss: 0.493657	 Accuracy:87.562%
+Epoch : 1 [41600/60000 (69%)]	Loss: 0.343423	 Accuracy:87.632%
+Epoch : 1 [43200/60000 (72%)]	Loss: 0.130216	 Accuracy:87.692%
+Epoch : 1 [44800/60000 (75%)]	Loss: 0.236736	 Accuracy:87.794%
+Epoch : 1 [46400/60000 (77%)]	Loss: 0.503000	 Accuracy:87.804%
+Epoch : 1 [48000/60000 (80%)]	Loss: 0.312279	 Accuracy:87.800%
+Epoch : 1 [49600/60000 (83%)]	Loss: 0.607227	 Accuracy:87.814%
+Epoch : 1 [51200/60000 (85%)]	Loss: 0.334969	 Accuracy:87.844%
+Epoch : 1 [52800/60000 (88%)]	Loss: 0.756504	 Accuracy:87.926%
+Epoch : 1 [54400/60000 (91%)]	Loss: 0.172372	 Accuracy:87.959%
+Epoch : 1 [56000/60000 (93%)]	Loss: 0.572125	 Accuracy:88.005%
+Epoch : 1 [57600/60000 (96%)]	Loss: 0.260000	 Accuracy:88.071%
+Epoch : 1 [59200/60000 (99%)]	Loss: 0.061132	 Accuracy:88.201%
+Epoch : 2 [0/60000 (0%)]	Loss: 0.233686	 Accuracy:93.750%
+Epoch : 2 [1600/60000 (3%)]	Loss: 0.288262	 Accuracy:89.828%
+Epoch : 2 [3200/60000 (5%)]	Loss: 0.179944	 Accuracy:90.996%
+Epoch : 2 [4800/60000 (8%)]	Loss: 0.206003	 Accuracy:90.501%
+Epoch : 2 [6400/60000 (11%)]	Loss: 0.323106	 Accuracy:90.687%
+Epoch : 2 [8000/60000 (13%)]	Loss: 0.126148	 Accuracy:90.426%
+Epoch : 2 [9600/60000 (16%)]	Loss: 0.402014	 Accuracy:90.314%
+Epoch : 2 [11200/60000 (19%)]	Loss: 0.156343	 Accuracy:90.037%
+Epoch : 2 [12800/60000 (21%)]	Loss: 0.307328	 Accuracy:89.963%
+Epoch : 2 [14400/60000 (24%)]	Loss: 0.088582	 Accuracy:89.863%
+Epoch : 2 [16000/60000 (27%)]	Loss: 0.367829	 Accuracy:89.789%
+Epoch : 2 [17600/60000 (29%)]	Loss: 0.180114	 Accuracy:89.780%
+Epoch : 2 [19200/60000 (32%)]	Loss: 0.398730	 Accuracy:89.866%
+Epoch : 2 [20800/60000 (35%)]	Loss: 0.233707	 Accuracy:89.886%
+Epoch : 2 [22400/60000 (37%)]	Loss: 0.142348	 Accuracy:89.965%
+Epoch : 2 [24000/60000 (40%)]	Loss: 0.169953	 Accuracy:90.026%
+Epoch : 2 [25600/60000 (43%)]	Loss: 0.096460	 Accuracy:90.118%
+Epoch : 2 [27200/60000 (45%)]	Loss: 0.336743	 Accuracy:90.166%
+Epoch : 2 [28800/60000 (48%)]	Loss: 0.211818	 Accuracy:90.223%
+Epoch : 2 [30400/60000 (51%)]	Loss: 0.397601	 Accuracy:90.204%
+Epoch : 2 [32000/60000 (53%)]	Loss: 0.337776	 Accuracy:90.191%
+Epoch : 2 [33600/60000 (56%)]	Loss: 0.155526	 Accuracy:90.209%
+Epoch : 2 [35200/60000 (59%)]	Loss: 0.062151	 Accuracy:90.262%
+Epoch : 2 [36800/60000 (61%)]	Loss: 0.074812	 Accuracy:90.313%
+Epoch : 2 [38400/60000 (64%)]	Loss: 0.353924	 Accuracy:90.289%
+Epoch : 2 [40000/60000 (67%)]	Loss: 0.323656	 Accuracy:90.303%
+Epoch : 2 [41600/60000 (69%)]	Loss: 0.363372	 Accuracy:90.322%
+Epoch : 2 [43200/60000 (72%)]	Loss: 0.107139	 Accuracy:90.352%
+Epoch : 2 [44800/60000 (75%)]	Loss: 0.251984	 Accuracy:90.409%
+Epoch : 2 [46400/60000 (77%)]	Loss: 0.667105	 Accuracy:90.418%
+Epoch : 2 [48000/60000 (80%)]	Loss: 0.162875	 Accuracy:90.465%
+Epoch : 2 [49600/60000 (83%)]	Loss: 0.189957	 Accuracy:90.458%
+Epoch : 2 [51200/60000 (85%)]	Loss: 0.303221	 Accuracy:90.428%
+Epoch : 2 [52800/60000 (88%)]	Loss: 0.671879	 Accuracy:90.460%
+Epoch : 2 [54400/60000 (91%)]	Loss: 0.071588	 Accuracy:90.454%
+Epoch : 2 [56000/60000 (93%)]	Loss: 0.322860	 Accuracy:90.497%
+Epoch : 2 [57600/60000 (96%)]	Loss: 0.108219	 Accuracy:90.543%
+Epoch : 2 [59200/60000 (99%)]	Loss: 0.010562	 Accuracy:90.652%
+Epoch : 3 [0/60000 (0%)]	Loss: 0.388299	 Accuracy:87.500%
+Epoch : 3 [1600/60000 (3%)]	Loss: 0.325233	 Accuracy:90.931%
+Epoch : 3 [3200/60000 (5%)]	Loss: 0.314271	 Accuracy:91.770%
+Epoch : 3 [4800/60000 (8%)]	Loss: 0.226784	 Accuracy:91.950%
+Epoch : 3 [6400/60000 (11%)]	Loss: 0.369109	 Accuracy:91.978%
+Epoch : 3 [8000/60000 (13%)]	Loss: 0.364683	 Accuracy:91.945%
+Epoch : 3 [9600/60000 (16%)]	Loss: 0.238859	 Accuracy:91.601%
+Epoch : 3 [11200/60000 (19%)]	Loss: 0.183946	 Accuracy:91.711%
+Epoch : 3 [12800/60000 (21%)]	Loss: 0.280899	 Accuracy:91.732%
+Epoch : 3 [14400/60000 (24%)]	Loss: 0.100640	 Accuracy:91.664%
+Epoch : 3 [16000/60000 (27%)]	Loss: 0.849971	 Accuracy:91.667%
+Epoch : 3 [17600/60000 (29%)]	Loss: 0.414359	 Accuracy:91.674%
+Epoch : 3 [19200/60000 (32%)]	Loss: 0.191897	 Accuracy:91.805%
+Epoch : 3 [20800/60000 (35%)]	Loss: 0.088045	 Accuracy:91.835%
+Epoch : 3 [22400/60000 (37%)]	Loss: 0.042268	 Accuracy:91.873%
+Epoch : 3 [24000/60000 (40%)]	Loss: 0.229556	 Accuracy:91.798%
+Epoch : 3 [25600/60000 (43%)]	Loss: 0.339581	 Accuracy:91.831%
+Epoch : 3 [27200/60000 (45%)]	Loss: 0.393585	 Accuracy:91.892%
+Epoch : 3 [28800/60000 (48%)]	Loss: 0.339222	 Accuracy:91.877%
+Epoch : 3 [30400/60000 (51%)]	Loss: 0.347423	 Accuracy:91.795%
+Epoch : 3 [32000/60000 (53%)]	Loss: 0.141874	 Accuracy:91.768%
+Epoch : 3 [33600/60000 (56%)]	Loss: 0.150206	 Accuracy:91.785%
+Epoch : 3 [35200/60000 (59%)]	Loss: 0.293291	 Accuracy:91.786%
+Epoch : 3 [36800/60000 (61%)]	Loss: 0.238983	 Accuracy:91.841%
+Epoch : 3 [38400/60000 (64%)]	Loss: 0.296871	 Accuracy:91.853%
+Epoch : 3 [40000/60000 (67%)]	Loss: 0.224663	 Accuracy:91.889%
+Epoch : 3 [41600/60000 (69%)]	Loss: 0.215970	 Accuracy:91.886%
+Epoch : 3 [43200/60000 (72%)]	Loss: 0.245548	 Accuracy:91.930%
+Epoch : 3 [44800/60000 (75%)]	Loss: 0.134363	 Accuracy:91.972%
+Epoch : 3 [46400/60000 (77%)]	Loss: 0.615213	 Accuracy:91.932%
+Epoch : 3 [48000/60000 (80%)]	Loss: 0.169999	 Accuracy:91.941%
+Epoch : 3 [49600/60000 (83%)]	Loss: 0.258102	 Accuracy:91.937%
+Epoch : 3 [51200/60000 (85%)]	Loss: 0.129201	 Accuracy:91.929%
+Epoch : 3 [52800/60000 (88%)]	Loss: 0.548502	 Accuracy:91.959%
+Epoch : 3 [54400/60000 (91%)]	Loss: 0.086353	 Accuracy:91.968%
+Epoch : 3 [56000/60000 (93%)]	Loss: 0.638637	 Accuracy:91.992%
+Epoch : 3 [57600/60000 (96%)]	Loss: 0.220162	 Accuracy:92.015%
+Epoch : 3 [59200/60000 (99%)]	Loss: 0.007785	 Accuracy:92.085%
+Epoch : 4 [0/60000 (0%)]	Loss: 0.286692	 Accuracy:93.750%
+Epoch : 4 [1600/60000 (3%)]	Loss: 0.817646	 Accuracy:93.321%
+Epoch : 4 [3200/60000 (5%)]	Loss: 0.260404	 Accuracy:93.998%
+Epoch : 4 [4800/60000 (8%)]	Loss: 0.366780	 Accuracy:93.688%
+Epoch : 4 [6400/60000 (11%)]	Loss: 0.729876	 Accuracy:93.190%
+Epoch : 4 [8000/60000 (13%)]	Loss: 0.195045	 Accuracy:93.202%
+Epoch : 4 [9600/60000 (16%)]	Loss: 0.379438	 Accuracy:92.899%
+Epoch : 4 [11200/60000 (19%)]	Loss: 0.153812	 Accuracy:92.886%
+Epoch : 4 [12800/60000 (21%)]	Loss: 0.250636	 Accuracy:92.714%
+Epoch : 4 [14400/60000 (24%)]	Loss: 0.147697	 Accuracy:92.607%
+Epoch : 4 [16000/60000 (27%)]	Loss: 0.386132	 Accuracy:92.527%
+Epoch : 4 [17600/60000 (29%)]	Loss: 0.114877	 Accuracy:92.536%
+Epoch : 4 [19200/60000 (32%)]	Loss: 0.253117	 Accuracy:92.616%
+Epoch : 4 [20800/60000 (35%)]	Loss: 0.311308	 Accuracy:92.670%
+Epoch : 4 [22400/60000 (37%)]	Loss: 0.040589	 Accuracy:92.774%
+Epoch : 4 [24000/60000 (40%)]	Loss: 0.240642	 Accuracy:92.780%
+Epoch : 4 [25600/60000 (43%)]	Loss: 0.088659	 Accuracy:92.736%
+Epoch : 4 [27200/60000 (45%)]	Loss: 0.623812	 Accuracy:92.751%
+Epoch : 4 [28800/60000 (48%)]	Loss: 0.552272	 Accuracy:92.734%
+Epoch : 4 [30400/60000 (51%)]	Loss: 0.476396	 Accuracy:92.656%
+Epoch : 4 [32000/60000 (53%)]	Loss: 0.063644	 Accuracy:92.701%
+Epoch : 4 [33600/60000 (56%)]	Loss: 0.367016	 Accuracy:92.647%
+Epoch : 4 [35200/60000 (59%)]	Loss: 0.062020	 Accuracy:92.703%
+Epoch : 4 [36800/60000 (61%)]	Loss: 0.375876	 Accuracy:92.732%
+Epoch : 4 [38400/60000 (64%)]	Loss: 0.319913	 Accuracy:92.720%
+Epoch : 4 [40000/60000 (67%)]	Loss: 0.424604	 Accuracy:92.756%
+Epoch : 4 [41600/60000 (69%)]	Loss: 0.338041	 Accuracy:92.753%
+Epoch : 4 [43200/60000 (72%)]	Loss: 0.153160	 Accuracy:92.739%
+Epoch : 4 [44800/60000 (75%)]	Loss: 0.226982	 Accuracy:92.827%
+Epoch : 4 [46400/60000 (77%)]	Loss: 0.363240	 Accuracy:92.830%
+Epoch : 4 [48000/60000 (80%)]	Loss: 0.183512	 Accuracy:92.865%
+Epoch : 4 [49600/60000 (83%)]	Loss: 0.087160	 Accuracy:92.870%
+Epoch : 4 [51200/60000 (85%)]	Loss: 0.236687	 Accuracy:92.850%
+Epoch : 4 [52800/60000 (88%)]	Loss: 0.522680	 Accuracy:92.851%
+Epoch : 4 [54400/60000 (91%)]	Loss: 0.078998	 Accuracy:92.864%
+Epoch : 4 [56000/60000 (93%)]	Loss: 0.637356	 Accuracy:92.909%
+Epoch : 4 [57600/60000 (96%)]	Loss: 0.527236	 Accuracy:92.917%
+Epoch : 4 [59200/60000 (99%)]	Loss: 0.007764	 Accuracy:93.000%
+Test accuracy:0.933% 
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [5923 6742 5958 6131 5842 5421 5918 6265 5851 5949]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [ 980 1135 1032 1010  982  892  958 1028  974 1009]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(4, 4))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Epoch : 0 [0/60000 (0%)]	Loss: 12.425897	 Accuracy:9.375%
+Epoch : 0 [1600/60000 (3%)]	Loss: 2.148524	 Accuracy:15.135%
+Epoch : 0 [3200/60000 (5%)]	Loss: 2.177928	 Accuracy:24.783%
+Epoch : 0 [4800/60000 (8%)]	Loss: 1.613228	 Accuracy:30.029%
+Epoch : 0 [6400/60000 (11%)]	Loss: 1.586104	 Accuracy:34.562%
+Epoch : 0 [8000/60000 (13%)]	Loss: 1.755974	 Accuracy:38.484%
+Epoch : 0 [9600/60000 (16%)]	Loss: 0.770457	 Accuracy:41.850%
+Epoch : 0 [11200/60000 (19%)]	Loss: 1.065312	 Accuracy:44.605%
+Epoch : 0 [12800/60000 (21%)]	Loss: 0.940435	 Accuracy:46.820%
+Epoch : 0 [14400/60000 (24%)]	Loss: 0.736401	 Accuracy:48.420%
+Epoch : 0 [16000/60000 (27%)]	Loss: 1.394524	 Accuracy:50.193%
+Epoch : 0 [17600/60000 (29%)]	Loss: 0.831920	 Accuracy:51.565%
+Epoch : 0 [19200/60000 (32%)]	Loss: 0.953195	 Accuracy:53.000%
+Epoch : 0 [20800/60000 (35%)]	Loss: 0.887445	 Accuracy:54.479%
+Epoch : 0 [22400/60000 (37%)]	Loss: 0.817507	 Accuracy:55.813%
+Epoch : 0 [24000/60000 (40%)]	Loss: 1.107814	 Accuracy:56.903%
+Epoch : 0 [25600/60000 (43%)]	Loss: 0.994358	 Accuracy:57.998%
+Epoch : 0 [27200/60000 (45%)]	Loss: 1.275334	 Accuracy:58.879%
+Epoch : 0 [28800/60000 (48%)]	Loss: 0.659804	 Accuracy:59.798%
+Epoch : 0 [30400/60000 (51%)]	Loss: 0.960042	 Accuracy:60.574%
+Epoch : 0 [32000/60000 (53%)]	Loss: 0.996841	 Accuracy:61.242%
+Epoch : 0 [33600/60000 (56%)]	Loss: 0.469030	 Accuracy:61.879%
+Epoch : 0 [35200/60000 (59%)]	Loss: 0.698972	 Accuracy:62.614%
+Epoch : 0 [36800/60000 (61%)]	Loss: 1.139218	 Accuracy:63.282%
+Epoch : 0 [38400/60000 (64%)]	Loss: 0.717694	 Accuracy:63.817%
+Epoch : 0 [40000/60000 (67%)]	Loss: 0.731915	 Accuracy:64.346%
+Epoch : 0 [41600/60000 (69%)]	Loss: 0.910248	 Accuracy:64.854%
+Epoch : 0 [43200/60000 (72%)]	Loss: 0.698477	 Accuracy:65.364%
+Epoch : 0 [44800/60000 (75%)]	Loss: 0.405937	 Accuracy:65.962%
+Epoch : 0 [46400/60000 (77%)]	Loss: 0.447785	 Accuracy:66.364%
+Epoch : 0 [48000/60000 (80%)]	Loss: 0.722567	 Accuracy:66.843%
+Epoch : 0 [49600/60000 (83%)]	Loss: 0.298780	 Accuracy:67.235%
+Epoch : 0 [51200/60000 (85%)]	Loss: 0.454081	 Accuracy:67.565%
+Epoch : 0 [52800/60000 (88%)]	Loss: 0.853655	 Accuracy:67.944%
+Epoch : 0 [54400/60000 (91%)]	Loss: 0.329926	 Accuracy:68.298%
+Epoch : 0 [56000/60000 (93%)]	Loss: 0.549306	 Accuracy:68.682%
+Epoch : 0 [57600/60000 (96%)]	Loss: 0.408512	 Accuracy:69.057%
+Epoch : 0 [59200/60000 (99%)]	Loss: 0.194017	 Accuracy:69.525%
+Epoch : 1 [0/60000 (0%)]	Loss: 0.694478	 Accuracy:78.125%
+Epoch : 1 [1600/60000 (3%)]	Loss: 0.607589	 Accuracy:80.331%
+Epoch : 1 [3200/60000 (5%)]	Loss: 1.051777	 Accuracy:81.683%
+Epoch : 1 [4800/60000 (8%)]	Loss: 0.630332	 Accuracy:81.995%
+Epoch : 1 [6400/60000 (11%)]	Loss: 0.813801	 Accuracy:82.105%
+Epoch : 1 [8000/60000 (13%)]	Loss: 0.460294	 Accuracy:82.109%
+Epoch : 1 [9600/60000 (16%)]	Loss: 0.321779	 Accuracy:81.914%
+Epoch : 1 [11200/60000 (19%)]	Loss: 0.607844	 Accuracy:82.007%
+Epoch : 1 [12800/60000 (21%)]	Loss: 0.484135	 Accuracy:82.162%
+Epoch : 1 [14400/60000 (24%)]	Loss: 0.516811	 Accuracy:82.137%
+Epoch : 1 [16000/60000 (27%)]	Loss: 0.614320	 Accuracy:82.310%
+Epoch : 1 [17600/60000 (29%)]	Loss: 0.434000	 Accuracy:82.379%
+Epoch : 1 [19200/60000 (32%)]	Loss: 0.473925	 Accuracy:82.482%
+Epoch : 1 [20800/60000 (35%)]	Loss: 0.607409	 Accuracy:82.656%
+Epoch : 1 [22400/60000 (37%)]	Loss: 0.412770	 Accuracy:82.815%
+Epoch : 1 [24000/60000 (40%)]	Loss: 0.595637	 Accuracy:82.931%
+Epoch : 1 [25600/60000 (43%)]	Loss: 0.562529	 Accuracy:83.002%
+Epoch : 1 [27200/60000 (45%)]	Loss: 0.640061	 Accuracy:83.119%
+Epoch : 1 [28800/60000 (48%)]	Loss: 0.349938	 Accuracy:83.171%
+Epoch : 1 [30400/60000 (51%)]	Loss: 0.965145	 Accuracy:83.120%
+Epoch : 1 [32000/60000 (53%)]	Loss: 0.436583	 Accuracy:83.164%
+Epoch : 1 [33600/60000 (56%)]	Loss: 0.705530	 Accuracy:83.126%
+Epoch : 1 [35200/60000 (59%)]	Loss: 0.180410	 Accuracy:83.262%
+Epoch : 1 [36800/60000 (61%)]	Loss: 0.744928	 Accuracy:83.351%
+Epoch : 1 [38400/60000 (64%)]	Loss: 0.526746	 Accuracy:83.391%
+Epoch : 1 [40000/60000 (67%)]	Loss: 0.564242	 Accuracy:83.398%
+Epoch : 1 [41600/60000 (69%)]	Loss: 0.530121	 Accuracy:83.517%
+Epoch : 1 [43200/60000 (72%)]	Loss: 0.583181	 Accuracy:83.542%
+Epoch : 1 [44800/60000 (75%)]	Loss: 0.283372	 Accuracy:83.704%
+Epoch : 1 [46400/60000 (77%)]	Loss: 0.401801	 Accuracy:83.763%
+Epoch : 1 [48000/60000 (80%)]	Loss: 0.666775	 Accuracy:83.855%
+Epoch : 1 [49600/60000 (83%)]	Loss: 1.082205	 Accuracy:83.914%
+Epoch : 1 [51200/60000 (85%)]	Loss: 0.247184	 Accuracy:83.926%
+Epoch : 1 [52800/60000 (88%)]	Loss: 0.683823	 Accuracy:84.004%
+Epoch : 1 [54400/60000 (91%)]	Loss: 0.331711	 Accuracy:84.076%
+Epoch : 1 [56000/60000 (93%)]	Loss: 0.608956	 Accuracy:84.197%
+Epoch : 1 [57600/60000 (96%)]	Loss: 0.955225	 Accuracy:84.254%
+Epoch : 1 [59200/60000 (99%)]	Loss: 0.210273	 Accuracy:84.394%
+Epoch : 2 [0/60000 (0%)]	Loss: 0.480653	 Accuracy:87.500%
+Epoch : 2 [1600/60000 (3%)]	Loss: 0.412610	 Accuracy:86.458%
+Epoch : 2 [3200/60000 (5%)]	Loss: 0.375659	 Accuracy:87.129%
+Epoch : 2 [4800/60000 (8%)]	Loss: 0.754928	 Accuracy:87.334%
+Epoch : 2 [6400/60000 (11%)]	Loss: 0.352375	 Accuracy:87.220%
+Epoch : 2 [8000/60000 (13%)]	Loss: 0.446846	 Accuracy:87.164%
+Epoch : 2 [9600/60000 (16%)]	Loss: 0.302751	 Accuracy:87.209%
+Epoch : 2 [11200/60000 (19%)]	Loss: 0.564138	 Accuracy:87.349%
+Epoch : 2 [12800/60000 (21%)]	Loss: 0.374536	 Accuracy:87.445%
+Epoch : 2 [14400/60000 (24%)]	Loss: 0.563798	 Accuracy:87.251%
+Epoch : 2 [16000/60000 (27%)]	Loss: 0.464464	 Accuracy:87.076%
+Epoch : 2 [17600/60000 (29%)]	Loss: 0.453181	 Accuracy:87.114%
+Epoch : 2 [19200/60000 (32%)]	Loss: 0.257598	 Accuracy:87.209%
+Epoch : 2 [20800/60000 (35%)]	Loss: 0.348441	 Accuracy:87.246%
+Epoch : 2 [22400/60000 (37%)]	Loss: 0.083925	 Accuracy:87.353%
+Epoch : 2 [24000/60000 (40%)]	Loss: 0.495245	 Accuracy:87.425%
+Epoch : 2 [25600/60000 (43%)]	Loss: 0.294856	 Accuracy:87.402%
+Epoch : 2 [27200/60000 (45%)]	Loss: 0.391071	 Accuracy:87.427%
+Epoch : 2 [28800/60000 (48%)]	Loss: 0.312564	 Accuracy:87.514%
+Epoch : 2 [30400/60000 (51%)]	Loss: 0.497022	 Accuracy:87.398%
+Epoch : 2 [32000/60000 (53%)]	Loss: 0.309077	 Accuracy:87.388%
+Epoch : 2 [33600/60000 (56%)]	Loss: 0.300346	 Accuracy:87.384%
+Epoch : 2 [35200/60000 (59%)]	Loss: 0.292741	 Accuracy:87.398%
+Epoch : 2 [36800/60000 (61%)]	Loss: 0.460686	 Accuracy:87.530%
+Epoch : 2 [38400/60000 (64%)]	Loss: 0.753365	 Accuracy:87.542%
+Epoch : 2 [40000/60000 (67%)]	Loss: 0.282053	 Accuracy:87.540%
+Epoch : 2 [41600/60000 (69%)]	Loss: 0.247462	 Accuracy:87.615%
+Epoch : 2 [43200/60000 (72%)]	Loss: 0.493896	 Accuracy:87.639%
+Epoch : 2 [44800/60000 (75%)]	Loss: 0.258447	 Accuracy:87.750%
+Epoch : 2 [46400/60000 (77%)]	Loss: 0.824450	 Accuracy:87.769%
+Epoch : 2 [48000/60000 (80%)]	Loss: 0.264188	 Accuracy:87.814%
+Epoch : 2 [49600/60000 (83%)]	Loss: 0.533743	 Accuracy:87.828%
+Epoch : 2 [51200/60000 (85%)]	Loss: 0.331091	 Accuracy:87.834%
+Epoch : 2 [52800/60000 (88%)]	Loss: 0.985197	 Accuracy:87.835%
+Epoch : 2 [54400/60000 (91%)]	Loss: 0.207705	 Accuracy:87.823%
+Epoch : 2 [56000/60000 (93%)]	Loss: 0.176501	 Accuracy:87.859%
+Epoch : 2 [57600/60000 (96%)]	Loss: 0.256052	 Accuracy:87.930%
+Epoch : 2 [59200/60000 (99%)]	Loss: 0.038727	 Accuracy:88.064%
+Epoch : 3 [0/60000 (0%)]	Loss: 0.278527	 Accuracy:90.625%
+Epoch : 3 [1600/60000 (3%)]	Loss: 0.648071	 Accuracy:89.032%
+Epoch : 3 [3200/60000 (5%)]	Loss: 0.306103	 Accuracy:89.790%
+Epoch : 3 [4800/60000 (8%)]	Loss: 0.511344	 Accuracy:89.776%
+Epoch : 3 [6400/60000 (11%)]	Loss: 0.393283	 Accuracy:89.443%
+Epoch : 3 [8000/60000 (13%)]	Loss: 0.522258	 Accuracy:89.168%
+Epoch : 3 [9600/60000 (16%)]	Loss: 0.183338	 Accuracy:88.850%
+Epoch : 3 [11200/60000 (19%)]	Loss: 0.305672	 Accuracy:89.058%
+Epoch : 3 [12800/60000 (21%)]	Loss: 0.295591	 Accuracy:89.246%
+Epoch : 3 [14400/60000 (24%)]	Loss: 0.373710	 Accuracy:89.191%
+Epoch : 3 [16000/60000 (27%)]	Loss: 0.406616	 Accuracy:89.128%
+Epoch : 3 [17600/60000 (29%)]	Loss: 0.287485	 Accuracy:88.958%
+Epoch : 3 [19200/60000 (32%)]	Loss: 0.245990	 Accuracy:89.024%
+Epoch : 3 [20800/60000 (35%)]	Loss: 0.130565	 Accuracy:89.147%
+Epoch : 3 [22400/60000 (37%)]	Loss: 0.393682	 Accuracy:89.181%
+Epoch : 3 [24000/60000 (40%)]	Loss: 0.613119	 Accuracy:89.264%
+Epoch : 3 [25600/60000 (43%)]	Loss: 0.572523	 Accuracy:89.263%
+Epoch : 3 [27200/60000 (45%)]	Loss: 0.786268	 Accuracy:89.296%
+Epoch : 3 [28800/60000 (48%)]	Loss: 0.158500	 Accuracy:89.359%
+Epoch : 3 [30400/60000 (51%)]	Loss: 0.572637	 Accuracy:89.380%
+Epoch : 3 [32000/60000 (53%)]	Loss: 0.357458	 Accuracy:89.342%
+Epoch : 3 [33600/60000 (56%)]	Loss: 0.189066	 Accuracy:89.349%
+Epoch : 3 [35200/60000 (59%)]	Loss: 0.133021	 Accuracy:89.387%
+Epoch : 3 [36800/60000 (61%)]	Loss: 0.416511	 Accuracy:89.477%
+Epoch : 3 [38400/60000 (64%)]	Loss: 0.560270	 Accuracy:89.472%
+Epoch : 3 [40000/60000 (67%)]	Loss: 0.157503	 Accuracy:89.541%
+Epoch : 3 [41600/60000 (69%)]	Loss: 0.704934	 Accuracy:89.542%
+Epoch : 3 [43200/60000 (72%)]	Loss: 0.215405	 Accuracy:89.545%
+Epoch : 3 [44800/60000 (75%)]	Loss: 0.236645	 Accuracy:89.617%
+Epoch : 3 [46400/60000 (77%)]	Loss: 0.526846	 Accuracy:89.568%
+Epoch : 3 [48000/60000 (80%)]	Loss: 0.328225	 Accuracy:89.584%
+Epoch : 3 [49600/60000 (83%)]	Loss: 0.633211	 Accuracy:89.587%
+Epoch : 3 [51200/60000 (85%)]	Loss: 0.441680	 Accuracy:89.587%
+Epoch : 3 [52800/60000 (88%)]	Loss: 0.761148	 Accuracy:89.597%
+Epoch : 3 [54400/60000 (91%)]	Loss: 0.165754	 Accuracy:89.600%
+Epoch : 3 [56000/60000 (93%)]	Loss: 0.646814	 Accuracy:89.640%
+Epoch : 3 [57600/60000 (96%)]	Loss: 0.160656	 Accuracy:89.718%
+Epoch : 3 [59200/60000 (99%)]	Loss: 0.088632	 Accuracy:89.825%
+Epoch : 4 [0/60000 (0%)]	Loss: 0.326057	 Accuracy:84.375%
+Epoch : 4 [1600/60000 (3%)]	Loss: 0.555842	 Accuracy:90.319%
+Epoch : 4 [3200/60000 (5%)]	Loss: 0.163264	 Accuracy:91.151%
+Epoch : 4 [4800/60000 (8%)]	Loss: 0.374405	 Accuracy:91.349%
+Epoch : 4 [6400/60000 (11%)]	Loss: 0.211984	 Accuracy:91.185%
+Epoch : 4 [8000/60000 (13%)]	Loss: 0.564045	 Accuracy:91.272%
+Epoch : 4 [9600/60000 (16%)]	Loss: 0.222457	 Accuracy:90.895%
+Epoch : 4 [11200/60000 (19%)]	Loss: 0.523090	 Accuracy:90.999%
+Epoch : 4 [12800/60000 (21%)]	Loss: 0.102386	 Accuracy:91.030%
+Epoch : 4 [14400/60000 (24%)]	Loss: 0.167430	 Accuracy:90.861%
+Epoch : 4 [16000/60000 (27%)]	Loss: 0.405402	 Accuracy:90.843%
+Epoch : 4 [17600/60000 (29%)]	Loss: 0.347186	 Accuracy:90.801%
+Epoch : 4 [19200/60000 (32%)]	Loss: 0.291462	 Accuracy:90.791%
+Epoch : 4 [20800/60000 (35%)]	Loss: 0.335015	 Accuracy:90.817%
+Epoch : 4 [22400/60000 (37%)]	Loss: 0.213774	 Accuracy:90.803%
+Epoch : 4 [24000/60000 (40%)]	Loss: 0.388332	 Accuracy:90.758%
+Epoch : 4 [25600/60000 (43%)]	Loss: 0.630852	 Accuracy:90.832%
+Epoch : 4 [27200/60000 (45%)]	Loss: 0.222184	 Accuracy:90.809%
+Epoch : 4 [28800/60000 (48%)]	Loss: 0.133138	 Accuracy:90.857%
+Epoch : 4 [30400/60000 (51%)]	Loss: 0.534617	 Accuracy:90.819%
+Epoch : 4 [32000/60000 (53%)]	Loss: 0.247305	 Accuracy:90.769%
+Epoch : 4 [33600/60000 (56%)]	Loss: 0.551073	 Accuracy:90.714%
+Epoch : 4 [35200/60000 (59%)]	Loss: 0.320967	 Accuracy:90.656%
+Epoch : 4 [36800/60000 (61%)]	Loss: 0.336820	 Accuracy:90.701%
+Epoch : 4 [38400/60000 (64%)]	Loss: 0.137020	 Accuracy:90.641%
+Epoch : 4 [40000/60000 (67%)]	Loss: 0.347120	 Accuracy:90.652%
+Epoch : 4 [41600/60000 (69%)]	Loss: 0.358241	 Accuracy:90.673%
+Epoch : 4 [43200/60000 (72%)]	Loss: 0.303190	 Accuracy:90.630%
+Epoch : 4 [44800/60000 (75%)]	Loss: 0.200694	 Accuracy:90.743%
+Epoch : 4 [46400/60000 (77%)]	Loss: 0.578891	 Accuracy:90.722%
+Epoch : 4 [48000/60000 (80%)]	Loss: 0.375841	 Accuracy:90.729%
+Epoch : 4 [49600/60000 (83%)]	Loss: 0.276307	 Accuracy:90.730%
+Epoch : 4 [51200/60000 (85%)]	Loss: 0.244201	 Accuracy:90.725%
+Epoch : 4 [52800/60000 (88%)]	Loss: 0.452648	 Accuracy:90.754%
+Epoch : 4 [54400/60000 (91%)]	Loss: 0.110568	 Accuracy:90.776%
+Epoch : 4 [56000/60000 (93%)]	Loss: 0.280508	 Accuracy:90.805%
+Epoch : 4 [57600/60000 (96%)]	Loss: 0.154332	 Accuracy:90.826%
+Epoch : 4 [59200/60000 (99%)]	Loss: 0.053459	 Accuracy:90.915%
+Test accuracy:0.918% 
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [5923 6742 5958 6131 5842 5421 5918 6265 5851 5949]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [ 980 1135 1032 1010  982  892  958 1028  974 1009]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(5, 5))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Epoch : 0 [0/60000 (0%)]	Loss: 12.282574	 Accuracy:28.125%
+Epoch : 0 [1600/60000 (3%)]	Loss: 2.039191	 Accuracy:11.887%
+Epoch : 0 [3200/60000 (5%)]	Loss: 1.938867	 Accuracy:14.790%
+Epoch : 0 [4800/60000 (8%)]	Loss: 1.885573	 Accuracy:20.530%
+Epoch : 0 [6400/60000 (11%)]	Loss: 1.949916	 Accuracy:26.399%
+Epoch : 0 [8000/60000 (13%)]	Loss: 1.915470	 Accuracy:29.470%
+Epoch : 0 [9600/60000 (16%)]	Loss: 1.515137	 Accuracy:32.610%
+Epoch : 0 [11200/60000 (19%)]	Loss: 1.266368	 Accuracy:35.550%
+Epoch : 0 [12800/60000 (21%)]	Loss: 1.187024	 Accuracy:37.749%
+Epoch : 0 [14400/60000 (24%)]	Loss: 0.862846	 Accuracy:40.202%
+Epoch : 0 [16000/60000 (27%)]	Loss: 1.341303	 Accuracy:42.191%
+Epoch : 0 [17600/60000 (29%)]	Loss: 1.158149	 Accuracy:44.028%
+Epoch : 0 [19200/60000 (32%)]	Loss: 0.876448	 Accuracy:45.892%
+Epoch : 0 [20800/60000 (35%)]	Loss: 0.756818	 Accuracy:47.643%
+Epoch : 0 [22400/60000 (37%)]	Loss: 0.706312	 Accuracy:49.140%
+Epoch : 0 [24000/60000 (40%)]	Loss: 0.896333	 Accuracy:50.325%
+Epoch : 0 [25600/60000 (43%)]	Loss: 0.981129	 Accuracy:51.541%
+Epoch : 0 [27200/60000 (45%)]	Loss: 0.991319	 Accuracy:52.725%
+Epoch : 0 [28800/60000 (48%)]	Loss: 0.583222	 Accuracy:53.846%
+Epoch : 0 [30400/60000 (51%)]	Loss: 1.264937	 Accuracy:54.758%
+Epoch : 0 [32000/60000 (53%)]	Loss: 0.782059	 Accuracy:55.451%
+Epoch : 0 [33600/60000 (56%)]	Loss: 0.546440	 Accuracy:56.164%
+Epoch : 0 [35200/60000 (59%)]	Loss: 0.932601	 Accuracy:56.954%
+Epoch : 0 [36800/60000 (61%)]	Loss: 0.870061	 Accuracy:57.751%
+Epoch : 0 [38400/60000 (64%)]	Loss: 0.702486	 Accuracy:58.430%
+Epoch : 0 [40000/60000 (67%)]	Loss: 0.763237	 Accuracy:59.085%
+Epoch : 0 [41600/60000 (69%)]	Loss: 0.677359	 Accuracy:59.656%
+Epoch : 0 [43200/60000 (72%)]	Loss: 0.823883	 Accuracy:60.150%
+Epoch : 0 [44800/60000 (75%)]	Loss: 0.681179	 Accuracy:60.823%
+Epoch : 0 [46400/60000 (77%)]	Loss: 1.292523	 Accuracy:61.272%
+Epoch : 0 [48000/60000 (80%)]	Loss: 1.114674	 Accuracy:61.696%
+Epoch : 0 [49600/60000 (83%)]	Loss: 0.798978	 Accuracy:62.129%
+Epoch : 0 [51200/60000 (85%)]	Loss: 0.770546	 Accuracy:62.535%
+Epoch : 0 [52800/60000 (88%)]	Loss: 0.892349	 Accuracy:62.981%
+Epoch : 0 [54400/60000 (91%)]	Loss: 0.512390	 Accuracy:63.457%
+Epoch : 0 [56000/60000 (93%)]	Loss: 0.615976	 Accuracy:63.858%
+Epoch : 0 [57600/60000 (96%)]	Loss: 0.507935	 Accuracy:64.284%
+Epoch : 0 [59200/60000 (99%)]	Loss: 0.167355	 Accuracy:64.845%
+Epoch : 1 [0/60000 (0%)]	Loss: 0.830511	 Accuracy:84.375%
+Epoch : 1 [1600/60000 (3%)]	Loss: 0.909385	 Accuracy:80.699%
+Epoch : 1 [3200/60000 (5%)]	Loss: 0.776871	 Accuracy:80.353%
+Epoch : 1 [4800/60000 (8%)]	Loss: 1.046445	 Accuracy:80.319%
+Epoch : 1 [6400/60000 (11%)]	Loss: 0.490102	 Accuracy:80.348%
+Epoch : 1 [8000/60000 (13%)]	Loss: 1.161757	 Accuracy:80.652%
+Epoch : 1 [9600/60000 (16%)]	Loss: 0.586233	 Accuracy:80.305%
+Epoch : 1 [11200/60000 (19%)]	Loss: 0.557000	 Accuracy:80.796%
+Epoch : 1 [12800/60000 (21%)]	Loss: 0.692323	 Accuracy:80.829%
+Epoch : 1 [14400/60000 (24%)]	Loss: 0.535935	 Accuracy:80.585%
+Epoch : 1 [16000/60000 (27%)]	Loss: 1.003894	 Accuracy:80.346%
+Epoch : 1 [17600/60000 (29%)]	Loss: 0.591336	 Accuracy:80.314%
+Epoch : 1 [19200/60000 (32%)]	Loss: 0.350663	 Accuracy:80.532%
+Epoch : 1 [20800/60000 (35%)]	Loss: 0.831077	 Accuracy:80.674%
+Epoch : 1 [22400/60000 (37%)]	Loss: 0.582525	 Accuracy:80.773%
+Epoch : 1 [24000/60000 (40%)]	Loss: 0.446358	 Accuracy:80.659%
+Epoch : 1 [25600/60000 (43%)]	Loss: 0.491186	 Accuracy:80.692%
+Epoch : 1 [27200/60000 (45%)]	Loss: 0.783357	 Accuracy:80.732%
+Epoch : 1 [28800/60000 (48%)]	Loss: 0.494949	 Accuracy:80.799%
+Epoch : 1 [30400/60000 (51%)]	Loss: 0.853120	 Accuracy:80.859%
+Epoch : 1 [32000/60000 (53%)]	Loss: 0.517204	 Accuracy:80.847%
+Epoch : 1 [33600/60000 (56%)]	Loss: 0.682373	 Accuracy:80.798%
+Epoch : 1 [35200/60000 (59%)]	Loss: 0.493727	 Accuracy:80.969%
+Epoch : 1 [36800/60000 (61%)]	Loss: 0.894858	 Accuracy:81.044%
+Epoch : 1 [38400/60000 (64%)]	Loss: 0.527137	 Accuracy:81.068%
+Epoch : 1 [40000/60000 (67%)]	Loss: 0.523649	 Accuracy:81.123%
+Epoch : 1 [41600/60000 (69%)]	Loss: 0.344875	 Accuracy:81.262%
+Epoch : 1 [43200/60000 (72%)]	Loss: 0.947030	 Accuracy:81.289%
+Epoch : 1 [44800/60000 (75%)]	Loss: 0.220663	 Accuracy:81.388%
+Epoch : 1 [46400/60000 (77%)]	Loss: 0.727513	 Accuracy:81.353%
+Epoch : 1 [48000/60000 (80%)]	Loss: 0.645162	 Accuracy:81.298%
+Epoch : 1 [49600/60000 (83%)]	Loss: 0.458184	 Accuracy:81.359%
+Epoch : 1 [51200/60000 (85%)]	Loss: 0.425842	 Accuracy:81.430%
+Epoch : 1 [52800/60000 (88%)]	Loss: 0.830088	 Accuracy:81.574%
+Epoch : 1 [54400/60000 (91%)]	Loss: 0.523286	 Accuracy:81.673%
+Epoch : 1 [56000/60000 (93%)]	Loss: 0.375426	 Accuracy:81.755%
+Epoch : 1 [57600/60000 (96%)]	Loss: 0.371183	 Accuracy:81.831%
+Epoch : 1 [59200/60000 (99%)]	Loss: 0.662252	 Accuracy:81.976%
+Epoch : 2 [0/60000 (0%)]	Loss: 0.769891	 Accuracy:81.250%
+Epoch : 2 [1600/60000 (3%)]	Loss: 0.528903	 Accuracy:85.110%
+Epoch : 2 [3200/60000 (5%)]	Loss: 0.634323	 Accuracy:85.736%
+Epoch : 2 [4800/60000 (8%)]	Loss: 0.629803	 Accuracy:85.513%
+Epoch : 2 [6400/60000 (11%)]	Loss: 0.537317	 Accuracy:85.028%
+Epoch : 2 [8000/60000 (13%)]	Loss: 0.720058	 Accuracy:85.072%
+Epoch : 2 [9600/60000 (16%)]	Loss: 0.537212	 Accuracy:84.946%
+Epoch : 2 [11200/60000 (19%)]	Loss: 0.833635	 Accuracy:84.927%
+Epoch : 2 [12800/60000 (21%)]	Loss: 0.336252	 Accuracy:84.998%
+Epoch : 2 [14400/60000 (24%)]	Loss: 0.180555	 Accuracy:84.895%
+Epoch : 2 [16000/60000 (27%)]	Loss: 0.733587	 Accuracy:84.787%
+Epoch : 2 [17600/60000 (29%)]	Loss: 0.587871	 Accuracy:84.789%
+Epoch : 2 [19200/60000 (32%)]	Loss: 0.534386	 Accuracy:84.822%
+Epoch : 2 [20800/60000 (35%)]	Loss: 0.263596	 Accuracy:84.812%
+Epoch : 2 [22400/60000 (37%)]	Loss: 0.716874	 Accuracy:84.745%
+Epoch : 2 [24000/60000 (40%)]	Loss: 0.377821	 Accuracy:84.725%
+Epoch : 2 [25600/60000 (43%)]	Loss: 0.612092	 Accuracy:84.750%
+Epoch : 2 [27200/60000 (45%)]	Loss: 0.870848	 Accuracy:84.761%
+Epoch : 2 [28800/60000 (48%)]	Loss: 0.487737	 Accuracy:84.760%
+Epoch : 2 [30400/60000 (51%)]	Loss: 0.728161	 Accuracy:84.779%
+Epoch : 2 [32000/60000 (53%)]	Loss: 0.438289	 Accuracy:84.731%
+Epoch : 2 [33600/60000 (56%)]	Loss: 0.389576	 Accuracy:84.717%
+Epoch : 2 [35200/60000 (59%)]	Loss: 0.338004	 Accuracy:84.835%
+Epoch : 2 [36800/60000 (61%)]	Loss: 0.493296	 Accuracy:84.866%
+Epoch : 2 [38400/60000 (64%)]	Loss: 0.497760	 Accuracy:84.880%
+Epoch : 2 [40000/60000 (67%)]	Loss: 0.843060	 Accuracy:84.917%
+Epoch : 2 [41600/60000 (69%)]	Loss: 0.280960	 Accuracy:84.992%
+Epoch : 2 [43200/60000 (72%)]	Loss: 0.760175	 Accuracy:84.997%
+Epoch : 2 [44800/60000 (75%)]	Loss: 0.468240	 Accuracy:85.091%
+Epoch : 2 [46400/60000 (77%)]	Loss: 0.898266	 Accuracy:84.997%
+Epoch : 2 [48000/60000 (80%)]	Loss: 0.447339	 Accuracy:85.010%
+Epoch : 2 [49600/60000 (83%)]	Loss: 0.684159	 Accuracy:85.030%
+Epoch : 2 [51200/60000 (85%)]	Loss: 0.301531	 Accuracy:85.037%
+Epoch : 2 [52800/60000 (88%)]	Loss: 0.827248	 Accuracy:85.079%
+Epoch : 2 [54400/60000 (91%)]	Loss: 0.273138	 Accuracy:85.130%
+Epoch : 2 [56000/60000 (93%)]	Loss: 0.436108	 Accuracy:85.194%
+Epoch : 2 [57600/60000 (96%)]	Loss: 0.422666	 Accuracy:85.258%
+Epoch : 2 [59200/60000 (99%)]	Loss: 0.256745	 Accuracy:85.376%
+Epoch : 3 [0/60000 (0%)]	Loss: 0.392711	 Accuracy:87.500%
+Epoch : 3 [1600/60000 (3%)]	Loss: 0.455845	 Accuracy:86.887%
+Epoch : 3 [3200/60000 (5%)]	Loss: 0.603946	 Accuracy:87.345%
+Epoch : 3 [4800/60000 (8%)]	Loss: 0.547565	 Accuracy:87.728%
+Epoch : 3 [6400/60000 (11%)]	Loss: 0.839956	 Accuracy:87.826%
+Epoch : 3 [8000/60000 (13%)]	Loss: 0.406729	 Accuracy:87.400%
+Epoch : 3 [9600/60000 (16%)]	Loss: 0.477242	 Accuracy:87.085%
+Epoch : 3 [11200/60000 (19%)]	Loss: 0.495770	 Accuracy:87.046%
+Epoch : 3 [12800/60000 (21%)]	Loss: 0.139291	 Accuracy:87.040%
+Epoch : 3 [14400/60000 (24%)]	Loss: 0.365421	 Accuracy:86.849%
+Epoch : 3 [16000/60000 (27%)]	Loss: 0.660813	 Accuracy:86.677%
+Epoch : 3 [17600/60000 (29%)]	Loss: 0.382581	 Accuracy:86.638%
+Epoch : 3 [19200/60000 (32%)]	Loss: 0.289737	 Accuracy:86.746%
+Epoch : 3 [20800/60000 (35%)]	Loss: 0.400131	 Accuracy:86.876%
+Epoch : 3 [22400/60000 (37%)]	Loss: 0.145790	 Accuracy:87.023%
+Epoch : 3 [24000/60000 (40%)]	Loss: 0.318932	 Accuracy:86.992%
+Epoch : 3 [25600/60000 (43%)]	Loss: 0.411542	 Accuracy:86.926%
+Epoch : 3 [27200/60000 (45%)]	Loss: 0.435682	 Accuracy:86.931%
+Epoch : 3 [28800/60000 (48%)]	Loss: 0.265329	 Accuracy:86.917%
+Epoch : 3 [30400/60000 (51%)]	Loss: 0.838727	 Accuracy:86.846%
+Epoch : 3 [32000/60000 (53%)]	Loss: 0.447617	 Accuracy:86.695%
+Epoch : 3 [33600/60000 (56%)]	Loss: 0.288467	 Accuracy:86.733%
+Epoch : 3 [35200/60000 (59%)]	Loss: 0.227667	 Accuracy:86.796%
+Epoch : 3 [36800/60000 (61%)]	Loss: 0.501010	 Accuracy:86.810%
+Epoch : 3 [38400/60000 (64%)]	Loss: 1.054472	 Accuracy:86.784%
+Epoch : 3 [40000/60000 (67%)]	Loss: 0.863203	 Accuracy:86.766%
+Epoch : 3 [41600/60000 (69%)]	Loss: 0.399248	 Accuracy:86.811%
+Epoch : 3 [43200/60000 (72%)]	Loss: 0.596383	 Accuracy:86.808%
+Epoch : 3 [44800/60000 (75%)]	Loss: 0.491477	 Accuracy:86.918%
+Epoch : 3 [46400/60000 (77%)]	Loss: 0.659605	 Accuracy:86.936%
+Epoch : 3 [48000/60000 (80%)]	Loss: 0.229679	 Accuracy:86.915%
+Epoch : 3 [49600/60000 (83%)]	Loss: 0.240562	 Accuracy:86.940%
+Epoch : 3 [51200/60000 (85%)]	Loss: 0.451333	 Accuracy:86.909%
+Epoch : 3 [52800/60000 (88%)]	Loss: 0.909667	 Accuracy:86.909%
+Epoch : 3 [54400/60000 (91%)]	Loss: 0.323519	 Accuracy:86.910%
+Epoch : 3 [56000/60000 (93%)]	Loss: 0.762337	 Accuracy:86.957%
+Epoch : 3 [57600/60000 (96%)]	Loss: 0.528586	 Accuracy:87.018%
+Epoch : 3 [59200/60000 (99%)]	Loss: 0.158231	 Accuracy:87.135%
+Epoch : 4 [0/60000 (0%)]	Loss: 0.145284	 Accuracy:93.750%
+Epoch : 4 [1600/60000 (3%)]	Loss: 0.698125	 Accuracy:87.194%
+Epoch : 4 [3200/60000 (5%)]	Loss: 0.505396	 Accuracy:88.552%
+Epoch : 4 [4800/60000 (8%)]	Loss: 0.244973	 Accuracy:88.121%
+Epoch : 4 [6400/60000 (11%)]	Loss: 0.582527	 Accuracy:88.386%
+Epoch : 4 [8000/60000 (13%)]	Loss: 0.387958	 Accuracy:88.409%
+Epoch : 4 [9600/60000 (16%)]	Loss: 0.455425	 Accuracy:88.268%
+Epoch : 4 [11200/60000 (19%)]	Loss: 0.187046	 Accuracy:88.390%
+Epoch : 4 [12800/60000 (21%)]	Loss: 0.279197	 Accuracy:88.186%
+Epoch : 4 [14400/60000 (24%)]	Loss: 0.156259	 Accuracy:88.020%
+Epoch : 4 [16000/60000 (27%)]	Loss: 0.707663	 Accuracy:87.962%
+Epoch : 4 [17600/60000 (29%)]	Loss: 0.209088	 Accuracy:87.999%
+Epoch : 4 [19200/60000 (32%)]	Loss: 0.468338	 Accuracy:88.093%
+Epoch : 4 [20800/60000 (35%)]	Loss: 0.173701	 Accuracy:88.090%
+Epoch : 4 [22400/60000 (37%)]	Loss: 0.118874	 Accuracy:88.115%
+Epoch : 4 [24000/60000 (40%)]	Loss: 0.415742	 Accuracy:88.091%
+Epoch : 4 [25600/60000 (43%)]	Loss: 0.464134	 Accuracy:88.034%
+Epoch : 4 [27200/60000 (45%)]	Loss: 0.874875	 Accuracy:88.080%
+Epoch : 4 [28800/60000 (48%)]	Loss: 0.315201	 Accuracy:88.038%
+Epoch : 4 [30400/60000 (51%)]	Loss: 0.492746	 Accuracy:87.980%
+Epoch : 4 [32000/60000 (53%)]	Loss: 0.481694	 Accuracy:87.859%
+Epoch : 4 [33600/60000 (56%)]	Loss: 0.339568	 Accuracy:87.824%
+Epoch : 4 [35200/60000 (59%)]	Loss: 0.369721	 Accuracy:87.889%
+Epoch : 4 [36800/60000 (61%)]	Loss: 0.223829	 Accuracy:87.962%
+Epoch : 4 [38400/60000 (64%)]	Loss: 0.678138	 Accuracy:87.942%
+Epoch : 4 [40000/60000 (67%)]	Loss: 0.569270	 Accuracy:87.942%
+Epoch : 4 [41600/60000 (69%)]	Loss: 0.611469	 Accuracy:87.990%
+Epoch : 4 [43200/60000 (72%)]	Loss: 0.463835	 Accuracy:87.993%
+Epoch : 4 [44800/60000 (75%)]	Loss: 0.700808	 Accuracy:88.080%
+Epoch : 4 [46400/60000 (77%)]	Loss: 0.629044	 Accuracy:88.028%
+Epoch : 4 [48000/60000 (80%)]	Loss: 0.449559	 Accuracy:88.023%
+Epoch : 4 [49600/60000 (83%)]	Loss: 0.540701	 Accuracy:87.994%
+Epoch : 4 [51200/60000 (85%)]	Loss: 0.360986	 Accuracy:88.006%
+Epoch : 4 [52800/60000 (88%)]	Loss: 0.934957	 Accuracy:88.043%
+Epoch : 4 [54400/60000 (91%)]	Loss: 0.208914	 Accuracy:88.064%
+Epoch : 4 [56000/60000 (93%)]	Loss: 0.313390	 Accuracy:88.096%
+Epoch : 4 [57600/60000 (96%)]	Loss: 0.315091	 Accuracy:88.111%
+Epoch : 4 [59200/60000 (99%)]	Loss: 0.098153	 Accuracy:88.192%
+Test accuracy:0.891% 
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [5923 6742 5958 6131 5842 5421 5918 6265 5851 5949]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [ 980 1135 1032 1010  982  892  958 1028  974 1009]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(6, 6))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Epoch : 0 [0/60000 (0%)]	Loss: 25.088789	 Accuracy:6.250%
+Epoch : 0 [1600/60000 (3%)]	Loss: 2.329169	 Accuracy:12.132%
+Epoch : 0 [3200/60000 (5%)]	Loss: 1.877146	 Accuracy:16.027%
+Epoch : 0 [4800/60000 (8%)]	Loss: 1.632838	 Accuracy:20.964%
+Epoch : 0 [6400/60000 (11%)]	Loss: 1.782904	 Accuracy:26.182%
+Epoch : 0 [8000/60000 (13%)]	Loss: 1.653705	 Accuracy:30.017%
+Epoch : 0 [9600/60000 (16%)]	Loss: 1.140097	 Accuracy:33.295%
+Epoch : 0 [11200/60000 (19%)]	Loss: 1.029232	 Accuracy:36.859%
+Epoch : 0 [12800/60000 (21%)]	Loss: 1.185588	 Accuracy:39.807%
+Epoch : 0 [14400/60000 (24%)]	Loss: 0.889873	 Accuracy:42.039%
+Epoch : 0 [16000/60000 (27%)]	Loss: 1.320052	 Accuracy:43.794%
+Epoch : 0 [17600/60000 (29%)]	Loss: 1.011786	 Accuracy:45.554%
+Epoch : 0 [19200/60000 (32%)]	Loss: 0.956660	 Accuracy:47.317%
+Epoch : 0 [20800/60000 (35%)]	Loss: 1.087615	 Accuracy:48.978%
+Epoch : 0 [22400/60000 (37%)]	Loss: 1.111071	 Accuracy:50.410%
+Epoch : 0 [24000/60000 (40%)]	Loss: 0.892830	 Accuracy:51.669%
+Epoch : 0 [25600/60000 (43%)]	Loss: 0.717437	 Accuracy:52.918%
+Epoch : 0 [27200/60000 (45%)]	Loss: 0.934176	 Accuracy:53.944%
+Epoch : 0 [28800/60000 (48%)]	Loss: 0.734335	 Accuracy:54.922%
+Epoch : 0 [30400/60000 (51%)]	Loss: 1.248699	 Accuracy:55.629%
+Epoch : 0 [32000/60000 (53%)]	Loss: 0.812039	 Accuracy:56.275%
+Epoch : 0 [33600/60000 (56%)]	Loss: 0.725620	 Accuracy:56.973%
+Epoch : 0 [35200/60000 (59%)]	Loss: 0.955395	 Accuracy:57.675%
+Epoch : 0 [36800/60000 (61%)]	Loss: 0.750978	 Accuracy:58.275%
+Epoch : 0 [38400/60000 (64%)]	Loss: 1.079985	 Accuracy:58.823%
+Epoch : 0 [40000/60000 (67%)]	Loss: 0.839506	 Accuracy:59.412%
+Epoch : 0 [41600/60000 (69%)]	Loss: 0.854199	 Accuracy:59.978%
+Epoch : 0 [43200/60000 (72%)]	Loss: 1.004601	 Accuracy:60.448%
+Epoch : 0 [44800/60000 (75%)]	Loss: 0.911991	 Accuracy:60.999%
+Epoch : 0 [46400/60000 (77%)]	Loss: 0.747219	 Accuracy:61.514%
+Epoch : 0 [48000/60000 (80%)]	Loss: 0.984250	 Accuracy:61.996%
+Epoch : 0 [49600/60000 (83%)]	Loss: 0.582760	 Accuracy:62.431%
+Epoch : 0 [51200/60000 (85%)]	Loss: 0.580957	 Accuracy:62.863%
+Epoch : 0 [52800/60000 (88%)]	Loss: 0.971571	 Accuracy:63.312%
+Epoch : 0 [54400/60000 (91%)]	Loss: 0.703904	 Accuracy:63.733%
+Epoch : 0 [56000/60000 (93%)]	Loss: 0.771903	 Accuracy:64.163%
+Epoch : 0 [57600/60000 (96%)]	Loss: 0.759809	 Accuracy:64.556%
+Epoch : 0 [59200/60000 (99%)]	Loss: 0.559313	 Accuracy:65.002%
+Epoch : 1 [0/60000 (0%)]	Loss: 0.562370	 Accuracy:81.250%
+Epoch : 1 [1600/60000 (3%)]	Loss: 0.464332	 Accuracy:77.941%
+Epoch : 1 [3200/60000 (5%)]	Loss: 0.325472	 Accuracy:79.022%
+Epoch : 1 [4800/60000 (8%)]	Loss: 0.755845	 Accuracy:79.553%
+Epoch : 1 [6400/60000 (11%)]	Loss: 1.061602	 Accuracy:79.213%
+Epoch : 1 [8000/60000 (13%)]	Loss: 0.680763	 Accuracy:79.009%
+Epoch : 1 [9600/60000 (16%)]	Loss: 0.512375	 Accuracy:78.821%
+Epoch : 1 [11200/60000 (19%)]	Loss: 0.575304	 Accuracy:79.069%
+Epoch : 1 [12800/60000 (21%)]	Loss: 0.314542	 Accuracy:79.325%
+Epoch : 1 [14400/60000 (24%)]	Loss: 0.383772	 Accuracy:79.178%
+Epoch : 1 [16000/60000 (27%)]	Loss: 0.921025	 Accuracy:78.942%
+Epoch : 1 [17600/60000 (29%)]	Loss: 0.341587	 Accuracy:78.800%
+Epoch : 1 [19200/60000 (32%)]	Loss: 0.614550	 Accuracy:78.801%
+Epoch : 1 [20800/60000 (35%)]	Loss: 0.681241	 Accuracy:79.027%
+Epoch : 1 [22400/60000 (37%)]	Loss: 0.477017	 Accuracy:79.070%
+Epoch : 1 [24000/60000 (40%)]	Loss: 0.394155	 Accuracy:79.045%
+Epoch : 1 [25600/60000 (43%)]	Loss: 0.564625	 Accuracy:79.171%
+Epoch : 1 [27200/60000 (45%)]	Loss: 0.915780	 Accuracy:79.175%
+Epoch : 1 [28800/60000 (48%)]	Loss: 0.627138	 Accuracy:79.235%
+Epoch : 1 [30400/60000 (51%)]	Loss: 0.945104	 Accuracy:79.193%
+Epoch : 1 [32000/60000 (53%)]	Loss: 0.788809	 Accuracy:79.155%
+Epoch : 1 [33600/60000 (56%)]	Loss: 0.451976	 Accuracy:79.267%
+Epoch : 1 [35200/60000 (59%)]	Loss: 0.580650	 Accuracy:79.280%
+Epoch : 1 [36800/60000 (61%)]	Loss: 0.808656	 Accuracy:79.330%
+Epoch : 1 [38400/60000 (64%)]	Loss: 0.676761	 Accuracy:79.382%
+Epoch : 1 [40000/60000 (67%)]	Loss: 0.633667	 Accuracy:79.526%
+Epoch : 1 [41600/60000 (69%)]	Loss: 0.634980	 Accuracy:79.564%
+Epoch : 1 [43200/60000 (72%)]	Loss: 0.745787	 Accuracy:79.538%
+Epoch : 1 [44800/60000 (75%)]	Loss: 0.605932	 Accuracy:79.735%
+Epoch : 1 [46400/60000 (77%)]	Loss: 0.636511	 Accuracy:79.714%
+Epoch : 1 [48000/60000 (80%)]	Loss: 0.939665	 Accuracy:79.795%
+Epoch : 1 [49600/60000 (83%)]	Loss: 0.718486	 Accuracy:79.775%
+Epoch : 1 [51200/60000 (85%)]	Loss: 0.511178	 Accuracy:79.780%
+Epoch : 1 [52800/60000 (88%)]	Loss: 0.669859	 Accuracy:79.815%
+Epoch : 1 [54400/60000 (91%)]	Loss: 0.491258	 Accuracy:79.887%
+Epoch : 1 [56000/60000 (93%)]	Loss: 0.561773	 Accuracy:79.986%
+Epoch : 1 [57600/60000 (96%)]	Loss: 0.595220	 Accuracy:80.094%
+Epoch : 1 [59200/60000 (99%)]	Loss: 0.847206	 Accuracy:80.259%
+Epoch : 2 [0/60000 (0%)]	Loss: 0.317314	 Accuracy:87.500%
+Epoch : 2 [1600/60000 (3%)]	Loss: 0.542444	 Accuracy:82.047%
+Epoch : 2 [3200/60000 (5%)]	Loss: 1.326554	 Accuracy:82.952%
+Epoch : 2 [4800/60000 (8%)]	Loss: 0.528613	 Accuracy:83.320%
+Epoch : 2 [6400/60000 (11%)]	Loss: 1.085740	 Accuracy:83.333%
+Epoch : 2 [8000/60000 (13%)]	Loss: 1.276165	 Accuracy:82.956%
+Epoch : 2 [9600/60000 (16%)]	Loss: 0.536676	 Accuracy:82.600%
+Epoch : 2 [11200/60000 (19%)]	Loss: 0.489854	 Accuracy:82.861%
+Epoch : 2 [12800/60000 (21%)]	Loss: 0.565735	 Accuracy:82.879%
+Epoch : 2 [14400/60000 (24%)]	Loss: 0.647759	 Accuracy:82.615%
+Epoch : 2 [16000/60000 (27%)]	Loss: 0.788312	 Accuracy:82.398%
+Epoch : 2 [17600/60000 (29%)]	Loss: 0.278680	 Accuracy:82.243%
+Epoch : 2 [19200/60000 (32%)]	Loss: 0.637979	 Accuracy:82.363%
+Epoch : 2 [20800/60000 (35%)]	Loss: 0.682091	 Accuracy:82.402%
+Epoch : 2 [22400/60000 (37%)]	Loss: 0.242085	 Accuracy:82.480%
+Epoch : 2 [24000/60000 (40%)]	Loss: 0.654811	 Accuracy:82.432%
+Epoch : 2 [25600/60000 (43%)]	Loss: 0.502874	 Accuracy:82.498%
+Epoch : 2 [27200/60000 (45%)]	Loss: 1.027298	 Accuracy:82.451%
+Epoch : 2 [28800/60000 (48%)]	Loss: 0.529643	 Accuracy:82.464%
+Epoch : 2 [30400/60000 (51%)]	Loss: 1.281002	 Accuracy:82.426%
+Epoch : 2 [32000/60000 (53%)]	Loss: 0.684374	 Accuracy:82.324%
+Epoch : 2 [33600/60000 (56%)]	Loss: 0.477343	 Accuracy:82.294%
+Epoch : 2 [35200/60000 (59%)]	Loss: 0.440857	 Accuracy:82.411%
+Epoch : 2 [36800/60000 (61%)]	Loss: 0.883539	 Accuracy:82.445%
+Epoch : 2 [38400/60000 (64%)]	Loss: 0.692749	 Accuracy:82.426%
+Epoch : 2 [40000/60000 (67%)]	Loss: 0.938248	 Accuracy:82.457%
+Epoch : 2 [41600/60000 (69%)]	Loss: 0.607198	 Accuracy:82.470%
+Epoch : 2 [43200/60000 (72%)]	Loss: 0.795896	 Accuracy:82.462%
+Epoch : 2 [44800/60000 (75%)]	Loss: 0.848867	 Accuracy:82.584%
+Epoch : 2 [46400/60000 (77%)]	Loss: 0.630870	 Accuracy:82.523%
+Epoch : 2 [48000/60000 (80%)]	Loss: 0.349249	 Accuracy:82.568%
+Epoch : 2 [49600/60000 (83%)]	Loss: 0.272527	 Accuracy:82.570%
+Epoch : 2 [51200/60000 (85%)]	Loss: 0.491639	 Accuracy:82.564%
+Epoch : 2 [52800/60000 (88%)]	Loss: 0.607883	 Accuracy:82.558%
+Epoch : 2 [54400/60000 (91%)]	Loss: 0.839598	 Accuracy:82.606%
+Epoch : 2 [56000/60000 (93%)]	Loss: 0.499193	 Accuracy:82.674%
+Epoch : 2 [57600/60000 (96%)]	Loss: 0.507504	 Accuracy:82.730%
+Epoch : 2 [59200/60000 (99%)]	Loss: 1.003452	 Accuracy:82.864%
+Epoch : 3 [0/60000 (0%)]	Loss: 0.428956	 Accuracy:87.500%
+Epoch : 3 [1600/60000 (3%)]	Loss: 0.827836	 Accuracy:83.027%
+Epoch : 3 [3200/60000 (5%)]	Loss: 0.911030	 Accuracy:83.725%
+Epoch : 3 [4800/60000 (8%)]	Loss: 0.687316	 Accuracy:84.292%
+Epoch : 3 [6400/60000 (11%)]	Loss: 0.534901	 Accuracy:84.593%
+Epoch : 3 [8000/60000 (13%)]	Loss: 0.514533	 Accuracy:84.425%
+Epoch : 3 [9600/60000 (16%)]	Loss: 0.749734	 Accuracy:84.250%
+Epoch : 3 [11200/60000 (19%)]	Loss: 0.628338	 Accuracy:84.366%
+Epoch : 3 [12800/60000 (21%)]	Loss: 0.601314	 Accuracy:84.149%
+Epoch : 3 [14400/60000 (24%)]	Loss: 0.411284	 Accuracy:84.077%
+Epoch : 3 [16000/60000 (27%)]	Loss: 0.562987	 Accuracy:83.932%
+Epoch : 3 [17600/60000 (29%)]	Loss: 0.555549	 Accuracy:83.791%
+Epoch : 3 [19200/60000 (32%)]	Loss: 0.567652	 Accuracy:83.912%
+Epoch : 3 [20800/60000 (35%)]	Loss: 0.334888	 Accuracy:84.073%
+Epoch : 3 [22400/60000 (37%)]	Loss: 0.252648	 Accuracy:84.090%
+Epoch : 3 [24000/60000 (40%)]	Loss: 0.371400	 Accuracy:84.050%
+Epoch : 3 [25600/60000 (43%)]	Loss: 0.734559	 Accuracy:84.032%
+Epoch : 3 [27200/60000 (45%)]	Loss: 1.244422	 Accuracy:83.982%
+Epoch : 3 [28800/60000 (48%)]	Loss: 0.524727	 Accuracy:84.063%
+Epoch : 3 [30400/60000 (51%)]	Loss: 0.900499	 Accuracy:84.033%
+Epoch : 3 [32000/60000 (53%)]	Loss: 0.625902	 Accuracy:83.910%
+Epoch : 3 [33600/60000 (56%)]	Loss: 0.313416	 Accuracy:83.870%
+Epoch : 3 [35200/60000 (59%)]	Loss: 0.276222	 Accuracy:83.918%
+Epoch : 3 [36800/60000 (61%)]	Loss: 0.725046	 Accuracy:83.903%
+Epoch : 3 [38400/60000 (64%)]	Loss: 0.847975	 Accuracy:83.909%
+Epoch : 3 [40000/60000 (67%)]	Loss: 0.353169	 Accuracy:83.948%
+Epoch : 3 [41600/60000 (69%)]	Loss: 0.534082	 Accuracy:83.964%
+Epoch : 3 [43200/60000 (72%)]	Loss: 0.482714	 Accuracy:83.892%
+Epoch : 3 [44800/60000 (75%)]	Loss: 0.360406	 Accuracy:84.034%
+Epoch : 3 [46400/60000 (77%)]	Loss: 0.558573	 Accuracy:84.013%
+Epoch : 3 [48000/60000 (80%)]	Loss: 0.730535	 Accuracy:84.050%
+Epoch : 3 [49600/60000 (83%)]	Loss: 0.488233	 Accuracy:84.030%
+Epoch : 3 [51200/60000 (85%)]	Loss: 0.420047	 Accuracy:83.959%
+Epoch : 3 [52800/60000 (88%)]	Loss: 0.578930	 Accuracy:84.019%
+Epoch : 3 [54400/60000 (91%)]	Loss: 0.608027	 Accuracy:84.044%
+Epoch : 3 [56000/60000 (93%)]	Loss: 0.385051	 Accuracy:84.113%
+Epoch : 3 [57600/60000 (96%)]	Loss: 0.245722	 Accuracy:84.170%
+Epoch : 3 [59200/60000 (99%)]	Loss: 0.447166	 Accuracy:84.299%
+Epoch : 4 [0/60000 (0%)]	Loss: 0.750016	 Accuracy:78.125%
+Epoch : 4 [1600/60000 (3%)]	Loss: 0.377046	 Accuracy:84.314%
+Epoch : 4 [3200/60000 (5%)]	Loss: 0.360763	 Accuracy:85.087%
+Epoch : 4 [4800/60000 (8%)]	Loss: 0.376457	 Accuracy:85.493%
+Epoch : 4 [6400/60000 (11%)]	Loss: 0.802706	 Accuracy:85.650%
+Epoch : 4 [8000/60000 (13%)]	Loss: 1.067797	 Accuracy:85.433%
+Epoch : 4 [9600/60000 (16%)]	Loss: 0.558929	 Accuracy:85.247%
+Epoch : 4 [11200/60000 (19%)]	Loss: 0.487859	 Accuracy:85.301%
+Epoch : 4 [12800/60000 (21%)]	Loss: 0.533810	 Accuracy:85.318%
+Epoch : 4 [14400/60000 (24%)]	Loss: 0.299131	 Accuracy:85.186%
+Epoch : 4 [16000/60000 (27%)]	Loss: 0.628637	 Accuracy:85.024%
+Epoch : 4 [17600/60000 (29%)]	Loss: 0.378817	 Accuracy:85.141%
+Epoch : 4 [19200/60000 (32%)]	Loss: 0.343454	 Accuracy:85.181%
+Epoch : 4 [20800/60000 (35%)]	Loss: 0.402145	 Accuracy:85.349%
+Epoch : 4 [22400/60000 (37%)]	Loss: 0.597538	 Accuracy:85.391%
+Epoch : 4 [24000/60000 (40%)]	Loss: 0.245757	 Accuracy:85.386%
+Epoch : 4 [25600/60000 (43%)]	Loss: 0.589530	 Accuracy:85.405%
+Epoch : 4 [27200/60000 (45%)]	Loss: 0.709283	 Accuracy:85.381%
+Epoch : 4 [28800/60000 (48%)]	Loss: 0.277237	 Accuracy:85.468%
+Epoch : 4 [30400/60000 (51%)]	Loss: 0.818651	 Accuracy:85.400%
+Epoch : 4 [32000/60000 (53%)]	Loss: 0.467891	 Accuracy:85.315%
+Epoch : 4 [33600/60000 (56%)]	Loss: 0.358500	 Accuracy:85.216%
+Epoch : 4 [35200/60000 (59%)]	Loss: 0.389766	 Accuracy:85.235%
+Epoch : 4 [36800/60000 (61%)]	Loss: 0.993981	 Accuracy:85.198%
+Epoch : 4 [38400/60000 (64%)]	Loss: 0.317172	 Accuracy:85.205%
+Epoch : 4 [40000/60000 (67%)]	Loss: 0.737971	 Accuracy:85.224%
+Epoch : 4 [41600/60000 (69%)]	Loss: 0.929666	 Accuracy:85.218%
+Epoch : 4 [43200/60000 (72%)]	Loss: 0.352181	 Accuracy:85.198%
+Epoch : 4 [44800/60000 (75%)]	Loss: 0.755772	 Accuracy:85.290%
+Epoch : 4 [46400/60000 (77%)]	Loss: 0.437894	 Accuracy:85.284%
+Epoch : 4 [48000/60000 (80%)]	Loss: 0.834017	 Accuracy:85.295%
+Epoch : 4 [49600/60000 (83%)]	Loss: 0.104541	 Accuracy:85.255%
+Epoch : 4 [51200/60000 (85%)]	Loss: 0.364131	 Accuracy:85.197%
+Epoch : 4 [52800/60000 (88%)]	Loss: 0.742756	 Accuracy:85.236%
+Epoch : 4 [54400/60000 (91%)]	Loss: 0.391004	 Accuracy:85.249%
+Epoch : 4 [56000/60000 (93%)]	Loss: 0.382366	 Accuracy:85.355%
+Epoch : 4 [57600/60000 (96%)]	Loss: 0.229338	 Accuracy:85.394%
+Epoch : 4 [59200/60000 (99%)]	Loss: 0.592650	 Accuracy:85.535%
+Test accuracy:0.866% 
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [5923 6742 5958 6131 5842 5421 5918 6265 5851 5949]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [ 980 1135 1032 1010  982  892  958 1028  974 1009]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(7, 7))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Epoch : 0 [0/60000 (0%)]	Loss: 12.097068	 Accuracy:6.250%
+Epoch : 0 [1600/60000 (3%)]	Loss: 2.133676	 Accuracy:14.461%
+Epoch : 0 [3200/60000 (5%)]	Loss: 1.450732	 Accuracy:22.030%
+Epoch : 0 [4800/60000 (8%)]	Loss: 1.583569	 Accuracy:29.988%
+Epoch : 0 [6400/60000 (11%)]	Loss: 1.238999	 Accuracy:35.976%
+Epoch : 0 [8000/60000 (13%)]	Loss: 1.704409	 Accuracy:39.778%
+Epoch : 0 [9600/60000 (16%)]	Loss: 1.094269	 Accuracy:43.314%
+Epoch : 0 [11200/60000 (19%)]	Loss: 1.002499	 Accuracy:46.697%
+Epoch : 0 [12800/60000 (21%)]	Loss: 1.576591	 Accuracy:48.932%
+Epoch : 0 [14400/60000 (24%)]	Loss: 1.332769	 Accuracy:50.728%
+Epoch : 0 [16000/60000 (27%)]	Loss: 0.930555	 Accuracy:52.376%
+Epoch : 0 [17600/60000 (29%)]	Loss: 0.776619	 Accuracy:53.828%
+Epoch : 0 [19200/60000 (32%)]	Loss: 0.668617	 Accuracy:55.506%
+Epoch : 0 [20800/60000 (35%)]	Loss: 0.688463	 Accuracy:57.104%
+Epoch : 0 [22400/60000 (37%)]	Loss: 0.446131	 Accuracy:58.412%
+Epoch : 0 [24000/60000 (40%)]	Loss: 0.689947	 Accuracy:59.596%
+Epoch : 0 [25600/60000 (43%)]	Loss: 0.601382	 Accuracy:60.662%
+Epoch : 0 [27200/60000 (45%)]	Loss: 0.936836	 Accuracy:61.685%
+Epoch : 0 [28800/60000 (48%)]	Loss: 0.719233	 Accuracy:62.635%
+Epoch : 0 [30400/60000 (51%)]	Loss: 0.677622	 Accuracy:63.351%
+Epoch : 0 [32000/60000 (53%)]	Loss: 1.075491	 Accuracy:64.064%
+Epoch : 0 [33600/60000 (56%)]	Loss: 1.030768	 Accuracy:64.804%
+Epoch : 0 [35200/60000 (59%)]	Loss: 0.573922	 Accuracy:65.509%
+Epoch : 0 [36800/60000 (61%)]	Loss: 1.009773	 Accuracy:66.236%
+Epoch : 0 [38400/60000 (64%)]	Loss: 0.591776	 Accuracy:66.848%
+Epoch : 0 [40000/60000 (67%)]	Loss: 0.581013	 Accuracy:67.354%
+Epoch : 0 [41600/60000 (69%)]	Loss: 0.854017	 Accuracy:67.861%
+Epoch : 0 [43200/60000 (72%)]	Loss: 0.770148	 Accuracy:68.267%
+Epoch : 0 [44800/60000 (75%)]	Loss: 0.598341	 Accuracy:68.772%
+Epoch : 0 [46400/60000 (77%)]	Loss: 0.634099	 Accuracy:69.172%
+Epoch : 0 [48000/60000 (80%)]	Loss: 0.231851	 Accuracy:69.612%
+Epoch : 0 [49600/60000 (83%)]	Loss: 0.600263	 Accuracy:69.941%
+Epoch : 0 [51200/60000 (85%)]	Loss: 0.570978	 Accuracy:70.294%
+Epoch : 0 [52800/60000 (88%)]	Loss: 0.948582	 Accuracy:70.688%
+Epoch : 0 [54400/60000 (91%)]	Loss: 0.306660	 Accuracy:71.065%
+Epoch : 0 [56000/60000 (93%)]	Loss: 0.366806	 Accuracy:71.465%
+Epoch : 0 [57600/60000 (96%)]	Loss: 0.334569	 Accuracy:71.787%
+Epoch : 0 [59200/60000 (99%)]	Loss: 0.258143	 Accuracy:72.203%
+Epoch : 1 [0/60000 (0%)]	Loss: 0.285656	 Accuracy:93.750%
+Epoch : 1 [1600/60000 (3%)]	Loss: 0.589899	 Accuracy:82.782%
+Epoch : 1 [3200/60000 (5%)]	Loss: 0.815449	 Accuracy:84.623%
+Epoch : 1 [4800/60000 (8%)]	Loss: 0.708901	 Accuracy:85.141%
+Epoch : 1 [6400/60000 (11%)]	Loss: 0.713684	 Accuracy:85.401%
+Epoch : 1 [8000/60000 (13%)]	Loss: 0.767754	 Accuracy:85.433%
+Epoch : 1 [9600/60000 (16%)]	Loss: 0.499350	 Accuracy:85.154%
+Epoch : 1 [11200/60000 (19%)]	Loss: 0.473259	 Accuracy:85.390%
+Epoch : 1 [12800/60000 (21%)]	Loss: 0.553306	 Accuracy:85.147%
+Epoch : 1 [14400/60000 (24%)]	Loss: 0.489244	 Accuracy:84.992%
+Epoch : 1 [16000/60000 (27%)]	Loss: 0.961308	 Accuracy:84.743%
+Epoch : 1 [17600/60000 (29%)]	Loss: 0.463671	 Accuracy:84.783%
+Epoch : 1 [19200/60000 (32%)]	Loss: 0.247148	 Accuracy:84.978%
+Epoch : 1 [20800/60000 (35%)]	Loss: 0.450104	 Accuracy:85.105%
+Epoch : 1 [22400/60000 (37%)]	Loss: 0.248717	 Accuracy:85.106%
+Epoch : 1 [24000/60000 (40%)]	Loss: 0.428194	 Accuracy:85.174%
+Epoch : 1 [25600/60000 (43%)]	Loss: 0.342002	 Accuracy:85.124%
+Epoch : 1 [27200/60000 (45%)]	Loss: 0.420576	 Accuracy:85.220%
+Epoch : 1 [28800/60000 (48%)]	Loss: 0.723767	 Accuracy:85.277%
+Epoch : 1 [30400/60000 (51%)]	Loss: 0.426152	 Accuracy:85.259%
+Epoch : 1 [32000/60000 (53%)]	Loss: 0.552360	 Accuracy:85.196%
+Epoch : 1 [33600/60000 (56%)]	Loss: 0.539614	 Accuracy:85.178%
+Epoch : 1 [35200/60000 (59%)]	Loss: 1.021635	 Accuracy:85.278%
+Epoch : 1 [36800/60000 (61%)]	Loss: 0.714987	 Accuracy:85.363%
+Epoch : 1 [38400/60000 (64%)]	Loss: 0.405029	 Accuracy:85.353%
+Epoch : 1 [40000/60000 (67%)]	Loss: 0.468207	 Accuracy:85.307%
+Epoch : 1 [41600/60000 (69%)]	Loss: 0.537359	 Accuracy:85.357%
+Epoch : 1 [43200/60000 (72%)]	Loss: 0.459697	 Accuracy:85.379%
+Epoch : 1 [44800/60000 (75%)]	Loss: 0.336986	 Accuracy:85.466%
+Epoch : 1 [46400/60000 (77%)]	Loss: 0.772056	 Accuracy:85.439%
+Epoch : 1 [48000/60000 (80%)]	Loss: 0.200315	 Accuracy:85.526%
+Epoch : 1 [49600/60000 (83%)]	Loss: 0.637850	 Accuracy:85.529%
+Epoch : 1 [51200/60000 (85%)]	Loss: 0.308212	 Accuracy:85.546%
+Epoch : 1 [52800/60000 (88%)]	Loss: 0.522528	 Accuracy:85.588%
+Epoch : 1 [54400/60000 (91%)]	Loss: 0.455674	 Accuracy:85.621%
+Epoch : 1 [56000/60000 (93%)]	Loss: 0.195973	 Accuracy:85.690%
+Epoch : 1 [57600/60000 (96%)]	Loss: 0.492483	 Accuracy:85.721%
+Epoch : 1 [59200/60000 (99%)]	Loss: 0.211396	 Accuracy:85.813%
+Epoch : 2 [0/60000 (0%)]	Loss: 0.254403	 Accuracy:90.625%
+Epoch : 2 [1600/60000 (3%)]	Loss: 0.808143	 Accuracy:85.907%
+Epoch : 2 [3200/60000 (5%)]	Loss: 0.472385	 Accuracy:87.345%
+Epoch : 2 [4800/60000 (8%)]	Loss: 0.557453	 Accuracy:87.603%
+Epoch : 2 [6400/60000 (11%)]	Loss: 0.381748	 Accuracy:87.889%
+Epoch : 2 [8000/60000 (13%)]	Loss: 0.647958	 Accuracy:87.724%
+Epoch : 2 [9600/60000 (16%)]	Loss: 0.340075	 Accuracy:87.396%
+Epoch : 2 [11200/60000 (19%)]	Loss: 0.887235	 Accuracy:87.206%
+Epoch : 2 [12800/60000 (21%)]	Loss: 0.175775	 Accuracy:87.149%
+Epoch : 2 [14400/60000 (24%)]	Loss: 0.411600	 Accuracy:86.987%
+Epoch : 2 [16000/60000 (27%)]	Loss: 0.627276	 Accuracy:86.833%
+Epoch : 2 [17600/60000 (29%)]	Loss: 0.315378	 Accuracy:86.882%
+Epoch : 2 [19200/60000 (32%)]	Loss: 0.410779	 Accuracy:86.964%
+Epoch : 2 [20800/60000 (35%)]	Loss: 0.263100	 Accuracy:87.087%
+Epoch : 2 [22400/60000 (37%)]	Loss: 0.296275	 Accuracy:87.152%
+Epoch : 2 [24000/60000 (40%)]	Loss: 0.564246	 Accuracy:87.130%
+Epoch : 2 [25600/60000 (43%)]	Loss: 0.203713	 Accuracy:87.149%
+Epoch : 2 [27200/60000 (45%)]	Loss: 0.896560	 Accuracy:87.199%
+Epoch : 2 [28800/60000 (48%)]	Loss: 0.498999	 Accuracy:87.212%
+Epoch : 2 [30400/60000 (51%)]	Loss: 0.287456	 Accuracy:87.152%
+Epoch : 2 [32000/60000 (53%)]	Loss: 0.239666	 Accuracy:87.128%
+Epoch : 2 [33600/60000 (56%)]	Loss: 0.696394	 Accuracy:87.203%
+Epoch : 2 [35200/60000 (59%)]	Loss: 0.209623	 Accuracy:87.281%
+Epoch : 2 [36800/60000 (61%)]	Loss: 0.249629	 Accuracy:87.332%
+Epoch : 2 [38400/60000 (64%)]	Loss: 0.336075	 Accuracy:87.380%
+Epoch : 2 [40000/60000 (67%)]	Loss: 0.267679	 Accuracy:87.383%
+Epoch : 2 [41600/60000 (69%)]	Loss: 0.982397	 Accuracy:87.385%
+Epoch : 2 [43200/60000 (72%)]	Loss: 0.612369	 Accuracy:87.384%
+Epoch : 2 [44800/60000 (75%)]	Loss: 0.493904	 Accuracy:87.462%
+Epoch : 2 [46400/60000 (77%)]	Loss: 0.657299	 Accuracy:87.448%
+Epoch : 2 [48000/60000 (80%)]	Loss: 0.329322	 Accuracy:87.463%
+Epoch : 2 [49600/60000 (83%)]	Loss: 0.323018	 Accuracy:87.470%
+Epoch : 2 [51200/60000 (85%)]	Loss: 0.251392	 Accuracy:87.471%
+Epoch : 2 [52800/60000 (88%)]	Loss: 0.857182	 Accuracy:87.534%
+Epoch : 2 [54400/60000 (91%)]	Loss: 0.324184	 Accuracy:87.575%
+Epoch : 2 [56000/60000 (93%)]	Loss: 0.509654	 Accuracy:87.614%
+Epoch : 2 [57600/60000 (96%)]	Loss: 0.198335	 Accuracy:87.667%
+Epoch : 2 [59200/60000 (99%)]	Loss: 0.364895	 Accuracy:87.765%
+Epoch : 3 [0/60000 (0%)]	Loss: 0.436625	 Accuracy:90.625%
+Epoch : 3 [1600/60000 (3%)]	Loss: 0.352854	 Accuracy:87.316%
+Epoch : 3 [3200/60000 (5%)]	Loss: 0.472567	 Accuracy:88.985%
+Epoch : 3 [4800/60000 (8%)]	Loss: 0.374921	 Accuracy:89.321%
+Epoch : 3 [6400/60000 (11%)]	Loss: 0.454572	 Accuracy:88.993%
+Epoch : 3 [8000/60000 (13%)]	Loss: 1.001100	 Accuracy:89.119%
+Epoch : 3 [9600/60000 (16%)]	Loss: 0.323038	 Accuracy:88.953%
+Epoch : 3 [11200/60000 (19%)]	Loss: 0.804083	 Accuracy:88.996%
+Epoch : 3 [12800/60000 (21%)]	Loss: 0.426135	 Accuracy:88.911%
+Epoch : 3 [14400/60000 (24%)]	Loss: 0.305538	 Accuracy:88.699%
+Epoch : 3 [16000/60000 (27%)]	Loss: 0.436076	 Accuracy:88.461%
+Epoch : 3 [17600/60000 (29%)]	Loss: 0.166293	 Accuracy:88.538%
+Epoch : 3 [19200/60000 (32%)]	Loss: 0.341493	 Accuracy:88.680%
+Epoch : 3 [20800/60000 (35%)]	Loss: 0.683289	 Accuracy:88.762%
+Epoch : 3 [22400/60000 (37%)]	Loss: 0.217380	 Accuracy:88.748%
+Epoch : 3 [24000/60000 (40%)]	Loss: 0.337710	 Accuracy:88.744%
+Epoch : 3 [25600/60000 (43%)]	Loss: 0.159106	 Accuracy:88.752%
+Epoch : 3 [27200/60000 (45%)]	Loss: 0.446845	 Accuracy:88.756%
+Epoch : 3 [28800/60000 (48%)]	Loss: 0.533751	 Accuracy:88.745%
+Epoch : 3 [30400/60000 (51%)]	Loss: 0.434874	 Accuracy:88.621%
+Epoch : 3 [32000/60000 (53%)]	Loss: 0.415018	 Accuracy:88.636%
+Epoch : 3 [33600/60000 (56%)]	Loss: 0.393490	 Accuracy:88.657%
+Epoch : 3 [35200/60000 (59%)]	Loss: 0.181978	 Accuracy:88.684%
+Epoch : 3 [36800/60000 (61%)]	Loss: 0.690880	 Accuracy:88.670%
+Epoch : 3 [38400/60000 (64%)]	Loss: 0.750394	 Accuracy:88.595%
+Epoch : 3 [40000/60000 (67%)]	Loss: 0.459594	 Accuracy:88.527%
+Epoch : 3 [41600/60000 (69%)]	Loss: 0.361091	 Accuracy:88.516%
+Epoch : 3 [43200/60000 (72%)]	Loss: 0.397715	 Accuracy:88.495%
+Epoch : 3 [44800/60000 (75%)]	Loss: 0.827908	 Accuracy:88.586%
+Epoch : 3 [46400/60000 (77%)]	Loss: 0.734972	 Accuracy:88.497%
+Epoch : 3 [48000/60000 (80%)]	Loss: 0.382865	 Accuracy:88.512%
+Epoch : 3 [49600/60000 (83%)]	Loss: 0.272550	 Accuracy:88.501%
+Epoch : 3 [51200/60000 (85%)]	Loss: 0.347286	 Accuracy:88.511%
+Epoch : 3 [52800/60000 (88%)]	Loss: 0.590137	 Accuracy:88.579%
+Epoch : 3 [54400/60000 (91%)]	Loss: 0.240390	 Accuracy:88.571%
+Epoch : 3 [56000/60000 (93%)]	Loss: 0.277825	 Accuracy:88.624%
+Epoch : 3 [57600/60000 (96%)]	Loss: 0.290038	 Accuracy:88.666%
+Epoch : 3 [59200/60000 (99%)]	Loss: 0.286843	 Accuracy:88.734%
+Epoch : 4 [0/60000 (0%)]	Loss: 0.230462	 Accuracy:90.625%
+Epoch : 4 [1600/60000 (3%)]	Loss: 0.519738	 Accuracy:88.787%
+Epoch : 4 [3200/60000 (5%)]	Loss: 0.224707	 Accuracy:90.068%
+Epoch : 4 [4800/60000 (8%)]	Loss: 0.337614	 Accuracy:89.963%
+Epoch : 4 [6400/60000 (11%)]	Loss: 0.448398	 Accuracy:90.050%
+Epoch : 4 [8000/60000 (13%)]	Loss: 0.749352	 Accuracy:89.791%
+Epoch : 4 [9600/60000 (16%)]	Loss: 0.415319	 Accuracy:89.587%
+Epoch : 4 [11200/60000 (19%)]	Loss: 0.774868	 Accuracy:89.530%
+Epoch : 4 [12800/60000 (21%)]	Loss: 0.301915	 Accuracy:89.448%
+Epoch : 4 [14400/60000 (24%)]	Loss: 0.335320	 Accuracy:89.329%
+Epoch : 4 [16000/60000 (27%)]	Loss: 0.321316	 Accuracy:89.222%
+Epoch : 4 [17600/60000 (29%)]	Loss: 0.351722	 Accuracy:89.309%
+Epoch : 4 [19200/60000 (32%)]	Loss: 0.351409	 Accuracy:89.512%
+Epoch : 4 [20800/60000 (35%)]	Loss: 0.366940	 Accuracy:89.555%
+Epoch : 4 [22400/60000 (37%)]	Loss: 0.170061	 Accuracy:89.577%
+Epoch : 4 [24000/60000 (40%)]	Loss: 0.148195	 Accuracy:89.630%
+Epoch : 4 [25600/60000 (43%)]	Loss: 0.248161	 Accuracy:89.681%
+Epoch : 4 [27200/60000 (45%)]	Loss: 0.704056	 Accuracy:89.611%
+Epoch : 4 [28800/60000 (48%)]	Loss: 0.546776	 Accuracy:89.640%
+Epoch : 4 [30400/60000 (51%)]	Loss: 0.237373	 Accuracy:89.514%
+Epoch : 4 [32000/60000 (53%)]	Loss: 0.461040	 Accuracy:89.442%
+Epoch : 4 [33600/60000 (56%)]	Loss: 0.621835	 Accuracy:89.421%
+Epoch : 4 [35200/60000 (59%)]	Loss: 0.685310	 Accuracy:89.493%
+Epoch : 4 [36800/60000 (61%)]	Loss: 0.611655	 Accuracy:89.485%
+Epoch : 4 [38400/60000 (64%)]	Loss: 0.501369	 Accuracy:89.475%
+Epoch : 4 [40000/60000 (67%)]	Loss: 0.332585	 Accuracy:89.473%
+Epoch : 4 [41600/60000 (69%)]	Loss: 0.577572	 Accuracy:89.470%
+Epoch : 4 [43200/60000 (72%)]	Loss: 0.630739	 Accuracy:89.429%
+Epoch : 4 [44800/60000 (75%)]	Loss: 0.319329	 Accuracy:89.490%
+Epoch : 4 [46400/60000 (77%)]	Loss: 0.632485	 Accuracy:89.415%
+Epoch : 4 [48000/60000 (80%)]	Loss: 0.295063	 Accuracy:89.432%
+Epoch : 4 [49600/60000 (83%)]	Loss: 0.232353	 Accuracy:89.412%
+Epoch : 4 [51200/60000 (85%)]	Loss: 0.254838	 Accuracy:89.419%
+Epoch : 4 [52800/60000 (88%)]	Loss: 0.493091	 Accuracy:89.421%
+Epoch : 4 [54400/60000 (91%)]	Loss: 0.164111	 Accuracy:89.440%
+Epoch : 4 [56000/60000 (93%)]	Loss: 0.117858	 Accuracy:89.463%
+Epoch : 4 [57600/60000 (96%)]	Loss: 0.607717	 Accuracy:89.473%
+Epoch : 4 [59200/60000 (99%)]	Loss: 0.110897	 Accuracy:89.538%
+Test accuracy:0.906% 
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [5923 6742 5958 6131 5842 5421 5918 6265 5851 5949]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [ 980 1135 1032 1010  982  892  958 1028  974 1009]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(8, 8))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Traceback (most recent call last):
+  File "mnist.py", line 265, in <module>
+    fit(cnn, train_loader)
+  File "mnist.py", line 171, in fit
+    output = model(var_X_batch)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 493, in __call__
+    result = self.forward(*input, **kwargs)
+  File "mnist.py", line 136, in forward
+    x = F.relu(F.max_pool2d(self.conv3(x),2))
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 493, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 338, in forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Calculated padded input size per channel: (4 x 4). Kernel size: (5 x 5). Kernel size can't be greater than actual input size
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [6000 6000 6000 6000 6000 6000 6000 6000 6000 6000]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [1000 1000 1000 1000 1000 1000 1000 1000 1000 1000]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Epoch : 0 [0/60000 (0%)]	Loss: 16.692770	 Accuracy:18.750%
+Epoch : 0 [1600/60000 (3%)]	Loss: 1.952141	 Accuracy:18.750%
+Epoch : 0 [3200/60000 (5%)]	Loss: 1.569058	 Accuracy:27.321%
+Epoch : 0 [4800/60000 (8%)]	Loss: 1.426471	 Accuracy:32.761%
+Epoch : 0 [6400/60000 (11%)]	Loss: 1.257633	 Accuracy:37.593%
+Epoch : 0 [8000/60000 (13%)]	Loss: 1.289758	 Accuracy:41.422%
+Epoch : 0 [9600/60000 (16%)]	Loss: 1.538958	 Accuracy:44.435%
+Epoch : 0 [11200/60000 (19%)]	Loss: 0.861230	 Accuracy:46.715%
+Epoch : 0 [12800/60000 (21%)]	Loss: 0.958052	 Accuracy:48.605%
+Epoch : 0 [14400/60000 (24%)]	Loss: 0.854540	 Accuracy:50.263%
+Epoch : 0 [16000/60000 (27%)]	Loss: 0.925263	 Accuracy:51.628%
+Epoch : 0 [17600/60000 (29%)]	Loss: 1.035880	 Accuracy:52.694%
+Epoch : 0 [19200/60000 (32%)]	Loss: 0.814484	 Accuracy:53.713%
+Epoch : 0 [20800/60000 (35%)]	Loss: 0.999514	 Accuracy:54.618%
+Epoch : 0 [22400/60000 (37%)]	Loss: 0.594131	 Accuracy:55.461%
+Epoch : 0 [24000/60000 (40%)]	Loss: 1.064474	 Accuracy:56.229%
+Epoch : 0 [25600/60000 (43%)]	Loss: 0.597518	 Accuracy:57.015%
+Epoch : 0 [27200/60000 (45%)]	Loss: 1.172412	 Accuracy:57.590%
+Epoch : 0 [28800/60000 (48%)]	Loss: 0.877853	 Accuracy:57.995%
+Epoch : 0 [30400/60000 (51%)]	Loss: 0.853311	 Accuracy:58.471%
+Epoch : 0 [32000/60000 (53%)]	Loss: 0.934001	 Accuracy:59.078%
+Epoch : 0 [33600/60000 (56%)]	Loss: 0.616843	 Accuracy:59.628%
+Epoch : 0 [35200/60000 (59%)]	Loss: 0.859059	 Accuracy:60.121%
+Epoch : 0 [36800/60000 (61%)]	Loss: 0.589183	 Accuracy:60.523%
+Epoch : 0 [38400/60000 (64%)]	Loss: 0.790762	 Accuracy:60.954%
+Epoch : 0 [40000/60000 (67%)]	Loss: 0.672452	 Accuracy:61.386%
+Epoch : 0 [41600/60000 (69%)]	Loss: 0.888158	 Accuracy:61.731%
+Epoch : 0 [43200/60000 (72%)]	Loss: 0.770046	 Accuracy:62.116%
+Epoch : 0 [44800/60000 (75%)]	Loss: 0.696426	 Accuracy:62.400%
+Epoch : 0 [46400/60000 (77%)]	Loss: 0.585659	 Accuracy:62.608%
+Epoch : 0 [48000/60000 (80%)]	Loss: 1.020059	 Accuracy:62.929%
+Epoch : 0 [49600/60000 (83%)]	Loss: 0.856055	 Accuracy:63.268%
+Epoch : 0 [51200/60000 (85%)]	Loss: 0.621117	 Accuracy:63.427%
+Epoch : 0 [52800/60000 (88%)]	Loss: 0.754804	 Accuracy:63.666%
+Epoch : 0 [54400/60000 (91%)]	Loss: 0.985814	 Accuracy:63.874%
+Epoch : 0 [56000/60000 (93%)]	Loss: 1.223227	 Accuracy:64.172%
+Epoch : 0 [57600/60000 (96%)]	Loss: 0.502384	 Accuracy:64.423%
+Epoch : 0 [59200/60000 (99%)]	Loss: 0.569393	 Accuracy:64.642%
+Epoch : 1 [0/60000 (0%)]	Loss: 0.703533	 Accuracy:78.125%
+Epoch : 1 [1600/60000 (3%)]	Loss: 0.844522	 Accuracy:73.958%
+Epoch : 1 [3200/60000 (5%)]	Loss: 0.823658	 Accuracy:73.144%
+Epoch : 1 [4800/60000 (8%)]	Loss: 0.582870	 Accuracy:72.993%
+Epoch : 1 [6400/60000 (11%)]	Loss: 0.823339	 Accuracy:72.808%
+Epoch : 1 [8000/60000 (13%)]	Loss: 0.945346	 Accuracy:72.410%
+Epoch : 1 [9600/60000 (16%)]	Loss: 1.056490	 Accuracy:72.228%
+Epoch : 1 [11200/60000 (19%)]	Loss: 0.494239	 Accuracy:72.249%
+Epoch : 1 [12800/60000 (21%)]	Loss: 0.509556	 Accuracy:72.148%
+Epoch : 1 [14400/60000 (24%)]	Loss: 0.698749	 Accuracy:72.124%
+Epoch : 1 [16000/60000 (27%)]	Loss: 0.779608	 Accuracy:72.249%
+Epoch : 1 [17600/60000 (29%)]	Loss: 0.489854	 Accuracy:72.317%
+Epoch : 1 [19200/60000 (32%)]	Loss: 0.594350	 Accuracy:72.213%
+Epoch : 1 [20800/60000 (35%)]	Loss: 0.798257	 Accuracy:72.235%
+Epoch : 1 [22400/60000 (37%)]	Loss: 0.312599	 Accuracy:72.334%
+Epoch : 1 [24000/60000 (40%)]	Loss: 1.057665	 Accuracy:72.304%
+Epoch : 1 [25600/60000 (43%)]	Loss: 0.602779	 Accuracy:72.511%
+Epoch : 1 [27200/60000 (45%)]	Loss: 0.748942	 Accuracy:72.576%
+Epoch : 1 [28800/60000 (48%)]	Loss: 1.008446	 Accuracy:72.541%
+Epoch : 1 [30400/60000 (51%)]	Loss: 0.573102	 Accuracy:72.555%
+Epoch : 1 [32000/60000 (53%)]	Loss: 0.776905	 Accuracy:72.581%
+Epoch : 1 [33600/60000 (56%)]	Loss: 0.509907	 Accuracy:72.681%
+Epoch : 1 [35200/60000 (59%)]	Loss: 0.945802	 Accuracy:72.769%
+Epoch : 1 [36800/60000 (61%)]	Loss: 0.673240	 Accuracy:72.766%
+Epoch : 1 [38400/60000 (64%)]	Loss: 1.336508	 Accuracy:72.874%
+Epoch : 1 [40000/60000 (67%)]	Loss: 0.613136	 Accuracy:72.929%
+Epoch : 1 [41600/60000 (69%)]	Loss: 0.857582	 Accuracy:72.973%
+Epoch : 1 [43200/60000 (72%)]	Loss: 0.527060	 Accuracy:73.043%
+Epoch : 1 [44800/60000 (75%)]	Loss: 1.069119	 Accuracy:73.111%
+Epoch : 1 [46400/60000 (77%)]	Loss: 0.553526	 Accuracy:73.040%
+Epoch : 1 [48000/60000 (80%)]	Loss: 0.706730	 Accuracy:73.122%
+Epoch : 1 [49600/60000 (83%)]	Loss: 0.570438	 Accuracy:73.231%
+Epoch : 1 [51200/60000 (85%)]	Loss: 0.489332	 Accuracy:73.251%
+Epoch : 1 [52800/60000 (88%)]	Loss: 0.887826	 Accuracy:73.257%
+Epoch : 1 [54400/60000 (91%)]	Loss: 0.699274	 Accuracy:73.269%
+Epoch : 1 [56000/60000 (93%)]	Loss: 0.932001	 Accuracy:73.321%
+Epoch : 1 [57600/60000 (96%)]	Loss: 0.521698	 Accuracy:73.395%
+Epoch : 1 [59200/60000 (99%)]	Loss: 0.714808	 Accuracy:73.379%
+Epoch : 2 [0/60000 (0%)]	Loss: 0.691651	 Accuracy:81.250%
+Epoch : 2 [1600/60000 (3%)]	Loss: 0.809441	 Accuracy:76.348%
+Epoch : 2 [3200/60000 (5%)]	Loss: 0.646093	 Accuracy:76.021%
+Epoch : 2 [4800/60000 (8%)]	Loss: 0.550110	 Accuracy:75.911%
+Epoch : 2 [6400/60000 (11%)]	Loss: 0.669718	 Accuracy:75.731%
+Epoch : 2 [8000/60000 (13%)]	Loss: 1.056465	 Accuracy:75.286%
+Epoch : 2 [9600/60000 (16%)]	Loss: 0.817807	 Accuracy:75.239%
+Epoch : 2 [11200/60000 (19%)]	Loss: 0.524550	 Accuracy:74.884%
+Epoch : 2 [12800/60000 (21%)]	Loss: 0.464716	 Accuracy:74.665%
+Epoch : 2 [14400/60000 (24%)]	Loss: 0.748910	 Accuracy:74.730%
+Epoch : 2 [16000/60000 (27%)]	Loss: 0.765486	 Accuracy:74.763%
+Epoch : 2 [17600/60000 (29%)]	Loss: 0.542287	 Accuracy:74.819%
+Epoch : 2 [19200/60000 (32%)]	Loss: 0.605861	 Accuracy:74.683%
+Epoch : 2 [20800/60000 (35%)]	Loss: 0.744462	 Accuracy:74.674%
+Epoch : 2 [22400/60000 (37%)]	Loss: 0.493146	 Accuracy:74.750%
+Epoch : 2 [24000/60000 (40%)]	Loss: 0.927059	 Accuracy:74.601%
+Epoch : 2 [25600/60000 (43%)]	Loss: 0.644410	 Accuracy:74.750%
+Epoch : 2 [27200/60000 (45%)]	Loss: 0.766287	 Accuracy:74.802%
+Epoch : 2 [28800/60000 (48%)]	Loss: 0.902319	 Accuracy:74.771%
+Epoch : 2 [30400/60000 (51%)]	Loss: 0.631628	 Accuracy:74.803%
+Epoch : 2 [32000/60000 (53%)]	Loss: 0.818778	 Accuracy:74.869%
+Epoch : 2 [33600/60000 (56%)]	Loss: 0.444741	 Accuracy:74.944%
+Epoch : 2 [35200/60000 (59%)]	Loss: 0.513070	 Accuracy:75.011%
+Epoch : 2 [36800/60000 (61%)]	Loss: 0.721014	 Accuracy:75.003%
+Epoch : 2 [38400/60000 (64%)]	Loss: 0.697178	 Accuracy:75.117%
+Epoch : 2 [40000/60000 (67%)]	Loss: 0.549942	 Accuracy:75.175%
+Epoch : 2 [41600/60000 (69%)]	Loss: 0.762031	 Accuracy:75.223%
+Epoch : 2 [43200/60000 (72%)]	Loss: 0.651846	 Accuracy:75.217%
+Epoch : 2 [44800/60000 (75%)]	Loss: 0.799572	 Accuracy:75.232%
+Epoch : 2 [46400/60000 (77%)]	Loss: 0.481456	 Accuracy:75.146%
+Epoch : 2 [48000/60000 (80%)]	Loss: 0.603296	 Accuracy:75.210%
+Epoch : 2 [49600/60000 (83%)]	Loss: 0.644207	 Accuracy:75.264%
+Epoch : 2 [51200/60000 (85%)]	Loss: 0.460677	 Accuracy:75.279%
+Epoch : 2 [52800/60000 (88%)]	Loss: 0.863129	 Accuracy:75.314%
+Epoch : 2 [54400/60000 (91%)]	Loss: 0.765649	 Accuracy:75.318%
+Epoch : 2 [56000/60000 (93%)]	Loss: 1.081119	 Accuracy:75.328%
+Epoch : 2 [57600/60000 (96%)]	Loss: 0.455405	 Accuracy:75.366%
+Epoch : 2 [59200/60000 (99%)]	Loss: 0.488663	 Accuracy:75.410%
+Epoch : 3 [0/60000 (0%)]	Loss: 0.636971	 Accuracy:75.000%
+Epoch : 3 [1600/60000 (3%)]	Loss: 0.661297	 Accuracy:78.248%
+Epoch : 3 [3200/60000 (5%)]	Loss: 0.599874	 Accuracy:77.042%
+Epoch : 3 [4800/60000 (8%)]	Loss: 0.533302	 Accuracy:76.863%
+Epoch : 3 [6400/60000 (11%)]	Loss: 0.589828	 Accuracy:76.586%
+Epoch : 3 [8000/60000 (13%)]	Loss: 0.923297	 Accuracy:76.245%
+Epoch : 3 [9600/60000 (16%)]	Loss: 0.854243	 Accuracy:76.132%
+Epoch : 3 [11200/60000 (19%)]	Loss: 0.517189	 Accuracy:76.077%
+Epoch : 3 [12800/60000 (21%)]	Loss: 0.532548	 Accuracy:75.927%
+Epoch : 3 [14400/60000 (24%)]	Loss: 0.619189	 Accuracy:75.859%
+Epoch : 3 [16000/60000 (27%)]	Loss: 0.611834	 Accuracy:76.029%
+Epoch : 3 [17600/60000 (29%)]	Loss: 0.602443	 Accuracy:75.958%
+Epoch : 3 [19200/60000 (32%)]	Loss: 0.643604	 Accuracy:75.733%
+Epoch : 3 [20800/60000 (35%)]	Loss: 0.597558	 Accuracy:75.835%
+Epoch : 3 [22400/60000 (37%)]	Loss: 0.434917	 Accuracy:75.999%
+Epoch : 3 [24000/60000 (40%)]	Loss: 0.987641	 Accuracy:75.907%
+Epoch : 3 [25600/60000 (43%)]	Loss: 0.460797	 Accuracy:75.940%
+Epoch : 3 [27200/60000 (45%)]	Loss: 0.792980	 Accuracy:76.039%
+Epoch : 3 [28800/60000 (48%)]	Loss: 0.789978	 Accuracy:76.047%
+Epoch : 3 [30400/60000 (51%)]	Loss: 0.671714	 Accuracy:76.012%
+Epoch : 3 [32000/60000 (53%)]	Loss: 0.734698	 Accuracy:76.065%
+Epoch : 3 [33600/60000 (56%)]	Loss: 0.382645	 Accuracy:76.121%
+Epoch : 3 [35200/60000 (59%)]	Loss: 0.846896	 Accuracy:76.164%
+Epoch : 3 [36800/60000 (61%)]	Loss: 0.505498	 Accuracy:76.121%
+Epoch : 3 [38400/60000 (64%)]	Loss: 0.499567	 Accuracy:76.231%
+Epoch : 3 [40000/60000 (67%)]	Loss: 0.446233	 Accuracy:76.336%
+Epoch : 3 [41600/60000 (69%)]	Loss: 0.792446	 Accuracy:76.376%
+Epoch : 3 [43200/60000 (72%)]	Loss: 0.659622	 Accuracy:76.372%
+Epoch : 3 [44800/60000 (75%)]	Loss: 0.941806	 Accuracy:76.383%
+Epoch : 3 [46400/60000 (77%)]	Loss: 0.517349	 Accuracy:76.281%
+Epoch : 3 [48000/60000 (80%)]	Loss: 0.757008	 Accuracy:76.282%
+Epoch : 3 [49600/60000 (83%)]	Loss: 0.339364	 Accuracy:76.372%
+Epoch : 3 [51200/60000 (85%)]	Loss: 0.577489	 Accuracy:76.360%
+Epoch : 3 [52800/60000 (88%)]	Loss: 0.825818	 Accuracy:76.378%
+Epoch : 3 [54400/60000 (91%)]	Loss: 0.574430	 Accuracy:76.347%
+Epoch : 3 [56000/60000 (93%)]	Loss: 1.053294	 Accuracy:76.367%
+Epoch : 3 [57600/60000 (96%)]	Loss: 0.526573	 Accuracy:76.399%
+Epoch : 3 [59200/60000 (99%)]	Loss: 0.534705	 Accuracy:76.430%
+Epoch : 4 [0/60000 (0%)]	Loss: 0.606939	 Accuracy:75.000%
+Epoch : 4 [1600/60000 (3%)]	Loss: 0.835221	 Accuracy:79.534%
+Epoch : 4 [3200/60000 (5%)]	Loss: 0.655127	 Accuracy:78.744%
+Epoch : 4 [4800/60000 (8%)]	Loss: 0.484753	 Accuracy:78.353%
+Epoch : 4 [6400/60000 (11%)]	Loss: 0.607526	 Accuracy:78.063%
+Epoch : 4 [8000/60000 (13%)]	Loss: 0.828748	 Accuracy:77.901%
+Epoch : 4 [9600/60000 (16%)]	Loss: 0.639535	 Accuracy:77.512%
+Epoch : 4 [11200/60000 (19%)]	Loss: 0.398782	 Accuracy:77.528%
+Epoch : 4 [12800/60000 (21%)]	Loss: 0.622753	 Accuracy:77.377%
+Epoch : 4 [14400/60000 (24%)]	Loss: 0.630730	 Accuracy:77.259%
+Epoch : 4 [16000/60000 (27%)]	Loss: 0.747599	 Accuracy:77.308%
+Epoch : 4 [17600/60000 (29%)]	Loss: 0.452614	 Accuracy:77.359%
+Epoch : 4 [19200/60000 (32%)]	Loss: 0.457534	 Accuracy:77.142%
+Epoch : 4 [20800/60000 (35%)]	Loss: 0.724212	 Accuracy:77.045%
+Epoch : 4 [22400/60000 (37%)]	Loss: 0.365168	 Accuracy:77.086%
+Epoch : 4 [24000/60000 (40%)]	Loss: 1.064698	 Accuracy:77.093%
+Epoch : 4 [25600/60000 (43%)]	Loss: 0.366165	 Accuracy:77.165%
+Epoch : 4 [27200/60000 (45%)]	Loss: 0.701615	 Accuracy:77.251%
+Epoch : 4 [28800/60000 (48%)]	Loss: 0.625422	 Accuracy:77.171%
+Epoch : 4 [30400/60000 (51%)]	Loss: 0.493741	 Accuracy:77.126%
+Epoch : 4 [32000/60000 (53%)]	Loss: 0.612463	 Accuracy:77.157%
+Epoch : 4 [33600/60000 (56%)]	Loss: 0.309117	 Accuracy:77.182%
+Epoch : 4 [35200/60000 (59%)]	Loss: 0.467776	 Accuracy:77.174%
+Epoch : 4 [36800/60000 (61%)]	Loss: 0.498832	 Accuracy:77.177%
+Epoch : 4 [38400/60000 (64%)]	Loss: 0.556243	 Accuracy:77.282%
+Epoch : 4 [40000/60000 (67%)]	Loss: 0.605143	 Accuracy:77.411%
+Epoch : 4 [41600/60000 (69%)]	Loss: 0.806108	 Accuracy:77.503%
+Epoch : 4 [43200/60000 (72%)]	Loss: 0.573332	 Accuracy:77.484%
+Epoch : 4 [44800/60000 (75%)]	Loss: 0.560496	 Accuracy:77.485%
+Epoch : 4 [46400/60000 (77%)]	Loss: 0.586596	 Accuracy:77.449%
+Epoch : 4 [48000/60000 (80%)]	Loss: 0.627015	 Accuracy:77.511%
+Epoch : 4 [49600/60000 (83%)]	Loss: 0.380829	 Accuracy:77.561%
+Epoch : 4 [51200/60000 (85%)]	Loss: 0.599373	 Accuracy:77.577%
+Epoch : 4 [52800/60000 (88%)]	Loss: 0.598590	 Accuracy:77.591%
+Epoch : 4 [54400/60000 (91%)]	Loss: 0.473632	 Accuracy:77.546%
+Epoch : 4 [56000/60000 (93%)]	Loss: 0.767426	 Accuracy:77.579%
+Epoch : 4 [57600/60000 (96%)]	Loss: 0.482902	 Accuracy:77.636%
+Epoch : 4 [59200/60000 (99%)]	Loss: 0.427657	 Accuracy:77.662%
+Test accuracy:0.783% 
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [6000 6000 6000 6000 6000 6000 6000 6000 6000 6000]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [1000 1000 1000 1000 1000 1000 1000 1000 1000 1000]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(2, 2))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Epoch : 0 [0/60000 (0%)]	Loss: 10.093410	 Accuracy:18.750%
+Epoch : 0 [1600/60000 (3%)]	Loss: 1.951063	 Accuracy:20.895%
+Epoch : 0 [3200/60000 (5%)]	Loss: 1.486021	 Accuracy:29.053%
+Epoch : 0 [4800/60000 (8%)]	Loss: 1.419593	 Accuracy:34.499%
+Epoch : 0 [6400/60000 (11%)]	Loss: 0.931297	 Accuracy:38.915%
+Epoch : 0 [8000/60000 (13%)]	Loss: 1.271504	 Accuracy:41.907%
+Epoch : 0 [9600/60000 (16%)]	Loss: 1.452879	 Accuracy:44.632%
+Epoch : 0 [11200/60000 (19%)]	Loss: 0.741854	 Accuracy:46.830%
+Epoch : 0 [12800/60000 (21%)]	Loss: 1.165675	 Accuracy:48.597%
+Epoch : 0 [14400/60000 (24%)]	Loss: 0.955263	 Accuracy:50.353%
+Epoch : 0 [16000/60000 (27%)]	Loss: 1.403796	 Accuracy:51.853%
+Epoch : 0 [17600/60000 (29%)]	Loss: 1.034696	 Accuracy:53.091%
+Epoch : 0 [19200/60000 (32%)]	Loss: 0.792189	 Accuracy:54.170%
+Epoch : 0 [20800/60000 (35%)]	Loss: 1.016794	 Accuracy:55.180%
+Epoch : 0 [22400/60000 (37%)]	Loss: 0.528120	 Accuracy:56.143%
+Epoch : 0 [24000/60000 (40%)]	Loss: 1.145602	 Accuracy:56.828%
+Epoch : 0 [25600/60000 (43%)]	Loss: 0.818964	 Accuracy:57.619%
+Epoch : 0 [27200/60000 (45%)]	Loss: 0.862021	 Accuracy:58.369%
+Epoch : 0 [28800/60000 (48%)]	Loss: 1.177862	 Accuracy:58.966%
+Epoch : 0 [30400/60000 (51%)]	Loss: 0.769602	 Accuracy:59.575%
+Epoch : 0 [32000/60000 (53%)]	Loss: 0.853832	 Accuracy:60.174%
+Epoch : 0 [33600/60000 (56%)]	Loss: 0.461883	 Accuracy:60.787%
+Epoch : 0 [35200/60000 (59%)]	Loss: 0.704557	 Accuracy:61.254%
+Epoch : 0 [36800/60000 (61%)]	Loss: 0.566002	 Accuracy:61.685%
+Epoch : 0 [38400/60000 (64%)]	Loss: 0.799084	 Accuracy:62.198%
+Epoch : 0 [40000/60000 (67%)]	Loss: 0.799145	 Accuracy:62.675%
+Epoch : 0 [41600/60000 (69%)]	Loss: 0.778721	 Accuracy:63.028%
+Epoch : 0 [43200/60000 (72%)]	Loss: 0.592452	 Accuracy:63.421%
+Epoch : 0 [44800/60000 (75%)]	Loss: 1.109568	 Accuracy:63.758%
+Epoch : 0 [46400/60000 (77%)]	Loss: 0.395177	 Accuracy:64.068%
+Epoch : 0 [48000/60000 (80%)]	Loss: 0.756258	 Accuracy:64.376%
+Epoch : 0 [49600/60000 (83%)]	Loss: 0.932073	 Accuracy:64.652%
+Epoch : 0 [51200/60000 (85%)]	Loss: 0.569776	 Accuracy:64.895%
+Epoch : 0 [52800/60000 (88%)]	Loss: 0.992651	 Accuracy:65.118%
+Epoch : 0 [54400/60000 (91%)]	Loss: 0.849876	 Accuracy:65.327%
+Epoch : 0 [56000/60000 (93%)]	Loss: 1.179044	 Accuracy:65.598%
+Epoch : 0 [57600/60000 (96%)]	Loss: 0.497783	 Accuracy:65.885%
+Epoch : 0 [59200/60000 (99%)]	Loss: 0.479018	 Accuracy:66.120%
+Epoch : 1 [0/60000 (0%)]	Loss: 0.553647	 Accuracy:84.375%
+Epoch : 1 [1600/60000 (3%)]	Loss: 0.622037	 Accuracy:77.635%
+Epoch : 1 [3200/60000 (5%)]	Loss: 0.777346	 Accuracy:76.176%
+Epoch : 1 [4800/60000 (8%)]	Loss: 0.551188	 Accuracy:75.600%
+Epoch : 1 [6400/60000 (11%)]	Loss: 0.670357	 Accuracy:75.435%
+Epoch : 1 [8000/60000 (13%)]	Loss: 1.069752	 Accuracy:75.037%
+Epoch : 1 [9600/60000 (16%)]	Loss: 0.930838	 Accuracy:74.709%
+Epoch : 1 [11200/60000 (19%)]	Loss: 0.528381	 Accuracy:74.644%
+Epoch : 1 [12800/60000 (21%)]	Loss: 0.710017	 Accuracy:74.719%
+Epoch : 1 [14400/60000 (24%)]	Loss: 0.753209	 Accuracy:74.716%
+Epoch : 1 [16000/60000 (27%)]	Loss: 0.862428	 Accuracy:74.775%
+Epoch : 1 [17600/60000 (29%)]	Loss: 0.892237	 Accuracy:74.563%
+Epoch : 1 [19200/60000 (32%)]	Loss: 0.625723	 Accuracy:74.350%
+Epoch : 1 [20800/60000 (35%)]	Loss: 0.791984	 Accuracy:74.386%
+Epoch : 1 [22400/60000 (37%)]	Loss: 0.405507	 Accuracy:74.438%
+Epoch : 1 [24000/60000 (40%)]	Loss: 0.730775	 Accuracy:74.459%
+Epoch : 1 [25600/60000 (43%)]	Loss: 0.842596	 Accuracy:74.505%
+Epoch : 1 [27200/60000 (45%)]	Loss: 0.811943	 Accuracy:74.585%
+Epoch : 1 [28800/60000 (48%)]	Loss: 1.071510	 Accuracy:74.521%
+Epoch : 1 [30400/60000 (51%)]	Loss: 0.596198	 Accuracy:74.553%
+Epoch : 1 [32000/60000 (53%)]	Loss: 0.776573	 Accuracy:74.638%
+Epoch : 1 [33600/60000 (56%)]	Loss: 0.450495	 Accuracy:74.715%
+Epoch : 1 [35200/60000 (59%)]	Loss: 0.599723	 Accuracy:74.787%
+Epoch : 1 [36800/60000 (61%)]	Loss: 0.799143	 Accuracy:74.821%
+Epoch : 1 [38400/60000 (64%)]	Loss: 0.544282	 Accuracy:74.951%
+Epoch : 1 [40000/60000 (67%)]	Loss: 0.532454	 Accuracy:75.055%
+Epoch : 1 [41600/60000 (69%)]	Loss: 0.744425	 Accuracy:75.108%
+Epoch : 1 [43200/60000 (72%)]	Loss: 0.565853	 Accuracy:75.139%
+Epoch : 1 [44800/60000 (75%)]	Loss: 0.983252	 Accuracy:75.141%
+Epoch : 1 [46400/60000 (77%)]	Loss: 0.536790	 Accuracy:75.134%
+Epoch : 1 [48000/60000 (80%)]	Loss: 0.578591	 Accuracy:75.187%
+Epoch : 1 [49600/60000 (83%)]	Loss: 0.692586	 Accuracy:75.266%
+Epoch : 1 [51200/60000 (85%)]	Loss: 0.574351	 Accuracy:75.281%
+Epoch : 1 [52800/60000 (88%)]	Loss: 0.571296	 Accuracy:75.271%
+Epoch : 1 [54400/60000 (91%)]	Loss: 0.614009	 Accuracy:75.283%
+Epoch : 1 [56000/60000 (93%)]	Loss: 1.050090	 Accuracy:75.328%
+Epoch : 1 [57600/60000 (96%)]	Loss: 0.751100	 Accuracy:75.378%
+Epoch : 1 [59200/60000 (99%)]	Loss: 0.467620	 Accuracy:75.393%
+Epoch : 2 [0/60000 (0%)]	Loss: 0.498041	 Accuracy:81.250%
+Epoch : 2 [1600/60000 (3%)]	Loss: 0.558057	 Accuracy:77.941%
+Epoch : 2 [3200/60000 (5%)]	Loss: 0.659830	 Accuracy:77.692%
+Epoch : 2 [4800/60000 (8%)]	Loss: 0.493649	 Accuracy:77.670%
+Epoch : 2 [6400/60000 (11%)]	Loss: 0.568683	 Accuracy:77.488%
+Epoch : 2 [8000/60000 (13%)]	Loss: 0.573760	 Accuracy:77.366%
+Epoch : 2 [9600/60000 (16%)]	Loss: 0.624885	 Accuracy:77.294%
+Epoch : 2 [11200/60000 (19%)]	Loss: 0.451385	 Accuracy:77.377%
+Epoch : 2 [12800/60000 (21%)]	Loss: 0.513919	 Accuracy:77.260%
+Epoch : 2 [14400/60000 (24%)]	Loss: 0.614137	 Accuracy:77.259%
+Epoch : 2 [16000/60000 (27%)]	Loss: 0.987437	 Accuracy:77.214%
+Epoch : 2 [17600/60000 (29%)]	Loss: 0.480154	 Accuracy:77.013%
+Epoch : 2 [19200/60000 (32%)]	Loss: 0.446914	 Accuracy:76.898%
+Epoch : 2 [20800/60000 (35%)]	Loss: 0.705824	 Accuracy:76.939%
+Epoch : 2 [22400/60000 (37%)]	Loss: 0.484522	 Accuracy:76.961%
+Epoch : 2 [24000/60000 (40%)]	Loss: 0.850547	 Accuracy:76.931%
+Epoch : 2 [25600/60000 (43%)]	Loss: 0.469714	 Accuracy:77.056%
+Epoch : 2 [27200/60000 (45%)]	Loss: 0.661271	 Accuracy:77.097%
+Epoch : 2 [28800/60000 (48%)]	Loss: 1.107281	 Accuracy:76.946%
+Epoch : 2 [30400/60000 (51%)]	Loss: 0.602799	 Accuracy:76.929%
+Epoch : 2 [32000/60000 (53%)]	Loss: 0.560127	 Accuracy:76.961%
+Epoch : 2 [33600/60000 (56%)]	Loss: 0.329824	 Accuracy:77.007%
+Epoch : 2 [35200/60000 (59%)]	Loss: 0.833589	 Accuracy:77.041%
+Epoch : 2 [36800/60000 (61%)]	Loss: 0.561669	 Accuracy:77.069%
+Epoch : 2 [38400/60000 (64%)]	Loss: 0.649181	 Accuracy:77.149%
+Epoch : 2 [40000/60000 (67%)]	Loss: 0.517469	 Accuracy:77.263%
+Epoch : 2 [41600/60000 (69%)]	Loss: 0.711420	 Accuracy:77.325%
+Epoch : 2 [43200/60000 (72%)]	Loss: 0.401483	 Accuracy:77.306%
+Epoch : 2 [44800/60000 (75%)]	Loss: 1.132208	 Accuracy:77.297%
+Epoch : 2 [46400/60000 (77%)]	Loss: 0.605848	 Accuracy:77.276%
+Epoch : 2 [48000/60000 (80%)]	Loss: 0.525633	 Accuracy:77.296%
+Epoch : 2 [49600/60000 (83%)]	Loss: 0.411369	 Accuracy:77.357%
+Epoch : 2 [51200/60000 (85%)]	Loss: 0.624853	 Accuracy:77.368%
+Epoch : 2 [52800/60000 (88%)]	Loss: 0.723139	 Accuracy:77.360%
+Epoch : 2 [54400/60000 (91%)]	Loss: 0.631139	 Accuracy:77.352%
+Epoch : 2 [56000/60000 (93%)]	Loss: 0.502916	 Accuracy:77.415%
+Epoch : 2 [57600/60000 (96%)]	Loss: 0.505431	 Accuracy:77.473%
+Epoch : 2 [59200/60000 (99%)]	Loss: 0.612824	 Accuracy:77.505%
+Epoch : 3 [0/60000 (0%)]	Loss: 0.449310	 Accuracy:81.250%
+Epoch : 3 [1600/60000 (3%)]	Loss: 0.628059	 Accuracy:80.270%
+Epoch : 3 [3200/60000 (5%)]	Loss: 0.724340	 Accuracy:79.053%
+Epoch : 3 [4800/60000 (8%)]	Loss: 0.568879	 Accuracy:79.118%
+Epoch : 3 [6400/60000 (11%)]	Loss: 0.443238	 Accuracy:79.649%
+Epoch : 3 [8000/60000 (13%)]	Loss: 0.622953	 Accuracy:79.295%
+Epoch : 3 [9600/60000 (16%)]	Loss: 0.719090	 Accuracy:79.122%
+Epoch : 3 [11200/60000 (19%)]	Loss: 0.479298	 Accuracy:79.158%
+Epoch : 3 [12800/60000 (21%)]	Loss: 0.499429	 Accuracy:78.897%
+Epoch : 3 [14400/60000 (24%)]	Loss: 0.669176	 Accuracy:78.804%
+Epoch : 3 [16000/60000 (27%)]	Loss: 0.818297	 Accuracy:78.693%
+Epoch : 3 [17600/60000 (29%)]	Loss: 0.532621	 Accuracy:78.545%
+Epoch : 3 [19200/60000 (32%)]	Loss: 0.491417	 Accuracy:78.359%
+Epoch : 3 [20800/60000 (35%)]	Loss: 0.605794	 Accuracy:78.375%
+Epoch : 3 [22400/60000 (37%)]	Loss: 0.542506	 Accuracy:78.299%
+Epoch : 3 [24000/60000 (40%)]	Loss: 0.694247	 Accuracy:78.354%
+Epoch : 3 [25600/60000 (43%)]	Loss: 0.687559	 Accuracy:78.422%
+Epoch : 3 [27200/60000 (45%)]	Loss: 0.885583	 Accuracy:78.474%
+Epoch : 3 [28800/60000 (48%)]	Loss: 0.856791	 Accuracy:78.496%
+Epoch : 3 [30400/60000 (51%)]	Loss: 0.598290	 Accuracy:78.526%
+Epoch : 3 [32000/60000 (53%)]	Loss: 0.670950	 Accuracy:78.521%
+Epoch : 3 [33600/60000 (56%)]	Loss: 0.349537	 Accuracy:78.553%
+Epoch : 3 [35200/60000 (59%)]	Loss: 0.522783	 Accuracy:78.608%
+Epoch : 3 [36800/60000 (61%)]	Loss: 0.501014	 Accuracy:78.595%
+Epoch : 3 [38400/60000 (64%)]	Loss: 0.486309	 Accuracy:78.661%
+Epoch : 3 [40000/60000 (67%)]	Loss: 0.498267	 Accuracy:78.725%
+Epoch : 3 [41600/60000 (69%)]	Loss: 0.818971	 Accuracy:78.769%
+Epoch : 3 [43200/60000 (72%)]	Loss: 0.556601	 Accuracy:78.805%
+Epoch : 3 [44800/60000 (75%)]	Loss: 1.507691	 Accuracy:78.819%
+Epoch : 3 [46400/60000 (77%)]	Loss: 0.408929	 Accuracy:78.758%
+Epoch : 3 [48000/60000 (80%)]	Loss: 0.645355	 Accuracy:78.775%
+Epoch : 3 [49600/60000 (83%)]	Loss: 0.389961	 Accuracy:78.877%
+Epoch : 3 [51200/60000 (85%)]	Loss: 0.489039	 Accuracy:78.834%
+Epoch : 3 [52800/60000 (88%)]	Loss: 0.566015	 Accuracy:78.863%
+Epoch : 3 [54400/60000 (91%)]	Loss: 0.625974	 Accuracy:78.816%
+Epoch : 3 [56000/60000 (93%)]	Loss: 0.723524	 Accuracy:78.821%
+Epoch : 3 [57600/60000 (96%)]	Loss: 0.415751	 Accuracy:78.861%
+Epoch : 3 [59200/60000 (99%)]	Loss: 0.557704	 Accuracy:78.875%
+Epoch : 4 [0/60000 (0%)]	Loss: 0.369420	 Accuracy:90.625%
+Epoch : 4 [1600/60000 (3%)]	Loss: 0.561146	 Accuracy:81.801%
+Epoch : 4 [3200/60000 (5%)]	Loss: 0.617215	 Accuracy:80.446%
+Epoch : 4 [4800/60000 (8%)]	Loss: 0.358580	 Accuracy:80.174%
+Epoch : 4 [6400/60000 (11%)]	Loss: 0.452608	 Accuracy:80.022%
+Epoch : 4 [8000/60000 (13%)]	Loss: 0.532387	 Accuracy:79.557%
+Epoch : 4 [9600/60000 (16%)]	Loss: 0.645071	 Accuracy:79.381%
+Epoch : 4 [11200/60000 (19%)]	Loss: 0.442380	 Accuracy:79.478%
+Epoch : 4 [12800/60000 (21%)]	Loss: 0.503480	 Accuracy:79.310%
+Epoch : 4 [14400/60000 (24%)]	Loss: 0.589150	 Accuracy:79.220%
+Epoch : 4 [16000/60000 (27%)]	Loss: 0.805037	 Accuracy:79.160%
+Epoch : 4 [17600/60000 (29%)]	Loss: 0.813999	 Accuracy:79.118%
+Epoch : 4 [19200/60000 (32%)]	Loss: 0.527192	 Accuracy:79.035%
+Epoch : 4 [20800/60000 (35%)]	Loss: 0.767194	 Accuracy:79.003%
+Epoch : 4 [22400/60000 (37%)]	Loss: 0.293754	 Accuracy:79.066%
+Epoch : 4 [24000/60000 (40%)]	Loss: 0.918432	 Accuracy:78.982%
+Epoch : 4 [25600/60000 (43%)]	Loss: 0.535470	 Accuracy:79.100%
+Epoch : 4 [27200/60000 (45%)]	Loss: 0.767225	 Accuracy:79.172%
+Epoch : 4 [28800/60000 (48%)]	Loss: 0.637897	 Accuracy:79.259%
+Epoch : 4 [30400/60000 (51%)]	Loss: 0.516594	 Accuracy:79.252%
+Epoch : 4 [32000/60000 (53%)]	Loss: 0.645749	 Accuracy:79.286%
+Epoch : 4 [33600/60000 (56%)]	Loss: 0.360927	 Accuracy:79.344%
+Epoch : 4 [35200/60000 (59%)]	Loss: 0.634715	 Accuracy:79.368%
+Epoch : 4 [36800/60000 (61%)]	Loss: 0.480172	 Accuracy:79.309%
+Epoch : 4 [38400/60000 (64%)]	Loss: 0.627556	 Accuracy:79.335%
+Epoch : 4 [40000/60000 (67%)]	Loss: 0.349830	 Accuracy:79.394%
+Epoch : 4 [41600/60000 (69%)]	Loss: 0.602096	 Accuracy:79.374%
+Epoch : 4 [43200/60000 (72%)]	Loss: 0.373197	 Accuracy:79.367%
+Epoch : 4 [44800/60000 (75%)]	Loss: 0.884476	 Accuracy:79.294%
+Epoch : 4 [46400/60000 (77%)]	Loss: 0.294321	 Accuracy:79.232%
+Epoch : 4 [48000/60000 (80%)]	Loss: 0.578819	 Accuracy:79.264%
+Epoch : 4 [49600/60000 (83%)]	Loss: 0.400832	 Accuracy:79.310%
+Epoch : 4 [51200/60000 (85%)]	Loss: 0.444469	 Accuracy:79.275%
+Epoch : 4 [52800/60000 (88%)]	Loss: 0.563411	 Accuracy:79.244%
+Epoch : 4 [54400/60000 (91%)]	Loss: 0.726596	 Accuracy:79.196%
+Epoch : 4 [56000/60000 (93%)]	Loss: 0.611017	 Accuracy:79.244%
+Epoch : 4 [57600/60000 (96%)]	Loss: 0.774587	 Accuracy:79.244%
+Epoch : 4 [59200/60000 (99%)]	Loss: 0.586899	 Accuracy:79.273%
+Test accuracy:0.787% 
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [6000 6000 6000 6000 6000 6000 6000 6000 6000 6000]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [1000 1000 1000 1000 1000 1000 1000 1000 1000 1000]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(3, 3))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Epoch : 0 [0/60000 (0%)]	Loss: 22.551277	 Accuracy:15.625%
+Epoch : 0 [1600/60000 (3%)]	Loss: 2.056352	 Accuracy:13.603%
+Epoch : 0 [3200/60000 (5%)]	Loss: 1.621372	 Accuracy:20.359%
+Epoch : 0 [4800/60000 (8%)]	Loss: 1.579736	 Accuracy:25.911%
+Epoch : 0 [6400/60000 (11%)]	Loss: 1.629051	 Accuracy:29.726%
+Epoch : 0 [8000/60000 (13%)]	Loss: 1.590313	 Accuracy:32.682%
+Epoch : 0 [9600/60000 (16%)]	Loss: 1.687485	 Accuracy:35.091%
+Epoch : 0 [11200/60000 (19%)]	Loss: 1.362960	 Accuracy:37.269%
+Epoch : 0 [12800/60000 (21%)]	Loss: 1.337563	 Accuracy:38.957%
+Epoch : 0 [14400/60000 (24%)]	Loss: 1.168618	 Accuracy:40.389%
+Epoch : 0 [16000/60000 (27%)]	Loss: 1.559558	 Accuracy:41.430%
+Epoch : 0 [17600/60000 (29%)]	Loss: 1.392542	 Accuracy:42.689%
+Epoch : 0 [19200/60000 (32%)]	Loss: 1.183888	 Accuracy:43.480%
+Epoch : 0 [20800/60000 (35%)]	Loss: 1.228678	 Accuracy:44.384%
+Epoch : 0 [22400/60000 (37%)]	Loss: 1.173889	 Accuracy:45.234%
+Epoch : 0 [24000/60000 (40%)]	Loss: 1.303295	 Accuracy:46.034%
+Epoch : 0 [25600/60000 (43%)]	Loss: 1.097026	 Accuracy:46.848%
+Epoch : 0 [27200/60000 (45%)]	Loss: 1.528717	 Accuracy:47.558%
+Epoch : 0 [28800/60000 (48%)]	Loss: 1.508511	 Accuracy:48.193%
+Epoch : 0 [30400/60000 (51%)]	Loss: 1.067546	 Accuracy:48.794%
+Epoch : 0 [32000/60000 (53%)]	Loss: 1.317736	 Accuracy:49.279%
+Epoch : 0 [33600/60000 (56%)]	Loss: 0.918499	 Accuracy:49.884%
+Epoch : 0 [35200/60000 (59%)]	Loss: 1.053530	 Accuracy:50.443%
+Epoch : 0 [36800/60000 (61%)]	Loss: 1.131040	 Accuracy:50.953%
+Epoch : 0 [38400/60000 (64%)]	Loss: 0.998670	 Accuracy:51.512%
+Epoch : 0 [40000/60000 (67%)]	Loss: 0.954519	 Accuracy:51.998%
+Epoch : 0 [41600/60000 (69%)]	Loss: 1.105391	 Accuracy:52.414%
+Epoch : 0 [43200/60000 (72%)]	Loss: 1.111234	 Accuracy:52.808%
+Epoch : 0 [44800/60000 (75%)]	Loss: 1.221581	 Accuracy:53.176%
+Epoch : 0 [46400/60000 (77%)]	Loss: 0.985092	 Accuracy:53.558%
+Epoch : 0 [48000/60000 (80%)]	Loss: 1.171514	 Accuracy:53.924%
+Epoch : 0 [49600/60000 (83%)]	Loss: 0.878535	 Accuracy:54.419%
+Epoch : 0 [51200/60000 (85%)]	Loss: 0.815822	 Accuracy:54.735%
+Epoch : 0 [52800/60000 (88%)]	Loss: 1.265001	 Accuracy:55.012%
+Epoch : 0 [54400/60000 (91%)]	Loss: 1.187238	 Accuracy:55.304%
+Epoch : 0 [56000/60000 (93%)]	Loss: 1.683898	 Accuracy:55.641%
+Epoch : 0 [57600/60000 (96%)]	Loss: 0.724559	 Accuracy:55.945%
+Epoch : 0 [59200/60000 (99%)]	Loss: 0.683120	 Accuracy:56.216%
+Epoch : 1 [0/60000 (0%)]	Loss: 0.718436	 Accuracy:71.875%
+Epoch : 1 [1600/60000 (3%)]	Loss: 1.022830	 Accuracy:67.034%
+Epoch : 1 [3200/60000 (5%)]	Loss: 0.930456	 Accuracy:66.708%
+Epoch : 1 [4800/60000 (8%)]	Loss: 0.981347	 Accuracy:66.825%
+Epoch : 1 [6400/60000 (11%)]	Loss: 0.932180	 Accuracy:66.775%
+Epoch : 1 [8000/60000 (13%)]	Loss: 1.305207	 Accuracy:66.795%
+Epoch : 1 [9600/60000 (16%)]	Loss: 1.359362	 Accuracy:66.466%
+Epoch : 1 [11200/60000 (19%)]	Loss: 0.952723	 Accuracy:66.471%
+Epoch : 1 [12800/60000 (21%)]	Loss: 0.723651	 Accuracy:66.194%
+Epoch : 1 [14400/60000 (24%)]	Loss: 0.929295	 Accuracy:66.235%
+Epoch : 1 [16000/60000 (27%)]	Loss: 0.890802	 Accuracy:66.430%
+Epoch : 1 [17600/60000 (29%)]	Loss: 0.789380	 Accuracy:66.408%
+Epoch : 1 [19200/60000 (32%)]	Loss: 0.774343	 Accuracy:66.374%
+Epoch : 1 [20800/60000 (35%)]	Loss: 0.958090	 Accuracy:66.393%
+Epoch : 1 [22400/60000 (37%)]	Loss: 0.826402	 Accuracy:66.463%
+Epoch : 1 [24000/60000 (40%)]	Loss: 1.165524	 Accuracy:66.553%
+Epoch : 1 [25600/60000 (43%)]	Loss: 1.021329	 Accuracy:66.557%
+Epoch : 1 [27200/60000 (45%)]	Loss: 1.168502	 Accuracy:66.594%
+Epoch : 1 [28800/60000 (48%)]	Loss: 1.221492	 Accuracy:66.613%
+Epoch : 1 [30400/60000 (51%)]	Loss: 0.844993	 Accuracy:66.650%
+Epoch : 1 [32000/60000 (53%)]	Loss: 1.089638	 Accuracy:66.727%
+Epoch : 1 [33600/60000 (56%)]	Loss: 0.499675	 Accuracy:66.820%
+Epoch : 1 [35200/60000 (59%)]	Loss: 0.818816	 Accuracy:66.837%
+Epoch : 1 [36800/60000 (61%)]	Loss: 0.662026	 Accuracy:66.915%
+Epoch : 1 [38400/60000 (64%)]	Loss: 1.040361	 Accuracy:66.999%
+Epoch : 1 [40000/60000 (67%)]	Loss: 0.717750	 Accuracy:67.051%
+Epoch : 1 [41600/60000 (69%)]	Loss: 1.118561	 Accuracy:67.016%
+Epoch : 1 [43200/60000 (72%)]	Loss: 0.749159	 Accuracy:66.994%
+Epoch : 1 [44800/60000 (75%)]	Loss: 0.913502	 Accuracy:67.050%
+Epoch : 1 [46400/60000 (77%)]	Loss: 0.795796	 Accuracy:67.102%
+Epoch : 1 [48000/60000 (80%)]	Loss: 0.693266	 Accuracy:67.147%
+Epoch : 1 [49600/60000 (83%)]	Loss: 0.725947	 Accuracy:67.271%
+Epoch : 1 [51200/60000 (85%)]	Loss: 0.815623	 Accuracy:67.290%
+Epoch : 1 [52800/60000 (88%)]	Loss: 1.140249	 Accuracy:67.262%
+Epoch : 1 [54400/60000 (91%)]	Loss: 1.329161	 Accuracy:67.262%
+Epoch : 1 [56000/60000 (93%)]	Loss: 1.355896	 Accuracy:67.312%
+Epoch : 1 [57600/60000 (96%)]	Loss: 0.929448	 Accuracy:67.383%
+Epoch : 1 [59200/60000 (99%)]	Loss: 0.586090	 Accuracy:67.376%
+Epoch : 2 [0/60000 (0%)]	Loss: 0.679129	 Accuracy:75.000%
+Epoch : 2 [1600/60000 (3%)]	Loss: 1.006000	 Accuracy:71.262%
+Epoch : 2 [3200/60000 (5%)]	Loss: 0.693019	 Accuracy:69.802%
+Epoch : 2 [4800/60000 (8%)]	Loss: 0.954088	 Accuracy:69.743%
+Epoch : 2 [6400/60000 (11%)]	Loss: 0.883416	 Accuracy:69.776%
+Epoch : 2 [8000/60000 (13%)]	Loss: 1.282786	 Accuracy:69.497%
+Epoch : 2 [9600/60000 (16%)]	Loss: 1.155928	 Accuracy:69.290%
+Epoch : 2 [11200/60000 (19%)]	Loss: 0.693704	 Accuracy:69.106%
+Epoch : 2 [12800/60000 (21%)]	Loss: 0.704601	 Accuracy:68.672%
+Epoch : 2 [14400/60000 (24%)]	Loss: 0.959226	 Accuracy:68.646%
+Epoch : 2 [16000/60000 (27%)]	Loss: 0.818299	 Accuracy:68.781%
+Epoch : 2 [17600/60000 (29%)]	Loss: 0.755829	 Accuracy:68.801%
+Epoch : 2 [19200/60000 (32%)]	Loss: 0.578515	 Accuracy:68.651%
+Epoch : 2 [20800/60000 (35%)]	Loss: 0.714207	 Accuracy:68.601%
+Epoch : 2 [22400/60000 (37%)]	Loss: 0.537921	 Accuracy:68.737%
+Epoch : 2 [24000/60000 (40%)]	Loss: 1.216718	 Accuracy:68.721%
+Epoch : 2 [25600/60000 (43%)]	Loss: 0.597722	 Accuracy:68.832%
+Epoch : 2 [27200/60000 (45%)]	Loss: 0.859870	 Accuracy:68.809%
+Epoch : 2 [28800/60000 (48%)]	Loss: 1.190863	 Accuracy:68.736%
+Epoch : 2 [30400/60000 (51%)]	Loss: 0.695300	 Accuracy:68.727%
+Epoch : 2 [32000/60000 (53%)]	Loss: 1.116301	 Accuracy:68.766%
+Epoch : 2 [33600/60000 (56%)]	Loss: 0.487539	 Accuracy:68.851%
+Epoch : 2 [35200/60000 (59%)]	Loss: 0.769802	 Accuracy:68.878%
+Epoch : 2 [36800/60000 (61%)]	Loss: 0.707282	 Accuracy:68.869%
+Epoch : 2 [38400/60000 (64%)]	Loss: 0.925720	 Accuracy:68.966%
+Epoch : 2 [40000/60000 (67%)]	Loss: 0.565337	 Accuracy:69.010%
+Epoch : 2 [41600/60000 (69%)]	Loss: 1.112811	 Accuracy:69.033%
+Epoch : 2 [43200/60000 (72%)]	Loss: 0.830598	 Accuracy:69.030%
+Epoch : 2 [44800/60000 (75%)]	Loss: 1.093259	 Accuracy:69.056%
+Epoch : 2 [46400/60000 (77%)]	Loss: 0.551626	 Accuracy:69.069%
+Epoch : 2 [48000/60000 (80%)]	Loss: 0.919931	 Accuracy:69.054%
+Epoch : 2 [49600/60000 (83%)]	Loss: 0.820935	 Accuracy:69.165%
+Epoch : 2 [51200/60000 (85%)]	Loss: 0.627721	 Accuracy:69.162%
+Epoch : 2 [52800/60000 (88%)]	Loss: 0.738044	 Accuracy:69.146%
+Epoch : 2 [54400/60000 (91%)]	Loss: 1.015529	 Accuracy:69.125%
+Epoch : 2 [56000/60000 (93%)]	Loss: 1.318213	 Accuracy:69.155%
+Epoch : 2 [57600/60000 (96%)]	Loss: 0.880615	 Accuracy:69.187%
+Epoch : 2 [59200/60000 (99%)]	Loss: 0.548252	 Accuracy:69.209%
+Epoch : 3 [0/60000 (0%)]	Loss: 0.664871	 Accuracy:71.875%
+Epoch : 3 [1600/60000 (3%)]	Loss: 0.830562	 Accuracy:71.078%
+Epoch : 3 [3200/60000 (5%)]	Loss: 0.787986	 Accuracy:70.606%
+Epoch : 3 [4800/60000 (8%)]	Loss: 0.609478	 Accuracy:70.964%
+Epoch : 3 [6400/60000 (11%)]	Loss: 0.898630	 Accuracy:70.787%
+Epoch : 3 [8000/60000 (13%)]	Loss: 0.748327	 Accuracy:70.555%
+Epoch : 3 [9600/60000 (16%)]	Loss: 0.860333	 Accuracy:70.276%
+Epoch : 3 [11200/60000 (19%)]	Loss: 0.644881	 Accuracy:70.459%
+Epoch : 3 [12800/60000 (21%)]	Loss: 0.545793	 Accuracy:70.153%
+Epoch : 3 [14400/60000 (24%)]	Loss: 0.964994	 Accuracy:70.143%
+Epoch : 3 [16000/60000 (27%)]	Loss: 0.761771	 Accuracy:70.347%
+Epoch : 3 [17600/60000 (29%)]	Loss: 0.740447	 Accuracy:70.247%
+Epoch : 3 [19200/60000 (32%)]	Loss: 0.664960	 Accuracy:70.066%
+Epoch : 3 [20800/60000 (35%)]	Loss: 0.748482	 Accuracy:69.936%
+Epoch : 3 [22400/60000 (37%)]	Loss: 0.707430	 Accuracy:70.021%
+Epoch : 3 [24000/60000 (40%)]	Loss: 0.966207	 Accuracy:70.032%
+Epoch : 3 [25600/60000 (43%)]	Loss: 0.643328	 Accuracy:70.030%
+Epoch : 3 [27200/60000 (45%)]	Loss: 0.954389	 Accuracy:70.024%
+Epoch : 3 [28800/60000 (48%)]	Loss: 0.872816	 Accuracy:70.012%
+Epoch : 3 [30400/60000 (51%)]	Loss: 0.585907	 Accuracy:69.986%
+Epoch : 3 [32000/60000 (53%)]	Loss: 0.892328	 Accuracy:70.011%
+Epoch : 3 [33600/60000 (56%)]	Loss: 0.428567	 Accuracy:70.073%
+Epoch : 3 [35200/60000 (59%)]	Loss: 0.871381	 Accuracy:70.093%
+Epoch : 3 [36800/60000 (61%)]	Loss: 0.784508	 Accuracy:70.045%
+Epoch : 3 [38400/60000 (64%)]	Loss: 1.000262	 Accuracy:70.132%
+Epoch : 3 [40000/60000 (67%)]	Loss: 0.611756	 Accuracy:70.304%
+Epoch : 3 [41600/60000 (69%)]	Loss: 1.056568	 Accuracy:70.359%
+Epoch : 3 [43200/60000 (72%)]	Loss: 0.688330	 Accuracy:70.406%
+Epoch : 3 [44800/60000 (75%)]	Loss: 0.849977	 Accuracy:70.434%
+Epoch : 3 [46400/60000 (77%)]	Loss: 0.582187	 Accuracy:70.434%
+Epoch : 3 [48000/60000 (80%)]	Loss: 0.850181	 Accuracy:70.468%
+Epoch : 3 [49600/60000 (83%)]	Loss: 0.610053	 Accuracy:70.620%
+Epoch : 3 [51200/60000 (85%)]	Loss: 0.804380	 Accuracy:70.663%
+Epoch : 3 [52800/60000 (88%)]	Loss: 0.961485	 Accuracy:70.686%
+Epoch : 3 [54400/60000 (91%)]	Loss: 1.088241	 Accuracy:70.710%
+Epoch : 3 [56000/60000 (93%)]	Loss: 1.110147	 Accuracy:70.767%
+Epoch : 3 [57600/60000 (96%)]	Loss: 0.650664	 Accuracy:70.891%
+Epoch : 3 [59200/60000 (99%)]	Loss: 0.505017	 Accuracy:70.994%
+Epoch : 4 [0/60000 (0%)]	Loss: 0.629309	 Accuracy:68.750%
+Epoch : 4 [1600/60000 (3%)]	Loss: 0.743874	 Accuracy:72.917%
+Epoch : 4 [3200/60000 (5%)]	Loss: 0.754342	 Accuracy:73.453%
+Epoch : 4 [4800/60000 (8%)]	Loss: 0.558486	 Accuracy:73.738%
+Epoch : 4 [6400/60000 (11%)]	Loss: 0.762416	 Accuracy:73.321%
+Epoch : 4 [8000/60000 (13%)]	Loss: 0.710847	 Accuracy:72.971%
+Epoch : 4 [9600/60000 (16%)]	Loss: 0.918575	 Accuracy:72.799%
+Epoch : 4 [11200/60000 (19%)]	Loss: 0.611369	 Accuracy:72.819%
+Epoch : 4 [12800/60000 (21%)]	Loss: 0.720510	 Accuracy:72.662%
+Epoch : 4 [14400/60000 (24%)]	Loss: 0.812515	 Accuracy:72.665%
+Epoch : 4 [16000/60000 (27%)]	Loss: 0.674490	 Accuracy:72.742%
+Epoch : 4 [17600/60000 (29%)]	Loss: 0.740953	 Accuracy:72.737%
+Epoch : 4 [19200/60000 (32%)]	Loss: 0.574649	 Accuracy:72.634%
+Epoch : 4 [20800/60000 (35%)]	Loss: 0.858307	 Accuracy:72.629%
+Epoch : 4 [22400/60000 (37%)]	Loss: 0.517057	 Accuracy:72.718%
+Epoch : 4 [24000/60000 (40%)]	Loss: 1.217711	 Accuracy:72.741%
+Epoch : 4 [25600/60000 (43%)]	Loss: 0.578486	 Accuracy:72.776%
+Epoch : 4 [27200/60000 (45%)]	Loss: 0.885262	 Accuracy:72.874%
+Epoch : 4 [28800/60000 (48%)]	Loss: 0.881058	 Accuracy:72.926%
+Epoch : 4 [30400/60000 (51%)]	Loss: 0.776843	 Accuracy:72.946%
+Epoch : 4 [32000/60000 (53%)]	Loss: 0.601584	 Accuracy:73.033%
+Epoch : 4 [33600/60000 (56%)]	Loss: 0.401434	 Accuracy:73.183%
+Epoch : 4 [35200/60000 (59%)]	Loss: 0.526727	 Accuracy:73.235%
+Epoch : 4 [36800/60000 (61%)]	Loss: 0.693170	 Accuracy:73.276%
+Epoch : 4 [38400/60000 (64%)]	Loss: 0.653264	 Accuracy:73.389%
+Epoch : 4 [40000/60000 (67%)]	Loss: 0.718500	 Accuracy:73.421%
+Epoch : 4 [41600/60000 (69%)]	Loss: 0.967318	 Accuracy:73.403%
+Epoch : 4 [43200/60000 (72%)]	Loss: 0.740695	 Accuracy:73.420%
+Epoch : 4 [44800/60000 (75%)]	Loss: 0.892171	 Accuracy:73.456%
+Epoch : 4 [46400/60000 (77%)]	Loss: 0.553946	 Accuracy:73.432%
+Epoch : 4 [48000/60000 (80%)]	Loss: 1.157165	 Accuracy:73.447%
+Epoch : 4 [49600/60000 (83%)]	Loss: 0.864205	 Accuracy:73.529%
+Epoch : 4 [51200/60000 (85%)]	Loss: 0.606668	 Accuracy:73.499%
+Epoch : 4 [52800/60000 (88%)]	Loss: 0.646738	 Accuracy:73.543%
+Epoch : 4 [54400/60000 (91%)]	Loss: 0.834324	 Accuracy:73.532%
+Epoch : 4 [56000/60000 (93%)]	Loss: 1.379266	 Accuracy:73.603%
+Epoch : 4 [57600/60000 (96%)]	Loss: 0.561820	 Accuracy:73.659%
+Epoch : 4 [59200/60000 (99%)]	Loss: 0.652875	 Accuracy:73.690%
+Test accuracy:0.736% 
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [6000 6000 6000 6000 6000 6000 6000 6000 6000 6000]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [1000 1000 1000 1000 1000 1000 1000 1000 1000 1000]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(4, 4))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Epoch : 0 [0/60000 (0%)]	Loss: 13.528157	 Accuracy:9.375%
+Epoch : 0 [1600/60000 (3%)]	Loss: 1.974515	 Accuracy:16.054%
+Epoch : 0 [3200/60000 (5%)]	Loss: 1.737961	 Accuracy:23.855%
+Epoch : 0 [4800/60000 (8%)]	Loss: 1.635227	 Accuracy:30.091%
+Epoch : 0 [6400/60000 (11%)]	Loss: 1.668155	 Accuracy:33.380%
+Epoch : 0 [8000/60000 (13%)]	Loss: 1.466864	 Accuracy:36.691%
+Epoch : 0 [9600/60000 (16%)]	Loss: 1.628987	 Accuracy:38.964%
+Epoch : 0 [11200/60000 (19%)]	Loss: 1.530678	 Accuracy:40.928%
+Epoch : 0 [12800/60000 (21%)]	Loss: 1.052260	 Accuracy:42.729%
+Epoch : 0 [14400/60000 (24%)]	Loss: 1.351965	 Accuracy:44.526%
+Epoch : 0 [16000/60000 (27%)]	Loss: 1.706130	 Accuracy:46.058%
+Epoch : 0 [17600/60000 (29%)]	Loss: 1.344831	 Accuracy:47.317%
+Epoch : 0 [19200/60000 (32%)]	Loss: 1.291564	 Accuracy:48.165%
+Epoch : 0 [20800/60000 (35%)]	Loss: 1.201026	 Accuracy:49.131%
+Epoch : 0 [22400/60000 (37%)]	Loss: 0.892165	 Accuracy:49.897%
+Epoch : 0 [24000/60000 (40%)]	Loss: 1.350258	 Accuracy:50.637%
+Epoch : 0 [25600/60000 (43%)]	Loss: 1.051396	 Accuracy:51.358%
+Epoch : 0 [27200/60000 (45%)]	Loss: 1.462122	 Accuracy:51.965%
+Epoch : 0 [28800/60000 (48%)]	Loss: 1.571439	 Accuracy:52.601%
+Epoch : 0 [30400/60000 (51%)]	Loss: 1.059093	 Accuracy:53.171%
+Epoch : 0 [32000/60000 (53%)]	Loss: 1.047107	 Accuracy:53.765%
+Epoch : 0 [33600/60000 (56%)]	Loss: 0.741642	 Accuracy:54.317%
+Epoch : 0 [35200/60000 (59%)]	Loss: 0.804192	 Accuracy:54.845%
+Epoch : 0 [36800/60000 (61%)]	Loss: 0.932764	 Accuracy:55.327%
+Epoch : 0 [38400/60000 (64%)]	Loss: 0.909178	 Accuracy:55.849%
+Epoch : 0 [40000/60000 (67%)]	Loss: 0.613704	 Accuracy:56.427%
+Epoch : 0 [41600/60000 (69%)]	Loss: 1.343978	 Accuracy:56.819%
+Epoch : 0 [43200/60000 (72%)]	Loss: 0.911663	 Accuracy:57.168%
+Epoch : 0 [44800/60000 (75%)]	Loss: 0.774842	 Accuracy:57.548%
+Epoch : 0 [46400/60000 (77%)]	Loss: 0.757790	 Accuracy:57.917%
+Epoch : 0 [48000/60000 (80%)]	Loss: 1.286572	 Accuracy:58.284%
+Epoch : 0 [49600/60000 (83%)]	Loss: 0.419052	 Accuracy:58.750%
+Epoch : 0 [51200/60000 (85%)]	Loss: 0.578120	 Accuracy:59.072%
+Epoch : 0 [52800/60000 (88%)]	Loss: 0.923238	 Accuracy:59.343%
+Epoch : 0 [54400/60000 (91%)]	Loss: 0.982436	 Accuracy:59.621%
+Epoch : 0 [56000/60000 (93%)]	Loss: 1.133157	 Accuracy:59.909%
+Epoch : 0 [57600/60000 (96%)]	Loss: 0.774764	 Accuracy:60.204%
+Epoch : 0 [59200/60000 (99%)]	Loss: 1.024524	 Accuracy:60.450%
+Epoch : 1 [0/60000 (0%)]	Loss: 0.973745	 Accuracy:65.625%
+Epoch : 1 [1600/60000 (3%)]	Loss: 0.748320	 Accuracy:70.098%
+Epoch : 1 [3200/60000 (5%)]	Loss: 1.290888	 Accuracy:69.524%
+Epoch : 1 [4800/60000 (8%)]	Loss: 0.863991	 Accuracy:69.785%
+Epoch : 1 [6400/60000 (11%)]	Loss: 0.853797	 Accuracy:69.667%
+Epoch : 1 [8000/60000 (13%)]	Loss: 0.970963	 Accuracy:69.646%
+Epoch : 1 [9600/60000 (16%)]	Loss: 1.036885	 Accuracy:69.477%
+Epoch : 1 [11200/60000 (19%)]	Loss: 0.717424	 Accuracy:69.667%
+Epoch : 1 [12800/60000 (21%)]	Loss: 0.595207	 Accuracy:69.506%
+Epoch : 1 [14400/60000 (24%)]	Loss: 0.741789	 Accuracy:69.748%
+Epoch : 1 [16000/60000 (27%)]	Loss: 0.946524	 Accuracy:69.748%
+Epoch : 1 [17600/60000 (29%)]	Loss: 0.792450	 Accuracy:69.816%
+Epoch : 1 [19200/60000 (32%)]	Loss: 0.562057	 Accuracy:69.717%
+Epoch : 1 [20800/60000 (35%)]	Loss: 1.059181	 Accuracy:69.763%
+Epoch : 1 [22400/60000 (37%)]	Loss: 0.633327	 Accuracy:69.789%
+Epoch : 1 [24000/60000 (40%)]	Loss: 1.048185	 Accuracy:69.882%
+Epoch : 1 [25600/60000 (43%)]	Loss: 0.813599	 Accuracy:69.991%
+Epoch : 1 [27200/60000 (45%)]	Loss: 1.012512	 Accuracy:70.013%
+Epoch : 1 [28800/60000 (48%)]	Loss: 1.093864	 Accuracy:69.978%
+Epoch : 1 [30400/60000 (51%)]	Loss: 0.679747	 Accuracy:70.009%
+Epoch : 1 [32000/60000 (53%)]	Loss: 0.759710	 Accuracy:70.117%
+Epoch : 1 [33600/60000 (56%)]	Loss: 0.592034	 Accuracy:70.272%
+Epoch : 1 [35200/60000 (59%)]	Loss: 0.856681	 Accuracy:70.365%
+Epoch : 1 [36800/60000 (61%)]	Loss: 0.661311	 Accuracy:70.422%
+Epoch : 1 [38400/60000 (64%)]	Loss: 0.943538	 Accuracy:70.506%
+Epoch : 1 [40000/60000 (67%)]	Loss: 0.534790	 Accuracy:70.628%
+Epoch : 1 [41600/60000 (69%)]	Loss: 1.019327	 Accuracy:70.648%
+Epoch : 1 [43200/60000 (72%)]	Loss: 0.691021	 Accuracy:70.691%
+Epoch : 1 [44800/60000 (75%)]	Loss: 0.807621	 Accuracy:70.773%
+Epoch : 1 [46400/60000 (77%)]	Loss: 0.506162	 Accuracy:70.790%
+Epoch : 1 [48000/60000 (80%)]	Loss: 0.638504	 Accuracy:70.863%
+Epoch : 1 [49600/60000 (83%)]	Loss: 0.414174	 Accuracy:71.037%
+Epoch : 1 [51200/60000 (85%)]	Loss: 0.854613	 Accuracy:71.081%
+Epoch : 1 [52800/60000 (88%)]	Loss: 0.598029	 Accuracy:71.129%
+Epoch : 1 [54400/60000 (91%)]	Loss: 0.848404	 Accuracy:71.144%
+Epoch : 1 [56000/60000 (93%)]	Loss: 1.040260	 Accuracy:71.254%
+Epoch : 1 [57600/60000 (96%)]	Loss: 0.668787	 Accuracy:71.308%
+Epoch : 1 [59200/60000 (99%)]	Loss: 0.590060	 Accuracy:71.370%
+Epoch : 2 [0/60000 (0%)]	Loss: 0.589189	 Accuracy:71.875%
+Epoch : 2 [1600/60000 (3%)]	Loss: 0.814590	 Accuracy:75.429%
+Epoch : 2 [3200/60000 (5%)]	Loss: 1.001390	 Accuracy:74.134%
+Epoch : 2 [4800/60000 (8%)]	Loss: 0.752392	 Accuracy:74.690%
+Epoch : 2 [6400/60000 (11%)]	Loss: 0.549482	 Accuracy:74.440%
+Epoch : 2 [8000/60000 (13%)]	Loss: 0.917775	 Accuracy:73.929%
+Epoch : 2 [9600/60000 (16%)]	Loss: 1.019462	 Accuracy:73.775%
+Epoch : 2 [11200/60000 (19%)]	Loss: 0.541328	 Accuracy:73.869%
+Epoch : 2 [12800/60000 (21%)]	Loss: 0.543649	 Accuracy:73.769%
+Epoch : 2 [14400/60000 (24%)]	Loss: 1.064957	 Accuracy:73.836%
+Epoch : 2 [16000/60000 (27%)]	Loss: 0.975921	 Accuracy:73.915%
+Epoch : 2 [17600/60000 (29%)]	Loss: 0.958778	 Accuracy:73.990%
+Epoch : 2 [19200/60000 (32%)]	Loss: 0.484484	 Accuracy:73.887%
+Epoch : 2 [20800/60000 (35%)]	Loss: 0.899871	 Accuracy:73.786%
+Epoch : 2 [22400/60000 (37%)]	Loss: 0.385871	 Accuracy:73.859%
+Epoch : 2 [24000/60000 (40%)]	Loss: 0.718534	 Accuracy:73.960%
+Epoch : 2 [25600/60000 (43%)]	Loss: 0.797015	 Accuracy:74.075%
+Epoch : 2 [27200/60000 (45%)]	Loss: 0.940002	 Accuracy:74.078%
+Epoch : 2 [28800/60000 (48%)]	Loss: 0.895945	 Accuracy:74.046%
+Epoch : 2 [30400/60000 (51%)]	Loss: 0.860045	 Accuracy:74.047%
+Epoch : 2 [32000/60000 (53%)]	Loss: 0.465124	 Accuracy:74.160%
+Epoch : 2 [33600/60000 (56%)]	Loss: 0.353419	 Accuracy:74.233%
+Epoch : 2 [35200/60000 (59%)]	Loss: 0.845275	 Accuracy:74.262%
+Epoch : 2 [36800/60000 (61%)]	Loss: 0.678458	 Accuracy:74.270%
+Epoch : 2 [38400/60000 (64%)]	Loss: 0.637726	 Accuracy:74.407%
+Epoch : 2 [40000/60000 (67%)]	Loss: 0.524558	 Accuracy:74.445%
+Epoch : 2 [41600/60000 (69%)]	Loss: 1.048442	 Accuracy:74.467%
+Epoch : 2 [43200/60000 (72%)]	Loss: 0.505743	 Accuracy:74.489%
+Epoch : 2 [44800/60000 (75%)]	Loss: 0.711266	 Accuracy:74.471%
+Epoch : 2 [46400/60000 (77%)]	Loss: 0.578432	 Accuracy:74.468%
+Epoch : 2 [48000/60000 (80%)]	Loss: 0.565799	 Accuracy:74.494%
+Epoch : 2 [49600/60000 (83%)]	Loss: 0.606270	 Accuracy:74.565%
+Epoch : 2 [51200/60000 (85%)]	Loss: 0.822888	 Accuracy:74.561%
+Epoch : 2 [52800/60000 (88%)]	Loss: 0.687086	 Accuracy:74.561%
+Epoch : 2 [54400/60000 (91%)]	Loss: 0.955706	 Accuracy:74.555%
+Epoch : 2 [56000/60000 (93%)]	Loss: 1.100949	 Accuracy:74.598%
+Epoch : 2 [57600/60000 (96%)]	Loss: 0.890230	 Accuracy:74.655%
+Epoch : 2 [59200/60000 (99%)]	Loss: 0.540619	 Accuracy:74.688%
+Epoch : 3 [0/60000 (0%)]	Loss: 0.524427	 Accuracy:78.125%
+Epoch : 3 [1600/60000 (3%)]	Loss: 0.793636	 Accuracy:76.532%
+Epoch : 3 [3200/60000 (5%)]	Loss: 0.661604	 Accuracy:76.454%
+Epoch : 3 [4800/60000 (8%)]	Loss: 0.432254	 Accuracy:76.407%
+Epoch : 3 [6400/60000 (11%)]	Loss: 0.562570	 Accuracy:76.399%
+Epoch : 3 [8000/60000 (13%)]	Loss: 0.731486	 Accuracy:76.419%
+Epoch : 3 [9600/60000 (16%)]	Loss: 0.762168	 Accuracy:76.111%
+Epoch : 3 [11200/60000 (19%)]	Loss: 0.450670	 Accuracy:76.300%
+Epoch : 3 [12800/60000 (21%)]	Loss: 0.469126	 Accuracy:76.161%
+Epoch : 3 [14400/60000 (24%)]	Loss: 0.655588	 Accuracy:76.143%
+Epoch : 3 [16000/60000 (27%)]	Loss: 0.690404	 Accuracy:76.098%
+Epoch : 3 [17600/60000 (29%)]	Loss: 0.616463	 Accuracy:75.958%
+Epoch : 3 [19200/60000 (32%)]	Loss: 0.528255	 Accuracy:75.900%
+Epoch : 3 [20800/60000 (35%)]	Loss: 0.537960	 Accuracy:75.946%
+Epoch : 3 [22400/60000 (37%)]	Loss: 0.326490	 Accuracy:76.030%
+Epoch : 3 [24000/60000 (40%)]	Loss: 0.855566	 Accuracy:76.011%
+Epoch : 3 [25600/60000 (43%)]	Loss: 0.988684	 Accuracy:75.983%
+Epoch : 3 [27200/60000 (45%)]	Loss: 0.702777	 Accuracy:76.006%
+Epoch : 3 [28800/60000 (48%)]	Loss: 1.084570	 Accuracy:75.961%
+Epoch : 3 [30400/60000 (51%)]	Loss: 0.614617	 Accuracy:75.927%
+Epoch : 3 [32000/60000 (53%)]	Loss: 0.790592	 Accuracy:75.971%
+Epoch : 3 [33600/60000 (56%)]	Loss: 0.438920	 Accuracy:76.047%
+Epoch : 3 [35200/60000 (59%)]	Loss: 0.574296	 Accuracy:76.115%
+Epoch : 3 [36800/60000 (61%)]	Loss: 0.594626	 Accuracy:76.100%
+Epoch : 3 [38400/60000 (64%)]	Loss: 0.552776	 Accuracy:76.174%
+Epoch : 3 [40000/60000 (67%)]	Loss: 0.798541	 Accuracy:76.202%
+Epoch : 3 [41600/60000 (69%)]	Loss: 0.893899	 Accuracy:76.225%
+Epoch : 3 [43200/60000 (72%)]	Loss: 0.632010	 Accuracy:76.219%
+Epoch : 3 [44800/60000 (75%)]	Loss: 0.798076	 Accuracy:76.218%
+Epoch : 3 [46400/60000 (77%)]	Loss: 0.468914	 Accuracy:76.215%
+Epoch : 3 [48000/60000 (80%)]	Loss: 0.698308	 Accuracy:76.197%
+Epoch : 3 [49600/60000 (83%)]	Loss: 0.375907	 Accuracy:76.261%
+Epoch : 3 [51200/60000 (85%)]	Loss: 0.603348	 Accuracy:76.257%
+Epoch : 3 [52800/60000 (88%)]	Loss: 0.421289	 Accuracy:76.278%
+Epoch : 3 [54400/60000 (91%)]	Loss: 0.911245	 Accuracy:76.235%
+Epoch : 3 [56000/60000 (93%)]	Loss: 1.167373	 Accuracy:76.248%
+Epoch : 3 [57600/60000 (96%)]	Loss: 0.582616	 Accuracy:76.284%
+Epoch : 3 [59200/60000 (99%)]	Loss: 0.602391	 Accuracy:76.337%
+Epoch : 4 [0/60000 (0%)]	Loss: 0.440654	 Accuracy:84.375%
+Epoch : 4 [1600/60000 (3%)]	Loss: 0.774961	 Accuracy:77.880%
+Epoch : 4 [3200/60000 (5%)]	Loss: 0.773113	 Accuracy:77.877%
+Epoch : 4 [4800/60000 (8%)]	Loss: 0.415159	 Accuracy:78.146%
+Epoch : 4 [6400/60000 (11%)]	Loss: 0.612342	 Accuracy:77.985%
+Epoch : 4 [8000/60000 (13%)]	Loss: 1.114300	 Accuracy:77.502%
+Epoch : 4 [9600/60000 (16%)]	Loss: 0.839511	 Accuracy:77.253%
+Epoch : 4 [11200/60000 (19%)]	Loss: 0.554366	 Accuracy:77.475%
+Epoch : 4 [12800/60000 (21%)]	Loss: 0.504416	 Accuracy:77.392%
+Epoch : 4 [14400/60000 (24%)]	Loss: 0.678987	 Accuracy:77.266%
+Epoch : 4 [16000/60000 (27%)]	Loss: 0.839495	 Accuracy:77.189%
+Epoch : 4 [17600/60000 (29%)]	Loss: 0.850349	 Accuracy:77.008%
+Epoch : 4 [19200/60000 (32%)]	Loss: 0.696870	 Accuracy:76.820%
+Epoch : 4 [20800/60000 (35%)]	Loss: 0.722434	 Accuracy:76.805%
+Epoch : 4 [22400/60000 (37%)]	Loss: 0.382657	 Accuracy:76.846%
+Epoch : 4 [24000/60000 (40%)]	Loss: 0.944081	 Accuracy:76.839%
+Epoch : 4 [25600/60000 (43%)]	Loss: 0.727665	 Accuracy:76.935%
+Epoch : 4 [27200/60000 (45%)]	Loss: 0.728944	 Accuracy:76.979%
+Epoch : 4 [28800/60000 (48%)]	Loss: 0.597486	 Accuracy:77.012%
+Epoch : 4 [30400/60000 (51%)]	Loss: 0.587435	 Accuracy:77.077%
+Epoch : 4 [32000/60000 (53%)]	Loss: 0.699994	 Accuracy:77.076%
+Epoch : 4 [33600/60000 (56%)]	Loss: 0.442111	 Accuracy:77.159%
+Epoch : 4 [35200/60000 (59%)]	Loss: 0.387237	 Accuracy:77.225%
+Epoch : 4 [36800/60000 (61%)]	Loss: 0.651841	 Accuracy:77.199%
+Epoch : 4 [38400/60000 (64%)]	Loss: 0.577063	 Accuracy:77.285%
+Epoch : 4 [40000/60000 (67%)]	Loss: 0.486936	 Accuracy:77.368%
+Epoch : 4 [41600/60000 (69%)]	Loss: 0.688887	 Accuracy:77.388%
+Epoch : 4 [43200/60000 (72%)]	Loss: 0.661322	 Accuracy:77.422%
+Epoch : 4 [44800/60000 (75%)]	Loss: 0.828507	 Accuracy:77.447%
+Epoch : 4 [46400/60000 (77%)]	Loss: 0.343861	 Accuracy:77.414%
+Epoch : 4 [48000/60000 (80%)]	Loss: 0.832057	 Accuracy:77.371%
+Epoch : 4 [49600/60000 (83%)]	Loss: 0.464286	 Accuracy:77.442%
+Epoch : 4 [51200/60000 (85%)]	Loss: 0.557969	 Accuracy:77.438%
+Epoch : 4 [52800/60000 (88%)]	Loss: 0.653605	 Accuracy:77.453%
+Epoch : 4 [54400/60000 (91%)]	Loss: 0.866917	 Accuracy:77.414%
+Epoch : 4 [56000/60000 (93%)]	Loss: 1.100826	 Accuracy:77.491%
+Epoch : 4 [57600/60000 (96%)]	Loss: 0.630161	 Accuracy:77.488%
+Epoch : 4 [59200/60000 (99%)]	Loss: 0.811274	 Accuracy:77.529%
+Test accuracy:0.773% 
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [6000 6000 6000 6000 6000 6000 6000 6000 6000 6000]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [1000 1000 1000 1000 1000 1000 1000 1000 1000 1000]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(5, 5))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Epoch : 0 [0/60000 (0%)]	Loss: 9.043531	 Accuracy:18.750%
+Epoch : 0 [1600/60000 (3%)]	Loss: 2.107957	 Accuracy:17.892%
+Epoch : 0 [3200/60000 (5%)]	Loss: 1.680436	 Accuracy:26.485%
+Epoch : 0 [4800/60000 (8%)]	Loss: 1.653360	 Accuracy:32.471%
+Epoch : 0 [6400/60000 (11%)]	Loss: 1.420548	 Accuracy:35.961%
+Epoch : 0 [8000/60000 (13%)]	Loss: 1.664862	 Accuracy:38.434%
+Epoch : 0 [9600/60000 (16%)]	Loss: 1.693791	 Accuracy:40.365%
+Epoch : 0 [11200/60000 (19%)]	Loss: 1.424413	 Accuracy:42.317%
+Epoch : 0 [12800/60000 (21%)]	Loss: 1.082265	 Accuracy:43.508%
+Epoch : 0 [14400/60000 (24%)]	Loss: 1.186145	 Accuracy:44.443%
+Epoch : 0 [16000/60000 (27%)]	Loss: 1.324678	 Accuracy:45.578%
+Epoch : 0 [17600/60000 (29%)]	Loss: 1.417365	 Accuracy:46.676%
+Epoch : 0 [19200/60000 (32%)]	Loss: 1.079503	 Accuracy:47.301%
+Epoch : 0 [20800/60000 (35%)]	Loss: 1.265345	 Accuracy:47.979%
+Epoch : 0 [22400/60000 (37%)]	Loss: 1.029213	 Accuracy:48.618%
+Epoch : 0 [24000/60000 (40%)]	Loss: 1.305576	 Accuracy:49.326%
+Epoch : 0 [25600/60000 (43%)]	Loss: 1.201854	 Accuracy:49.918%
+Epoch : 0 [27200/60000 (45%)]	Loss: 1.383641	 Accuracy:50.481%
+Epoch : 0 [28800/60000 (48%)]	Loss: 1.664662	 Accuracy:50.888%
+Epoch : 0 [30400/60000 (51%)]	Loss: 1.097961	 Accuracy:51.466%
+Epoch : 0 [32000/60000 (53%)]	Loss: 1.034968	 Accuracy:51.898%
+Epoch : 0 [33600/60000 (56%)]	Loss: 1.012678	 Accuracy:52.438%
+Epoch : 0 [35200/60000 (59%)]	Loss: 1.101185	 Accuracy:52.847%
+Epoch : 0 [36800/60000 (61%)]	Loss: 1.069062	 Accuracy:53.277%
+Epoch : 0 [38400/60000 (64%)]	Loss: 0.918896	 Accuracy:53.658%
+Epoch : 0 [40000/60000 (67%)]	Loss: 1.167422	 Accuracy:54.074%
+Epoch : 0 [41600/60000 (69%)]	Loss: 1.370471	 Accuracy:54.391%
+Epoch : 0 [43200/60000 (72%)]	Loss: 0.900873	 Accuracy:54.682%
+Epoch : 0 [44800/60000 (75%)]	Loss: 1.071381	 Accuracy:55.037%
+Epoch : 0 [46400/60000 (77%)]	Loss: 0.919351	 Accuracy:55.343%
+Epoch : 0 [48000/60000 (80%)]	Loss: 0.910210	 Accuracy:55.650%
+Epoch : 0 [49600/60000 (83%)]	Loss: 0.700582	 Accuracy:56.018%
+Epoch : 0 [51200/60000 (85%)]	Loss: 0.993411	 Accuracy:56.270%
+Epoch : 0 [52800/60000 (88%)]	Loss: 1.016771	 Accuracy:56.521%
+Epoch : 0 [54400/60000 (91%)]	Loss: 1.062304	 Accuracy:56.718%
+Epoch : 0 [56000/60000 (93%)]	Loss: 1.805149	 Accuracy:56.944%
+Epoch : 0 [57600/60000 (96%)]	Loss: 0.966986	 Accuracy:57.194%
+Epoch : 0 [59200/60000 (99%)]	Loss: 0.954023	 Accuracy:57.437%
+Epoch : 1 [0/60000 (0%)]	Loss: 0.693896	 Accuracy:71.875%
+Epoch : 1 [1600/60000 (3%)]	Loss: 0.928562	 Accuracy:67.341%
+Epoch : 1 [3200/60000 (5%)]	Loss: 1.132718	 Accuracy:66.646%
+Epoch : 1 [4800/60000 (8%)]	Loss: 0.841295	 Accuracy:67.115%
+Epoch : 1 [6400/60000 (11%)]	Loss: 0.715517	 Accuracy:67.289%
+Epoch : 1 [8000/60000 (13%)]	Loss: 0.971969	 Accuracy:67.044%
+Epoch : 1 [9600/60000 (16%)]	Loss: 1.050338	 Accuracy:66.881%
+Epoch : 1 [11200/60000 (19%)]	Loss: 1.000725	 Accuracy:67.121%
+Epoch : 1 [12800/60000 (21%)]	Loss: 0.757202	 Accuracy:66.864%
+Epoch : 1 [14400/60000 (24%)]	Loss: 0.911993	 Accuracy:66.858%
+Epoch : 1 [16000/60000 (27%)]	Loss: 0.843728	 Accuracy:66.810%
+Epoch : 1 [17600/60000 (29%)]	Loss: 0.729495	 Accuracy:66.998%
+Epoch : 1 [19200/60000 (32%)]	Loss: 1.007145	 Accuracy:66.961%
+Epoch : 1 [20800/60000 (35%)]	Loss: 0.556359	 Accuracy:66.974%
+Epoch : 1 [22400/60000 (37%)]	Loss: 0.656290	 Accuracy:67.145%
+Epoch : 1 [24000/60000 (40%)]	Loss: 1.162253	 Accuracy:67.235%
+Epoch : 1 [25600/60000 (43%)]	Loss: 0.633407	 Accuracy:67.388%
+Epoch : 1 [27200/60000 (45%)]	Loss: 1.145558	 Accuracy:67.435%
+Epoch : 1 [28800/60000 (48%)]	Loss: 1.456091	 Accuracy:67.550%
+Epoch : 1 [30400/60000 (51%)]	Loss: 0.929585	 Accuracy:67.652%
+Epoch : 1 [32000/60000 (53%)]	Loss: 0.836446	 Accuracy:67.798%
+Epoch : 1 [33600/60000 (56%)]	Loss: 0.534770	 Accuracy:67.953%
+Epoch : 1 [35200/60000 (59%)]	Loss: 0.643191	 Accuracy:68.092%
+Epoch : 1 [36800/60000 (61%)]	Loss: 0.798771	 Accuracy:68.101%
+Epoch : 1 [38400/60000 (64%)]	Loss: 0.897206	 Accuracy:68.250%
+Epoch : 1 [40000/60000 (67%)]	Loss: 0.602666	 Accuracy:68.360%
+Epoch : 1 [41600/60000 (69%)]	Loss: 1.109593	 Accuracy:68.438%
+Epoch : 1 [43200/60000 (72%)]	Loss: 0.991776	 Accuracy:68.526%
+Epoch : 1 [44800/60000 (75%)]	Loss: 0.894878	 Accuracy:68.601%
+Epoch : 1 [46400/60000 (77%)]	Loss: 0.589562	 Accuracy:68.608%
+Epoch : 1 [48000/60000 (80%)]	Loss: 0.686215	 Accuracy:68.677%
+Epoch : 1 [49600/60000 (83%)]	Loss: 0.633992	 Accuracy:68.823%
+Epoch : 1 [51200/60000 (85%)]	Loss: 0.470200	 Accuracy:68.916%
+Epoch : 1 [52800/60000 (88%)]	Loss: 0.854913	 Accuracy:69.064%
+Epoch : 1 [54400/60000 (91%)]	Loss: 1.153776	 Accuracy:69.081%
+Epoch : 1 [56000/60000 (93%)]	Loss: 1.674088	 Accuracy:69.178%
+Epoch : 1 [57600/60000 (96%)]	Loss: 0.658595	 Accuracy:69.238%
+Epoch : 1 [59200/60000 (99%)]	Loss: 0.731635	 Accuracy:69.329%
+Epoch : 2 [0/60000 (0%)]	Loss: 0.650119	 Accuracy:65.625%
+Epoch : 2 [1600/60000 (3%)]	Loss: 0.609735	 Accuracy:72.978%
+Epoch : 2 [3200/60000 (5%)]	Loss: 1.084882	 Accuracy:72.710%
+Epoch : 2 [4800/60000 (8%)]	Loss: 0.818201	 Accuracy:73.303%
+Epoch : 2 [6400/60000 (11%)]	Loss: 0.811808	 Accuracy:72.839%
+Epoch : 2 [8000/60000 (13%)]	Loss: 0.992857	 Accuracy:72.261%
+Epoch : 2 [9600/60000 (16%)]	Loss: 1.025796	 Accuracy:72.238%
+Epoch : 2 [11200/60000 (19%)]	Loss: 0.583255	 Accuracy:72.454%
+Epoch : 2 [12800/60000 (21%)]	Loss: 0.607692	 Accuracy:72.148%
+Epoch : 2 [14400/60000 (24%)]	Loss: 0.810824	 Accuracy:72.159%
+Epoch : 2 [16000/60000 (27%)]	Loss: 0.813231	 Accuracy:72.137%
+Epoch : 2 [17600/60000 (29%)]	Loss: 0.698861	 Accuracy:71.966%
+Epoch : 2 [19200/60000 (32%)]	Loss: 0.699691	 Accuracy:71.844%
+Epoch : 2 [20800/60000 (35%)]	Loss: 1.027482	 Accuracy:71.832%
+Epoch : 2 [22400/60000 (37%)]	Loss: 0.474291	 Accuracy:71.928%
+Epoch : 2 [24000/60000 (40%)]	Loss: 1.140565	 Accuracy:71.896%
+Epoch : 2 [25600/60000 (43%)]	Loss: 0.584009	 Accuracy:72.015%
+Epoch : 2 [27200/60000 (45%)]	Loss: 0.872138	 Accuracy:72.004%
+Epoch : 2 [28800/60000 (48%)]	Loss: 0.982692	 Accuracy:71.965%
+Epoch : 2 [30400/60000 (51%)]	Loss: 0.682117	 Accuracy:71.941%
+Epoch : 2 [32000/60000 (53%)]	Loss: 0.693055	 Accuracy:72.012%
+Epoch : 2 [33600/60000 (56%)]	Loss: 0.320110	 Accuracy:72.122%
+Epoch : 2 [35200/60000 (59%)]	Loss: 0.614063	 Accuracy:72.145%
+Epoch : 2 [36800/60000 (61%)]	Loss: 0.887406	 Accuracy:72.149%
+Epoch : 2 [38400/60000 (64%)]	Loss: 1.053822	 Accuracy:72.213%
+Epoch : 2 [40000/60000 (67%)]	Loss: 0.529224	 Accuracy:72.277%
+Epoch : 2 [41600/60000 (69%)]	Loss: 0.976442	 Accuracy:72.279%
+Epoch : 2 [43200/60000 (72%)]	Loss: 0.599805	 Accuracy:72.377%
+Epoch : 2 [44800/60000 (75%)]	Loss: 0.548964	 Accuracy:72.408%
+Epoch : 2 [46400/60000 (77%)]	Loss: 0.563471	 Accuracy:72.385%
+Epoch : 2 [48000/60000 (80%)]	Loss: 0.828414	 Accuracy:72.433%
+Epoch : 2 [49600/60000 (83%)]	Loss: 0.462704	 Accuracy:72.490%
+Epoch : 2 [51200/60000 (85%)]	Loss: 0.752770	 Accuracy:72.482%
+Epoch : 2 [52800/60000 (88%)]	Loss: 0.709209	 Accuracy:72.486%
+Epoch : 2 [54400/60000 (91%)]	Loss: 1.004029	 Accuracy:72.516%
+Epoch : 2 [56000/60000 (93%)]	Loss: 1.240771	 Accuracy:72.601%
+Epoch : 2 [57600/60000 (96%)]	Loss: 0.798553	 Accuracy:72.628%
+Epoch : 2 [59200/60000 (99%)]	Loss: 0.638227	 Accuracy:72.665%
+Epoch : 3 [0/60000 (0%)]	Loss: 0.572638	 Accuracy:81.250%
+Epoch : 3 [1600/60000 (3%)]	Loss: 0.561542	 Accuracy:75.919%
+Epoch : 3 [3200/60000 (5%)]	Loss: 0.779551	 Accuracy:75.031%
+Epoch : 3 [4800/60000 (8%)]	Loss: 0.486218	 Accuracy:75.476%
+Epoch : 3 [6400/60000 (11%)]	Loss: 0.529239	 Accuracy:75.155%
+Epoch : 3 [8000/60000 (13%)]	Loss: 0.759783	 Accuracy:74.875%
+Epoch : 3 [9600/60000 (16%)]	Loss: 0.820190	 Accuracy:74.678%
+Epoch : 3 [11200/60000 (19%)]	Loss: 0.519266	 Accuracy:74.662%
+Epoch : 3 [12800/60000 (21%)]	Loss: 0.483060	 Accuracy:74.478%
+Epoch : 3 [14400/60000 (24%)]	Loss: 1.033820	 Accuracy:74.328%
+Epoch : 3 [16000/60000 (27%)]	Loss: 0.677197	 Accuracy:74.145%
+Epoch : 3 [17600/60000 (29%)]	Loss: 0.894258	 Accuracy:73.985%
+Epoch : 3 [19200/60000 (32%)]	Loss: 0.676478	 Accuracy:73.840%
+Epoch : 3 [20800/60000 (35%)]	Loss: 0.759061	 Accuracy:73.805%
+Epoch : 3 [22400/60000 (37%)]	Loss: 0.523677	 Accuracy:73.836%
+Epoch : 3 [24000/60000 (40%)]	Loss: 1.082927	 Accuracy:73.852%
+Epoch : 3 [25600/60000 (43%)]	Loss: 0.716520	 Accuracy:74.013%
+Epoch : 3 [27200/60000 (45%)]	Loss: 1.004300	 Accuracy:73.950%
+Epoch : 3 [28800/60000 (48%)]	Loss: 0.798843	 Accuracy:73.921%
+Epoch : 3 [30400/60000 (51%)]	Loss: 0.731171	 Accuracy:73.952%
+Epoch : 3 [32000/60000 (53%)]	Loss: 0.817208	 Accuracy:73.967%
+Epoch : 3 [33600/60000 (56%)]	Loss: 0.366666	 Accuracy:74.054%
+Epoch : 3 [35200/60000 (59%)]	Loss: 0.760911	 Accuracy:74.106%
+Epoch : 3 [36800/60000 (61%)]	Loss: 0.593747	 Accuracy:74.039%
+Epoch : 3 [38400/60000 (64%)]	Loss: 0.890227	 Accuracy:74.118%
+Epoch : 3 [40000/60000 (67%)]	Loss: 0.402347	 Accuracy:74.203%
+Epoch : 3 [41600/60000 (69%)]	Loss: 1.019650	 Accuracy:74.236%
+Epoch : 3 [43200/60000 (72%)]	Loss: 0.524345	 Accuracy:74.239%
+Epoch : 3 [44800/60000 (75%)]	Loss: 1.179202	 Accuracy:74.244%
+Epoch : 3 [46400/60000 (77%)]	Loss: 0.418444	 Accuracy:74.173%
+Epoch : 3 [48000/60000 (80%)]	Loss: 0.860121	 Accuracy:74.176%
+Epoch : 3 [49600/60000 (83%)]	Loss: 0.376586	 Accuracy:74.226%
+Epoch : 3 [51200/60000 (85%)]	Loss: 0.607295	 Accuracy:74.225%
+Epoch : 3 [52800/60000 (88%)]	Loss: 0.567714	 Accuracy:74.222%
+Epoch : 3 [54400/60000 (91%)]	Loss: 0.730998	 Accuracy:74.162%
+Epoch : 3 [56000/60000 (93%)]	Loss: 1.487449	 Accuracy:74.174%
+Epoch : 3 [57600/60000 (96%)]	Loss: 1.026058	 Accuracy:74.204%
+Epoch : 3 [59200/60000 (99%)]	Loss: 0.394276	 Accuracy:74.262%
+Epoch : 4 [0/60000 (0%)]	Loss: 0.610302	 Accuracy:87.500%
+Epoch : 4 [1600/60000 (3%)]	Loss: 0.583365	 Accuracy:77.757%
+Epoch : 4 [3200/60000 (5%)]	Loss: 0.689631	 Accuracy:76.702%
+Epoch : 4 [4800/60000 (8%)]	Loss: 0.333451	 Accuracy:76.697%
+Epoch : 4 [6400/60000 (11%)]	Loss: 0.548605	 Accuracy:76.104%
+Epoch : 4 [8000/60000 (13%)]	Loss: 0.736655	 Accuracy:75.548%
+Epoch : 4 [9600/60000 (16%)]	Loss: 0.798934	 Accuracy:75.176%
+Epoch : 4 [11200/60000 (19%)]	Loss: 0.499530	 Accuracy:75.169%
+Epoch : 4 [12800/60000 (21%)]	Loss: 0.580516	 Accuracy:74.914%
+Epoch : 4 [14400/60000 (24%)]	Loss: 0.798633	 Accuracy:74.848%
+Epoch : 4 [16000/60000 (27%)]	Loss: 0.857467	 Accuracy:74.857%
+Epoch : 4 [17600/60000 (29%)]	Loss: 0.497472	 Accuracy:74.836%
+Epoch : 4 [19200/60000 (32%)]	Loss: 0.667174	 Accuracy:74.761%
+Epoch : 4 [20800/60000 (35%)]	Loss: 0.671020	 Accuracy:74.726%
+Epoch : 4 [22400/60000 (37%)]	Loss: 0.485596	 Accuracy:74.661%
+Epoch : 4 [24000/60000 (40%)]	Loss: 1.009561	 Accuracy:74.725%
+Epoch : 4 [25600/60000 (43%)]	Loss: 0.631678	 Accuracy:74.782%
+Epoch : 4 [27200/60000 (45%)]	Loss: 0.936439	 Accuracy:74.820%
+Epoch : 4 [28800/60000 (48%)]	Loss: 0.780819	 Accuracy:74.747%
+Epoch : 4 [30400/60000 (51%)]	Loss: 0.604164	 Accuracy:74.793%
+Epoch : 4 [32000/60000 (53%)]	Loss: 0.739094	 Accuracy:74.800%
+Epoch : 4 [33600/60000 (56%)]	Loss: 0.310618	 Accuracy:74.833%
+Epoch : 4 [35200/60000 (59%)]	Loss: 0.586385	 Accuracy:74.872%
+Epoch : 4 [36800/60000 (61%)]	Loss: 0.681117	 Accuracy:74.805%
+Epoch : 4 [38400/60000 (64%)]	Loss: 0.888717	 Accuracy:74.831%
+Epoch : 4 [40000/60000 (67%)]	Loss: 0.657449	 Accuracy:74.860%
+Epoch : 4 [41600/60000 (69%)]	Loss: 0.830806	 Accuracy:74.873%
+Epoch : 4 [43200/60000 (72%)]	Loss: 0.446706	 Accuracy:74.924%
+Epoch : 4 [44800/60000 (75%)]	Loss: 1.161035	 Accuracy:74.909%
+Epoch : 4 [46400/60000 (77%)]	Loss: 0.531487	 Accuracy:74.882%
+Epoch : 4 [48000/60000 (80%)]	Loss: 0.842229	 Accuracy:74.888%
+Epoch : 4 [49600/60000 (83%)]	Loss: 0.483532	 Accuracy:74.931%
+Epoch : 4 [51200/60000 (85%)]	Loss: 0.479494	 Accuracy:74.951%
+Epoch : 4 [52800/60000 (88%)]	Loss: 0.549857	 Accuracy:74.989%
+Epoch : 4 [54400/60000 (91%)]	Loss: 0.761315	 Accuracy:74.934%
+Epoch : 4 [56000/60000 (93%)]	Loss: 0.920232	 Accuracy:74.980%
+Epoch : 4 [57600/60000 (96%)]	Loss: 0.653192	 Accuracy:74.943%
+Epoch : 4 [59200/60000 (99%)]	Loss: 0.547031	 Accuracy:75.015%
+Test accuracy:0.755% 
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [6000 6000 6000 6000 6000 6000 6000 6000 6000 6000]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [1000 1000 1000 1000 1000 1000 1000 1000 1000 1000]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(6, 6))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Epoch : 0 [0/60000 (0%)]	Loss: 14.733044	 Accuracy:12.500%
+Epoch : 0 [1600/60000 (3%)]	Loss: 2.291685	 Accuracy:12.071%
+Epoch : 0 [3200/60000 (5%)]	Loss: 2.091356	 Accuracy:16.801%
+Epoch : 0 [4800/60000 (8%)]	Loss: 1.789801	 Accuracy:22.082%
+Epoch : 0 [6400/60000 (11%)]	Loss: 1.854953	 Accuracy:25.187%
+Epoch : 0 [8000/60000 (13%)]	Loss: 1.767694	 Accuracy:27.876%
+Epoch : 0 [9600/60000 (16%)]	Loss: 1.807713	 Accuracy:29.828%
+Epoch : 0 [11200/60000 (19%)]	Loss: 1.589904	 Accuracy:31.170%
+Epoch : 0 [12800/60000 (21%)]	Loss: 1.520907	 Accuracy:32.583%
+Epoch : 0 [14400/60000 (24%)]	Loss: 1.561684	 Accuracy:33.599%
+Epoch : 0 [16000/60000 (27%)]	Loss: 1.565251	 Accuracy:34.450%
+Epoch : 0 [17600/60000 (29%)]	Loss: 1.704738	 Accuracy:35.214%
+Epoch : 0 [19200/60000 (32%)]	Loss: 1.445609	 Accuracy:35.857%
+Epoch : 0 [20800/60000 (35%)]	Loss: 1.375580	 Accuracy:36.545%
+Epoch : 0 [22400/60000 (37%)]	Loss: 1.219376	 Accuracy:36.996%
+Epoch : 0 [24000/60000 (40%)]	Loss: 1.522186	 Accuracy:37.463%
+Epoch : 0 [25600/60000 (43%)]	Loss: 1.584902	 Accuracy:37.863%
+Epoch : 0 [27200/60000 (45%)]	Loss: 1.596588	 Accuracy:38.385%
+Epoch : 0 [28800/60000 (48%)]	Loss: 1.696966	 Accuracy:38.877%
+Epoch : 0 [30400/60000 (51%)]	Loss: 1.229304	 Accuracy:39.176%
+Epoch : 0 [32000/60000 (53%)]	Loss: 1.348320	 Accuracy:39.570%
+Epoch : 0 [33600/60000 (56%)]	Loss: 1.370609	 Accuracy:40.149%
+Epoch : 0 [35200/60000 (59%)]	Loss: 1.418392	 Accuracy:40.577%
+Epoch : 0 [36800/60000 (61%)]	Loss: 1.266870	 Accuracy:41.111%
+Epoch : 0 [38400/60000 (64%)]	Loss: 1.136296	 Accuracy:41.757%
+Epoch : 0 [40000/60000 (67%)]	Loss: 1.256795	 Accuracy:42.311%
+Epoch : 0 [41600/60000 (69%)]	Loss: 1.510411	 Accuracy:42.729%
+Epoch : 0 [43200/60000 (72%)]	Loss: 1.142697	 Accuracy:43.216%
+Epoch : 0 [44800/60000 (75%)]	Loss: 1.359852	 Accuracy:43.703%
+Epoch : 0 [46400/60000 (77%)]	Loss: 1.210109	 Accuracy:44.202%
+Epoch : 0 [48000/60000 (80%)]	Loss: 1.168597	 Accuracy:44.687%
+Epoch : 0 [49600/60000 (83%)]	Loss: 0.791708	 Accuracy:45.235%
+Epoch : 0 [51200/60000 (85%)]	Loss: 0.926260	 Accuracy:45.688%
+Epoch : 0 [52800/60000 (88%)]	Loss: 1.126200	 Accuracy:46.084%
+Epoch : 0 [54400/60000 (91%)]	Loss: 1.318093	 Accuracy:46.447%
+Epoch : 0 [56000/60000 (93%)]	Loss: 1.431040	 Accuracy:46.845%
+Epoch : 0 [57600/60000 (96%)]	Loss: 1.170273	 Accuracy:47.179%
+Epoch : 0 [59200/60000 (99%)]	Loss: 0.667215	 Accuracy:47.525%
+Epoch : 1 [0/60000 (0%)]	Loss: 1.047765	 Accuracy:65.625%
+Epoch : 1 [1600/60000 (3%)]	Loss: 0.994145	 Accuracy:63.480%
+Epoch : 1 [3200/60000 (5%)]	Loss: 1.112544	 Accuracy:62.964%
+Epoch : 1 [4800/60000 (8%)]	Loss: 0.996753	 Accuracy:63.038%
+Epoch : 1 [6400/60000 (11%)]	Loss: 0.947463	 Accuracy:62.920%
+Epoch : 1 [8000/60000 (13%)]	Loss: 1.176229	 Accuracy:62.749%
+Epoch : 1 [9600/60000 (16%)]	Loss: 1.238761	 Accuracy:62.438%
+Epoch : 1 [11200/60000 (19%)]	Loss: 0.741321	 Accuracy:62.562%
+Epoch : 1 [12800/60000 (21%)]	Loss: 0.782411	 Accuracy:62.196%
+Epoch : 1 [14400/60000 (24%)]	Loss: 1.246036	 Accuracy:62.077%
+Epoch : 1 [16000/60000 (27%)]	Loss: 0.993604	 Accuracy:62.163%
+Epoch : 1 [17600/60000 (29%)]	Loss: 1.110569	 Accuracy:62.245%
+Epoch : 1 [19200/60000 (32%)]	Loss: 0.757975	 Accuracy:62.100%
+Epoch : 1 [20800/60000 (35%)]	Loss: 0.904307	 Accuracy:62.126%
+Epoch : 1 [22400/60000 (37%)]	Loss: 0.728509	 Accuracy:62.250%
+Epoch : 1 [24000/60000 (40%)]	Loss: 1.007823	 Accuracy:62.279%
+Epoch : 1 [25600/60000 (43%)]	Loss: 1.038461	 Accuracy:62.391%
+Epoch : 1 [27200/60000 (45%)]	Loss: 1.149226	 Accuracy:62.529%
+Epoch : 1 [28800/60000 (48%)]	Loss: 1.051244	 Accuracy:62.608%
+Epoch : 1 [30400/60000 (51%)]	Loss: 0.685092	 Accuracy:62.750%
+Epoch : 1 [32000/60000 (53%)]	Loss: 0.961154	 Accuracy:62.806%
+Epoch : 1 [33600/60000 (56%)]	Loss: 0.671417	 Accuracy:62.961%
+Epoch : 1 [35200/60000 (59%)]	Loss: 0.949620	 Accuracy:62.963%
+Epoch : 1 [36800/60000 (61%)]	Loss: 0.889005	 Accuracy:63.024%
+Epoch : 1 [38400/60000 (64%)]	Loss: 1.098934	 Accuracy:63.140%
+Epoch : 1 [40000/60000 (67%)]	Loss: 1.202170	 Accuracy:63.302%
+Epoch : 1 [41600/60000 (69%)]	Loss: 1.189467	 Accuracy:63.348%
+Epoch : 1 [43200/60000 (72%)]	Loss: 0.757166	 Accuracy:63.414%
+Epoch : 1 [44800/60000 (75%)]	Loss: 1.120998	 Accuracy:63.475%
+Epoch : 1 [46400/60000 (77%)]	Loss: 0.759018	 Accuracy:63.551%
+Epoch : 1 [48000/60000 (80%)]	Loss: 0.825893	 Accuracy:63.608%
+Epoch : 1 [49600/60000 (83%)]	Loss: 0.584343	 Accuracy:63.783%
+Epoch : 1 [51200/60000 (85%)]	Loss: 0.585888	 Accuracy:63.812%
+Epoch : 1 [52800/60000 (88%)]	Loss: 1.009801	 Accuracy:63.802%
+Epoch : 1 [54400/60000 (91%)]	Loss: 0.926058	 Accuracy:63.810%
+Epoch : 1 [56000/60000 (93%)]	Loss: 0.951490	 Accuracy:63.905%
+Epoch : 1 [57600/60000 (96%)]	Loss: 0.933419	 Accuracy:63.990%
+Epoch : 1 [59200/60000 (99%)]	Loss: 0.672797	 Accuracy:64.067%
+Epoch : 2 [0/60000 (0%)]	Loss: 0.814404	 Accuracy:65.625%
+Epoch : 2 [1600/60000 (3%)]	Loss: 0.894056	 Accuracy:65.993%
+Epoch : 2 [3200/60000 (5%)]	Loss: 0.893026	 Accuracy:65.377%
+Epoch : 2 [4800/60000 (8%)]	Loss: 0.870443	 Accuracy:66.184%
+Epoch : 2 [6400/60000 (11%)]	Loss: 0.932164	 Accuracy:66.154%
+Epoch : 2 [8000/60000 (13%)]	Loss: 0.904563	 Accuracy:66.472%
+Epoch : 2 [9600/60000 (16%)]	Loss: 1.011527	 Accuracy:66.092%
+Epoch : 2 [11200/60000 (19%)]	Loss: 0.763220	 Accuracy:66.052%
+Epoch : 2 [12800/60000 (21%)]	Loss: 0.633861	 Accuracy:65.937%
+Epoch : 2 [14400/60000 (24%)]	Loss: 0.946558	 Accuracy:66.221%
+Epoch : 2 [16000/60000 (27%)]	Loss: 0.959683	 Accuracy:66.342%
+Epoch : 2 [17600/60000 (29%)]	Loss: 1.004379	 Accuracy:66.442%
+Epoch : 2 [19200/60000 (32%)]	Loss: 0.716004	 Accuracy:66.322%
+Epoch : 2 [20800/60000 (35%)]	Loss: 0.973551	 Accuracy:66.379%
+Epoch : 2 [22400/60000 (37%)]	Loss: 0.708540	 Accuracy:66.454%
+Epoch : 2 [24000/60000 (40%)]	Loss: 0.923703	 Accuracy:66.603%
+Epoch : 2 [25600/60000 (43%)]	Loss: 0.669182	 Accuracy:66.713%
+Epoch : 2 [27200/60000 (45%)]	Loss: 1.047262	 Accuracy:66.829%
+Epoch : 2 [28800/60000 (48%)]	Loss: 0.909196	 Accuracy:66.863%
+Epoch : 2 [30400/60000 (51%)]	Loss: 0.568491	 Accuracy:67.074%
+Epoch : 2 [32000/60000 (53%)]	Loss: 1.126809	 Accuracy:67.245%
+Epoch : 2 [33600/60000 (56%)]	Loss: 0.545935	 Accuracy:67.430%
+Epoch : 2 [35200/60000 (59%)]	Loss: 0.937626	 Accuracy:67.467%
+Epoch : 2 [36800/60000 (61%)]	Loss: 0.864088	 Accuracy:67.501%
+Epoch : 2 [38400/60000 (64%)]	Loss: 0.689093	 Accuracy:67.722%
+Epoch : 2 [40000/60000 (67%)]	Loss: 0.705426	 Accuracy:67.878%
+Epoch : 2 [41600/60000 (69%)]	Loss: 1.029955	 Accuracy:68.077%
+Epoch : 2 [43200/60000 (72%)]	Loss: 0.740026	 Accuracy:68.204%
+Epoch : 2 [44800/60000 (75%)]	Loss: 0.751538	 Accuracy:68.351%
+Epoch : 2 [46400/60000 (77%)]	Loss: 0.582836	 Accuracy:68.466%
+Epoch : 2 [48000/60000 (80%)]	Loss: 0.912108	 Accuracy:68.586%
+Epoch : 2 [49600/60000 (83%)]	Loss: 0.592336	 Accuracy:68.738%
+Epoch : 2 [51200/60000 (85%)]	Loss: 0.975802	 Accuracy:68.750%
+Epoch : 2 [52800/60000 (88%)]	Loss: 0.693793	 Accuracy:68.850%
+Epoch : 2 [54400/60000 (91%)]	Loss: 0.955569	 Accuracy:68.910%
+Epoch : 2 [56000/60000 (93%)]	Loss: 1.116481	 Accuracy:69.084%
+Epoch : 2 [57600/60000 (96%)]	Loss: 0.754878	 Accuracy:69.192%
+Epoch : 2 [59200/60000 (99%)]	Loss: 0.412514	 Accuracy:69.338%
+Epoch : 3 [0/60000 (0%)]	Loss: 0.920798	 Accuracy:71.875%
+Epoch : 3 [1600/60000 (3%)]	Loss: 0.616436	 Accuracy:73.100%
+Epoch : 3 [3200/60000 (5%)]	Loss: 0.785531	 Accuracy:73.298%
+Epoch : 3 [4800/60000 (8%)]	Loss: 0.425165	 Accuracy:74.214%
+Epoch : 3 [6400/60000 (11%)]	Loss: 0.504700	 Accuracy:73.803%
+Epoch : 3 [8000/60000 (13%)]	Loss: 0.762160	 Accuracy:73.743%
+Epoch : 3 [9600/60000 (16%)]	Loss: 0.929981	 Accuracy:73.578%
+Epoch : 3 [11200/60000 (19%)]	Loss: 0.632662	 Accuracy:73.860%
+Epoch : 3 [12800/60000 (21%)]	Loss: 0.385818	 Accuracy:73.745%
+Epoch : 3 [14400/60000 (24%)]	Loss: 0.840795	 Accuracy:73.732%
+Epoch : 3 [16000/60000 (27%)]	Loss: 0.793909	 Accuracy:73.734%
+Epoch : 3 [17600/60000 (29%)]	Loss: 0.573237	 Accuracy:73.696%
+Epoch : 3 [19200/60000 (32%)]	Loss: 0.657620	 Accuracy:73.726%
+Epoch : 3 [20800/60000 (35%)]	Loss: 1.191666	 Accuracy:73.766%
+Epoch : 3 [22400/60000 (37%)]	Loss: 0.530146	 Accuracy:73.850%
+Epoch : 3 [24000/60000 (40%)]	Loss: 0.833993	 Accuracy:73.985%
+Epoch : 3 [25600/60000 (43%)]	Loss: 0.996836	 Accuracy:74.196%
+Epoch : 3 [27200/60000 (45%)]	Loss: 0.964524	 Accuracy:74.185%
+Epoch : 3 [28800/60000 (48%)]	Loss: 0.789454	 Accuracy:74.150%
+Epoch : 3 [30400/60000 (51%)]	Loss: 0.541924	 Accuracy:74.119%
+Epoch : 3 [32000/60000 (53%)]	Loss: 0.804989	 Accuracy:74.185%
+Epoch : 3 [33600/60000 (56%)]	Loss: 0.431511	 Accuracy:74.280%
+Epoch : 3 [35200/60000 (59%)]	Loss: 0.883969	 Accuracy:74.367%
+Epoch : 3 [36800/60000 (61%)]	Loss: 0.638751	 Accuracy:74.319%
+Epoch : 3 [38400/60000 (64%)]	Loss: 0.726606	 Accuracy:74.360%
+Epoch : 3 [40000/60000 (67%)]	Loss: 0.480289	 Accuracy:74.433%
+Epoch : 3 [41600/60000 (69%)]	Loss: 1.023287	 Accuracy:74.491%
+Epoch : 3 [43200/60000 (72%)]	Loss: 0.703333	 Accuracy:74.466%
+Epoch : 3 [44800/60000 (75%)]	Loss: 0.969223	 Accuracy:74.491%
+Epoch : 3 [46400/60000 (77%)]	Loss: 0.543047	 Accuracy:74.472%
+Epoch : 3 [48000/60000 (80%)]	Loss: 0.814751	 Accuracy:74.532%
+Epoch : 3 [49600/60000 (83%)]	Loss: 0.535855	 Accuracy:74.637%
+Epoch : 3 [51200/60000 (85%)]	Loss: 0.554897	 Accuracy:74.641%
+Epoch : 3 [52800/60000 (88%)]	Loss: 0.678695	 Accuracy:74.669%
+Epoch : 3 [54400/60000 (91%)]	Loss: 0.897722	 Accuracy:74.656%
+Epoch : 3 [56000/60000 (93%)]	Loss: 1.042750	 Accuracy:74.689%
+Epoch : 3 [57600/60000 (96%)]	Loss: 0.498253	 Accuracy:74.721%
+Epoch : 3 [59200/60000 (99%)]	Loss: 0.451189	 Accuracy:74.787%
+Epoch : 4 [0/60000 (0%)]	Loss: 0.594903	 Accuracy:81.250%
+Epoch : 4 [1600/60000 (3%)]	Loss: 0.818814	 Accuracy:77.512%
+Epoch : 4 [3200/60000 (5%)]	Loss: 0.697990	 Accuracy:76.640%
+Epoch : 4 [4800/60000 (8%)]	Loss: 0.505146	 Accuracy:77.049%
+Epoch : 4 [6400/60000 (11%)]	Loss: 0.475081	 Accuracy:76.508%
+Epoch : 4 [8000/60000 (13%)]	Loss: 0.794529	 Accuracy:76.220%
+Epoch : 4 [9600/60000 (16%)]	Loss: 0.732866	 Accuracy:75.955%
+Epoch : 4 [11200/60000 (19%)]	Loss: 0.443837	 Accuracy:76.229%
+Epoch : 4 [12800/60000 (21%)]	Loss: 0.500825	 Accuracy:76.130%
+Epoch : 4 [14400/60000 (24%)]	Loss: 0.875283	 Accuracy:76.171%
+Epoch : 4 [16000/60000 (27%)]	Loss: 0.880913	 Accuracy:76.241%
+Epoch : 4 [17600/60000 (29%)]	Loss: 0.612591	 Accuracy:76.146%
+Epoch : 4 [19200/60000 (32%)]	Loss: 0.732169	 Accuracy:76.045%
+Epoch : 4 [20800/60000 (35%)]	Loss: 0.727458	 Accuracy:75.955%
+Epoch : 4 [22400/60000 (37%)]	Loss: 0.416634	 Accuracy:76.101%
+Epoch : 4 [24000/60000 (40%)]	Loss: 1.126631	 Accuracy:76.024%
+Epoch : 4 [25600/60000 (43%)]	Loss: 0.669560	 Accuracy:76.049%
+Epoch : 4 [27200/60000 (45%)]	Loss: 0.671726	 Accuracy:76.065%
+Epoch : 4 [28800/60000 (48%)]	Loss: 0.957701	 Accuracy:75.964%
+Epoch : 4 [30400/60000 (51%)]	Loss: 0.631645	 Accuracy:75.946%
+Epoch : 4 [32000/60000 (53%)]	Loss: 0.834247	 Accuracy:75.952%
+Epoch : 4 [33600/60000 (56%)]	Loss: 0.314028	 Accuracy:76.005%
+Epoch : 4 [35200/60000 (59%)]	Loss: 0.571339	 Accuracy:76.042%
+Epoch : 4 [36800/60000 (61%)]	Loss: 0.630655	 Accuracy:76.005%
+Epoch : 4 [38400/60000 (64%)]	Loss: 0.488020	 Accuracy:76.103%
+Epoch : 4 [40000/60000 (67%)]	Loss: 0.759883	 Accuracy:76.184%
+Epoch : 4 [41600/60000 (69%)]	Loss: 0.844603	 Accuracy:76.215%
+Epoch : 4 [43200/60000 (72%)]	Loss: 0.623486	 Accuracy:76.217%
+Epoch : 4 [44800/60000 (75%)]	Loss: 1.185862	 Accuracy:76.274%
+Epoch : 4 [46400/60000 (77%)]	Loss: 0.413910	 Accuracy:76.256%
+Epoch : 4 [48000/60000 (80%)]	Loss: 0.705711	 Accuracy:76.249%
+Epoch : 4 [49600/60000 (83%)]	Loss: 0.481017	 Accuracy:76.352%
+Epoch : 4 [51200/60000 (85%)]	Loss: 0.440487	 Accuracy:76.345%
+Epoch : 4 [52800/60000 (88%)]	Loss: 0.504862	 Accuracy:76.348%
+Epoch : 4 [54400/60000 (91%)]	Loss: 0.741889	 Accuracy:76.336%
+Epoch : 4 [56000/60000 (93%)]	Loss: 0.754604	 Accuracy:76.380%
+Epoch : 4 [57600/60000 (96%)]	Loss: 0.839702	 Accuracy:76.359%
+Epoch : 4 [59200/60000 (99%)]	Loss: 0.307085	 Accuracy:76.388%
+Test accuracy:0.762% 
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [6000 6000 6000 6000 6000 6000 6000 6000 6000 6000]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [1000 1000 1000 1000 1000 1000 1000 1000 1000 1000]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(7, 7))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Epoch : 0 [0/60000 (0%)]	Loss: 10.752569	 Accuracy:6.250%
+Epoch : 0 [1600/60000 (3%)]	Loss: 2.130365	 Accuracy:14.645%
+Epoch : 0 [3200/60000 (5%)]	Loss: 1.640420	 Accuracy:19.400%
+Epoch : 0 [4800/60000 (8%)]	Loss: 2.136530	 Accuracy:22.703%
+Epoch : 0 [6400/60000 (11%)]	Loss: 1.637736	 Accuracy:26.664%
+Epoch : 0 [8000/60000 (13%)]	Loss: 1.821555	 Accuracy:29.420%
+Epoch : 0 [9600/60000 (16%)]	Loss: 1.722369	 Accuracy:31.572%
+Epoch : 0 [11200/60000 (19%)]	Loss: 1.545914	 Accuracy:33.574%
+Epoch : 0 [12800/60000 (21%)]	Loss: 1.390110	 Accuracy:35.279%
+Epoch : 0 [14400/60000 (24%)]	Loss: 1.362313	 Accuracy:36.856%
+Epoch : 0 [16000/60000 (27%)]	Loss: 1.555308	 Accuracy:37.980%
+Epoch : 0 [17600/60000 (29%)]	Loss: 1.720476	 Accuracy:39.020%
+Epoch : 0 [19200/60000 (32%)]	Loss: 1.214849	 Accuracy:39.824%
+Epoch : 0 [20800/60000 (35%)]	Loss: 1.417182	 Accuracy:40.524%
+Epoch : 0 [22400/60000 (37%)]	Loss: 1.331226	 Accuracy:40.973%
+Epoch : 0 [24000/60000 (40%)]	Loss: 1.403507	 Accuracy:41.603%
+Epoch : 0 [25600/60000 (43%)]	Loss: 1.472484	 Accuracy:42.037%
+Epoch : 0 [27200/60000 (45%)]	Loss: 1.578316	 Accuracy:42.527%
+Epoch : 0 [28800/60000 (48%)]	Loss: 1.888434	 Accuracy:42.980%
+Epoch : 0 [30400/60000 (51%)]	Loss: 1.388134	 Accuracy:43.441%
+Epoch : 0 [32000/60000 (53%)]	Loss: 1.537693	 Accuracy:44.022%
+Epoch : 0 [33600/60000 (56%)]	Loss: 1.001351	 Accuracy:44.731%
+Epoch : 0 [35200/60000 (59%)]	Loss: 1.213603	 Accuracy:45.087%
+Epoch : 0 [36800/60000 (61%)]	Loss: 1.300925	 Accuracy:45.637%
+Epoch : 0 [38400/60000 (64%)]	Loss: 0.987909	 Accuracy:46.204%
+Epoch : 0 [40000/60000 (67%)]	Loss: 1.065673	 Accuracy:46.703%
+Epoch : 0 [41600/60000 (69%)]	Loss: 1.228345	 Accuracy:47.194%
+Epoch : 0 [43200/60000 (72%)]	Loss: 1.284853	 Accuracy:47.636%
+Epoch : 0 [44800/60000 (75%)]	Loss: 1.119972	 Accuracy:48.084%
+Epoch : 0 [46400/60000 (77%)]	Loss: 1.015669	 Accuracy:48.576%
+Epoch : 0 [48000/60000 (80%)]	Loss: 0.949725	 Accuracy:49.011%
+Epoch : 0 [49600/60000 (83%)]	Loss: 0.664719	 Accuracy:49.508%
+Epoch : 0 [51200/60000 (85%)]	Loss: 0.842040	 Accuracy:49.883%
+Epoch : 0 [52800/60000 (88%)]	Loss: 0.925859	 Accuracy:50.210%
+Epoch : 0 [54400/60000 (91%)]	Loss: 1.056030	 Accuracy:50.564%
+Epoch : 0 [56000/60000 (93%)]	Loss: 1.117942	 Accuracy:50.985%
+Epoch : 0 [57600/60000 (96%)]	Loss: 1.013170	 Accuracy:51.362%
+Epoch : 0 [59200/60000 (99%)]	Loss: 0.664448	 Accuracy:51.730%
+Epoch : 1 [0/60000 (0%)]	Loss: 0.944669	 Accuracy:56.250%
+Epoch : 1 [1600/60000 (3%)]	Loss: 1.163754	 Accuracy:66.483%
+Epoch : 1 [3200/60000 (5%)]	Loss: 0.833463	 Accuracy:65.099%
+Epoch : 1 [4800/60000 (8%)]	Loss: 0.780717	 Accuracy:65.749%
+Epoch : 1 [6400/60000 (11%)]	Loss: 0.839122	 Accuracy:65.547%
+Epoch : 1 [8000/60000 (13%)]	Loss: 1.203983	 Accuracy:65.301%
+Epoch : 1 [9600/60000 (16%)]	Loss: 1.226325	 Accuracy:65.241%
+Epoch : 1 [11200/60000 (19%)]	Loss: 0.711489	 Accuracy:65.394%
+Epoch : 1 [12800/60000 (21%)]	Loss: 0.815891	 Accuracy:65.516%
+Epoch : 1 [14400/60000 (24%)]	Loss: 1.017449	 Accuracy:65.715%
+Epoch : 1 [16000/60000 (27%)]	Loss: 1.243785	 Accuracy:65.694%
+Epoch : 1 [17600/60000 (29%)]	Loss: 0.696903	 Accuracy:65.755%
+Epoch : 1 [19200/60000 (32%)]	Loss: 0.706428	 Accuracy:65.677%
+Epoch : 1 [20800/60000 (35%)]	Loss: 0.907187	 Accuracy:65.654%
+Epoch : 1 [22400/60000 (37%)]	Loss: 0.737606	 Accuracy:65.661%
+Epoch : 1 [24000/60000 (40%)]	Loss: 1.067572	 Accuracy:65.717%
+Epoch : 1 [25600/60000 (43%)]	Loss: 0.880516	 Accuracy:65.855%
+Epoch : 1 [27200/60000 (45%)]	Loss: 1.165465	 Accuracy:65.952%
+Epoch : 1 [28800/60000 (48%)]	Loss: 1.002234	 Accuracy:65.844%
+Epoch : 1 [30400/60000 (51%)]	Loss: 0.603517	 Accuracy:66.039%
+Epoch : 1 [32000/60000 (53%)]	Loss: 0.861992	 Accuracy:66.115%
+Epoch : 1 [33600/60000 (56%)]	Loss: 0.792053	 Accuracy:66.208%
+Epoch : 1 [35200/60000 (59%)]	Loss: 0.821966	 Accuracy:66.315%
+Epoch : 1 [36800/60000 (61%)]	Loss: 0.622313	 Accuracy:66.306%
+Epoch : 1 [38400/60000 (64%)]	Loss: 0.903756	 Accuracy:66.395%
+Epoch : 1 [40000/60000 (67%)]	Loss: 0.585001	 Accuracy:66.464%
+Epoch : 1 [41600/60000 (69%)]	Loss: 1.010270	 Accuracy:66.531%
+Epoch : 1 [43200/60000 (72%)]	Loss: 1.079769	 Accuracy:66.573%
+Epoch : 1 [44800/60000 (75%)]	Loss: 1.207017	 Accuracy:66.580%
+Epoch : 1 [46400/60000 (77%)]	Loss: 0.853032	 Accuracy:66.594%
+Epoch : 1 [48000/60000 (80%)]	Loss: 0.745259	 Accuracy:66.668%
+Epoch : 1 [49600/60000 (83%)]	Loss: 0.662504	 Accuracy:66.798%
+Epoch : 1 [51200/60000 (85%)]	Loss: 0.613770	 Accuracy:66.853%
+Epoch : 1 [52800/60000 (88%)]	Loss: 0.659185	 Accuracy:66.842%
+Epoch : 1 [54400/60000 (91%)]	Loss: 1.049168	 Accuracy:66.815%
+Epoch : 1 [56000/60000 (93%)]	Loss: 1.105766	 Accuracy:66.926%
+Epoch : 1 [57600/60000 (96%)]	Loss: 0.868498	 Accuracy:66.935%
+Epoch : 1 [59200/60000 (99%)]	Loss: 0.720185	 Accuracy:66.955%
+Epoch : 2 [0/60000 (0%)]	Loss: 0.868113	 Accuracy:62.500%
+Epoch : 2 [1600/60000 (3%)]	Loss: 0.714600	 Accuracy:69.424%
+Epoch : 2 [3200/60000 (5%)]	Loss: 0.853343	 Accuracy:69.245%
+Epoch : 2 [4800/60000 (8%)]	Loss: 0.709811	 Accuracy:69.743%
+Epoch : 2 [6400/60000 (11%)]	Loss: 0.802671	 Accuracy:69.263%
+Epoch : 2 [8000/60000 (13%)]	Loss: 0.921811	 Accuracy:68.675%
+Epoch : 2 [9600/60000 (16%)]	Loss: 0.879830	 Accuracy:68.522%
+Epoch : 2 [11200/60000 (19%)]	Loss: 0.552423	 Accuracy:68.670%
+Epoch : 2 [12800/60000 (21%)]	Loss: 0.809775	 Accuracy:68.462%
+Epoch : 2 [14400/60000 (24%)]	Loss: 1.018430	 Accuracy:68.390%
+Epoch : 2 [16000/60000 (27%)]	Loss: 1.312616	 Accuracy:68.388%
+Epoch : 2 [17600/60000 (29%)]	Loss: 0.970074	 Accuracy:68.438%
+Epoch : 2 [19200/60000 (32%)]	Loss: 0.806008	 Accuracy:68.246%
+Epoch : 2 [20800/60000 (35%)]	Loss: 0.799434	 Accuracy:68.121%
+Epoch : 2 [22400/60000 (37%)]	Loss: 0.704643	 Accuracy:68.130%
+Epoch : 2 [24000/60000 (40%)]	Loss: 0.980014	 Accuracy:68.142%
+Epoch : 2 [25600/60000 (43%)]	Loss: 0.704268	 Accuracy:68.161%
+Epoch : 2 [27200/60000 (45%)]	Loss: 1.009042	 Accuracy:68.177%
+Epoch : 2 [28800/60000 (48%)]	Loss: 1.082794	 Accuracy:68.143%
+Epoch : 2 [30400/60000 (51%)]	Loss: 0.600845	 Accuracy:68.297%
+Epoch : 2 [32000/60000 (53%)]	Loss: 0.856303	 Accuracy:68.316%
+Epoch : 2 [33600/60000 (56%)]	Loss: 0.582897	 Accuracy:68.432%
+Epoch : 2 [35200/60000 (59%)]	Loss: 0.971720	 Accuracy:68.514%
+Epoch : 2 [36800/60000 (61%)]	Loss: 0.793124	 Accuracy:68.538%
+Epoch : 2 [38400/60000 (64%)]	Loss: 0.960187	 Accuracy:68.651%
+Epoch : 2 [40000/60000 (67%)]	Loss: 0.633996	 Accuracy:68.698%
+Epoch : 2 [41600/60000 (69%)]	Loss: 1.082485	 Accuracy:68.707%
+Epoch : 2 [43200/60000 (72%)]	Loss: 0.696946	 Accuracy:68.741%
+Epoch : 2 [44800/60000 (75%)]	Loss: 0.709647	 Accuracy:68.837%
+Epoch : 2 [46400/60000 (77%)]	Loss: 0.585269	 Accuracy:68.840%
+Epoch : 2 [48000/60000 (80%)]	Loss: 0.601381	 Accuracy:68.904%
+Epoch : 2 [49600/60000 (83%)]	Loss: 0.510166	 Accuracy:68.982%
+Epoch : 2 [51200/60000 (85%)]	Loss: 0.691482	 Accuracy:69.017%
+Epoch : 2 [52800/60000 (88%)]	Loss: 0.786335	 Accuracy:69.007%
+Epoch : 2 [54400/60000 (91%)]	Loss: 0.938745	 Accuracy:69.027%
+Epoch : 2 [56000/60000 (93%)]	Loss: 0.941226	 Accuracy:69.071%
+Epoch : 2 [57600/60000 (96%)]	Loss: 0.812029	 Accuracy:69.104%
+Epoch : 2 [59200/60000 (99%)]	Loss: 0.716912	 Accuracy:69.157%
+Epoch : 3 [0/60000 (0%)]	Loss: 0.622913	 Accuracy:75.000%
+Epoch : 3 [1600/60000 (3%)]	Loss: 0.674252	 Accuracy:70.404%
+Epoch : 3 [3200/60000 (5%)]	Loss: 0.798679	 Accuracy:69.431%
+Epoch : 3 [4800/60000 (8%)]	Loss: 0.628490	 Accuracy:70.075%
+Epoch : 3 [6400/60000 (11%)]	Loss: 0.718286	 Accuracy:70.211%
+Epoch : 3 [8000/60000 (13%)]	Loss: 0.735836	 Accuracy:70.244%
+Epoch : 3 [9600/60000 (16%)]	Loss: 1.077487	 Accuracy:69.954%
+Epoch : 3 [11200/60000 (19%)]	Loss: 0.576508	 Accuracy:69.970%
+Epoch : 3 [12800/60000 (21%)]	Loss: 0.684574	 Accuracy:69.864%
+Epoch : 3 [14400/60000 (24%)]	Loss: 0.888294	 Accuracy:69.873%
+Epoch : 3 [16000/60000 (27%)]	Loss: 1.001805	 Accuracy:69.760%
+Epoch : 3 [17600/60000 (29%)]	Loss: 0.675205	 Accuracy:69.623%
+Epoch : 3 [19200/60000 (32%)]	Loss: 0.702376	 Accuracy:69.572%
+Epoch : 3 [20800/60000 (35%)]	Loss: 0.747335	 Accuracy:69.624%
+Epoch : 3 [22400/60000 (37%)]	Loss: 0.509403	 Accuracy:69.664%
+Epoch : 3 [24000/60000 (40%)]	Loss: 0.924939	 Accuracy:69.690%
+Epoch : 3 [25600/60000 (43%)]	Loss: 0.804282	 Accuracy:69.854%
+Epoch : 3 [27200/60000 (45%)]	Loss: 0.988379	 Accuracy:70.006%
+Epoch : 3 [28800/60000 (48%)]	Loss: 1.007393	 Accuracy:69.881%
+Epoch : 3 [30400/60000 (51%)]	Loss: 0.697828	 Accuracy:69.963%
+Epoch : 3 [32000/60000 (53%)]	Loss: 0.861416	 Accuracy:69.993%
+Epoch : 3 [33600/60000 (56%)]	Loss: 0.586775	 Accuracy:70.136%
+Epoch : 3 [35200/60000 (59%)]	Loss: 0.678362	 Accuracy:70.161%
+Epoch : 3 [36800/60000 (61%)]	Loss: 0.776124	 Accuracy:70.211%
+Epoch : 3 [38400/60000 (64%)]	Loss: 0.773180	 Accuracy:70.244%
+Epoch : 3 [40000/60000 (67%)]	Loss: 0.862348	 Accuracy:70.299%
+Epoch : 3 [41600/60000 (69%)]	Loss: 1.099431	 Accuracy:70.270%
+Epoch : 3 [43200/60000 (72%)]	Loss: 0.888519	 Accuracy:70.297%
+Epoch : 3 [44800/60000 (75%)]	Loss: 1.840168	 Accuracy:70.302%
+Epoch : 3 [46400/60000 (77%)]	Loss: 0.636118	 Accuracy:70.249%
+Epoch : 3 [48000/60000 (80%)]	Loss: 0.610558	 Accuracy:70.351%
+Epoch : 3 [49600/60000 (83%)]	Loss: 0.602628	 Accuracy:70.424%
+Epoch : 3 [51200/60000 (85%)]	Loss: 0.360652	 Accuracy:70.460%
+Epoch : 3 [52800/60000 (88%)]	Loss: 0.737204	 Accuracy:70.363%
+Epoch : 3 [54400/60000 (91%)]	Loss: 0.821777	 Accuracy:70.319%
+Epoch : 3 [56000/60000 (93%)]	Loss: 1.029693	 Accuracy:70.310%
+Epoch : 3 [57600/60000 (96%)]	Loss: 0.956292	 Accuracy:70.327%
+Epoch : 3 [59200/60000 (99%)]	Loss: 1.091012	 Accuracy:70.313%
+Epoch : 4 [0/60000 (0%)]	Loss: 0.999107	 Accuracy:62.500%
+Epoch : 4 [1600/60000 (3%)]	Loss: 0.823805	 Accuracy:71.017%
+Epoch : 4 [3200/60000 (5%)]	Loss: 0.713708	 Accuracy:70.328%
+Epoch : 4 [4800/60000 (8%)]	Loss: 0.826905	 Accuracy:71.026%
+Epoch : 4 [6400/60000 (11%)]	Loss: 0.673336	 Accuracy:70.958%
+Epoch : 4 [8000/60000 (13%)]	Loss: 0.763107	 Accuracy:70.929%
+Epoch : 4 [9600/60000 (16%)]	Loss: 0.958974	 Accuracy:70.941%
+Epoch : 4 [11200/60000 (19%)]	Loss: 0.630246	 Accuracy:70.869%
+Epoch : 4 [12800/60000 (21%)]	Loss: 0.529614	 Accuracy:70.722%
+Epoch : 4 [14400/60000 (24%)]	Loss: 0.742351	 Accuracy:70.808%
+Epoch : 4 [16000/60000 (27%)]	Loss: 0.804632	 Accuracy:71.039%
+Epoch : 4 [17600/60000 (29%)]	Loss: 0.639775	 Accuracy:70.973%
+Epoch : 4 [19200/60000 (32%)]	Loss: 0.703835	 Accuracy:70.861%
+Epoch : 4 [20800/60000 (35%)]	Loss: 0.606895	 Accuracy:70.814%
+Epoch : 4 [22400/60000 (37%)]	Loss: 0.711081	 Accuracy:70.725%
+Epoch : 4 [24000/60000 (40%)]	Loss: 0.762764	 Accuracy:70.739%
+Epoch : 4 [25600/60000 (43%)]	Loss: 1.623374	 Accuracy:70.872%
+Epoch : 4 [27200/60000 (45%)]	Loss: 0.826401	 Accuracy:70.953%
+Epoch : 4 [28800/60000 (48%)]	Loss: 1.282143	 Accuracy:70.887%
+Epoch : 4 [30400/60000 (51%)]	Loss: 0.645550	 Accuracy:70.899%
+Epoch : 4 [32000/60000 (53%)]	Loss: 0.569174	 Accuracy:70.910%
+Epoch : 4 [33600/60000 (56%)]	Loss: 0.451799	 Accuracy:70.980%
+Epoch : 4 [35200/60000 (59%)]	Loss: 0.637430	 Accuracy:70.953%
+Epoch : 4 [36800/60000 (61%)]	Loss: 0.592812	 Accuracy:70.960%
+Epoch : 4 [38400/60000 (64%)]	Loss: 0.834696	 Accuracy:71.058%
+Epoch : 4 [40000/60000 (67%)]	Loss: 0.634610	 Accuracy:71.151%
+Epoch : 4 [41600/60000 (69%)]	Loss: 0.947096	 Accuracy:71.126%
+Epoch : 4 [43200/60000 (72%)]	Loss: 0.693279	 Accuracy:71.144%
+Epoch : 4 [44800/60000 (75%)]	Loss: 1.064649	 Accuracy:71.177%
+Epoch : 4 [46400/60000 (77%)]	Loss: 0.665169	 Accuracy:71.162%
+Epoch : 4 [48000/60000 (80%)]	Loss: 0.646062	 Accuracy:71.178%
+Epoch : 4 [49600/60000 (83%)]	Loss: 0.589418	 Accuracy:71.236%
+Epoch : 4 [51200/60000 (85%)]	Loss: 0.525208	 Accuracy:71.262%
+Epoch : 4 [52800/60000 (88%)]	Loss: 0.834962	 Accuracy:71.197%
+Epoch : 4 [54400/60000 (91%)]	Loss: 0.839590	 Accuracy:71.127%
+Epoch : 4 [56000/60000 (93%)]	Loss: 0.883348	 Accuracy:71.200%
+Epoch : 4 [57600/60000 (96%)]	Loss: 0.728494	 Accuracy:71.256%
+Epoch : 4 [59200/60000 (99%)]	Loss: 0.535574	 Accuracy:71.330%
+Test accuracy:0.715% 
+Traceback (most recent call last):
+  File "mnist.py", line 270, in <module>
+    fig1, axes1 = plt.subplots(nrows=3,ncols=4)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 1184, in subplots
+    fig = figure(**fig_kw)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/pyplot.py", line 533, in figure
+    **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 167, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 24, in __init__
+    super(FigureCanvasQTAgg, self).__init__(figure=figure)
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 234, in __init__
+    _create_qApp()
+  File "/opt/conda/lib/python3.7/site-packages/matplotlib/backends/backend_qt5.py", line 125, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+
+Training Data Shape: (60000, 784)
+Training Labels Shape: (60000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [6000 6000 6000 6000 6000 6000 6000 6000 6000 6000]
+
+Test Data Shape: (10000, 784)
+Test Labels Shape: (10000,)
+Class Labels: [0 1 2 3 4 5 6 7 8 9]
+Class Distributions: [1000 1000 1000 1000 1000 1000 1000 1000 1000 1000]
+CNN(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), dilation=(8, 8))
+  (conv2): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc1): Linear(in_features=576, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=10, bias=True)
+)
+Traceback (most recent call last):
+  File "mnist.py", line 265, in <module>
+    fit(cnn, train_loader)
+  File "mnist.py", line 171, in fit
+    output = model(var_X_batch)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 493, in __call__
+    result = self.forward(*input, **kwargs)
+  File "mnist.py", line 136, in forward
+    x = F.relu(F.max_pool2d(self.conv3(x),2))
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 493, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 338, in forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Calculated padded input size per channel: (4 x 4). Kernel size: (5 x 5). Kernel size can't be greater than actual input size
