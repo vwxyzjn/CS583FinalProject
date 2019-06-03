@@ -121,11 +121,12 @@ class MLP(nn.Module):
 class CNN(nn.Module):
     def __init__(self, dilation:int=1):
         super(CNN, self).__init__()
-        self.conv1 = nn.Conv2d(1, 32, kernel_size=5, dilation=dilation)
-        self.conv2 = nn.Conv2d(32, 32, kernel_size=5, dilation=dilation)
-        self.conv3 = nn.Conv2d(32,64, kernel_size=5, dilation=dilation)
+        self.conv1 = nn.Conv2d(1, 32, kernel_size=2, dilation=dilation)
+        self.conv2 = nn.Conv2d(32, 32, kernel_size=5)
+        self.conv3 = nn.Conv2d(32, 64, kernel_size=5)
         self.fc1 = nn.Linear(3*3*64, 256)
         self.fc2 = nn.Linear(256, 10)
+        self.flag = True
 
     def forward(self, x):
         x = F.relu(self.conv1(x))
@@ -134,7 +135,12 @@ class CNN(nn.Module):
         x = F.dropout(x, p=0.5, training=self.training)
         x = F.relu(F.max_pool2d(self.conv3(x),2))
         x = F.dropout(x, p=0.5, training=self.training)
-        x = x.view(-1,3*3*64 )
+        flattened_shape = x.shape[1]*x.shape[2]*x.shape[3]
+        x = x.view(-1, flattened_shape)
+        # hack
+        if self.flag:
+            self.fc1 = nn.Linear(flattened_shape, 256)
+            self.flag = False
         x = F.relu(self.fc1(x))
         x = F.dropout(x, training=self.training)
         x = self.fc2(x)
@@ -204,7 +210,7 @@ def to_grayscale(image):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='CNN with different dilation factors')
-    parser.add_argument('--dilation', type=int, default=1,
+    parser.add_argument('--dilation', type=int, default=4,
                        help='an integer for the accumulator')
     parser.add_argument('--model-path', type=str, default="models",
                        help='path to save or load the model')
