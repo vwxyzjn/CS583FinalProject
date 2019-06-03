@@ -353,7 +353,7 @@ if __name__ == "__main__":
         opt = torch.optim.Adam([x], lr=0.1)
         labels = torch.zeros((1,10))
         labels[0, class_idx] = 1
-        for i in range(1, 31):
+        for i in range(1, 500):
             opt.zero_grad()
             # !!!! CRUCIAL COMMENTS HERE
             # We try to modify the image such that 
@@ -365,6 +365,7 @@ if __name__ == "__main__":
             # Update image
             opt.step()
         
+        prob = np.exp(output.detach())[0][class_idx]
         print(f"show the image that maximizes prediction on class {class_idx}")
         sz = int(upscaling_factor * 28)  # calculate new image size
         img = x[0][0].detach().numpy()
@@ -374,17 +375,17 @@ if __name__ == "__main__":
         # plt.show()
         # plt.imshow(x[0][0].detach())
         # plt.show()
-        return img
+        return img, prob
     
     fig, axes = plt.subplots(nrows=3,ncols=4)
     fig.subplots_adjust(hspace=.5,wspace=0.4)
     axes_f = axes.flatten()
     [ax.set_axis_off() for ax in axes_f]
     for i in range(len(np.unique(y_train))):
-        class_model_img = visualize_class_model(i)
+        class_model_img, prob = visualize_class_model(i)
         imgplot = axes_f[i].imshow(class_model_img)
         axes_f[i].axis('off')
-        axes_f[i].set_title(f"class {i}")
+        axes_f[i].set_title("class {}, {:.2f}".format(i, prob))
     title = f"Class Models with dilation factor of {args.dilation}.svg"
     fig.suptitle(title)
     fig.subplots_adjust(wspace=0.2)
