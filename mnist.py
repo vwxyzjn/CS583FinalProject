@@ -255,6 +255,7 @@ if __name__ == "__main__":
     filename = f"trained_cnn_dilation_{args.dilation}.pt"
     path = os.path.join(args.model_path, filename)
     if os.path.exists(path):
+        cnn.forward(torch_X_train[0:0+1])
         cnn.load_state_dict(torch.load(path))
         cnn.eval()
     else:
