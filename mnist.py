@@ -121,7 +121,7 @@ class MLP(nn.Module):
 class CNN(nn.Module):
     def __init__(self, dilation:int=1):
         super(CNN, self).__init__()
-        self.conv1 = nn.Conv2d(1, 32, kernel_size=2, dilation=dilation)
+        self.conv1 = nn.Conv2d(1, 32, kernel_size=3, dilation=dilation)
         self.conv2 = nn.Conv2d(32, 32, kernel_size=5)
         self.conv3 = nn.Conv2d(32, 64, kernel_size=5)
         self.fc1 = nn.Linear(3*3*64, 256)
@@ -210,22 +210,25 @@ def to_grayscale(image):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='CNN with different dilation factors')
-    parser.add_argument('--dilation', type=int, default=4,
+    parser.add_argument('--dilation', type=int, default=2,
                        help='an integer for the accumulator')
     parser.add_argument('--model-path', type=str, default="models",
                        help='path to save or load the model')
     parser.add_argument('--output-path', type=str, default="outputs",
                        help='path to store the outputs')
-    parser.add_argument('--show-average-class', type=bool, default=False,
+    parser.add_argument('--dataset', type=str, default="mnist",
+                       help='path to store the outputs')
+    parser.add_argument('--show-average-class', type=bool, default=True,
                        help='whether to show the average image of classes')
     args = parser.parse_args()
 
     # Loads the datasets from file
-    #X_train , y_train = load_mnist_training_set(True)
-    #X_test , y_test = load_mnist_test_set(True)
-
-    X_train , y_train = load_fashion_mnist_training_set(True)
-    X_test , y_test = load_fashion_mnist_test_set(True)
+    if args.dataset =="mnist":
+        X_train , y_train = load_mnist_training_set(True)
+        X_test , y_test = load_mnist_test_set(True)
+    elif args.dataset == "mnistfashion":
+        X_train , y_train = load_fashion_mnist_training_set(True)
+        X_test , y_test = load_fashion_mnist_test_set(True)
 
     # Converts the dataset into PyTorch LongTensor(s)
     torch_X_train = torch.from_numpy(X_train).type(torch.LongTensor)
@@ -253,7 +256,7 @@ if __name__ == "__main__":
     
     # check if the trained model exists
     filename = f"trained_cnn_dilation_{args.dilation}.pt"
-    path = os.path.join(args.model_path, filename)
+    path = os.path.join(args.model_path, args.dataset, filename)
     if os.path.exists(path):
         cnn.forward(torch_X_train[0:0+1])
         cnn.load_state_dict(torch.load(path))
@@ -288,8 +291,8 @@ if __name__ == "__main__":
 
         fig1.suptitle("Training Set Average for Class")
         fig2.suptitle("First sample in training set")
-        fig1.savefig(os.path.join(args.output_path, "Training Set Average for Class.svg"))
-        fig2.savefig(os.path.join(args.output_path, "First Samples in Training Set.svg"))
+        fig1.savefig(os.path.join(args.output_path, args.dataset, "Training Set Average for Class.svg"))
+        fig2.savefig(os.path.join(args.output_path, args.dataset, "First Samples in Training Set.svg"))
 
 #    # utilities scripts
 #    img_idx = 27
@@ -369,8 +372,8 @@ if __name__ == "__main__":
         print(f"show the image that maximizes prediction on class {class_idx}")
         sz = int(upscaling_factor * 28)  # calculate new image size
         img = x[0][0].detach().numpy()
-        img = cv2.resize(img, (sz, sz), interpolation = cv2.INTER_CUBIC)  # scale image up
-        img = cv2.blur(img,(5,5))  # blur image to reduce high frequency patterns
+        # img = cv2.resize(img, (sz, sz), interpolation = cv2.INTER_CUBIC)  # scale image up
+        # img = cv2.blur(img,(5,5))  # blur image to reduce high frequency patterns
         # plt.imshow(img)
         # plt.show()
         # plt.imshow(x[0][0].detach())
@@ -389,4 +392,4 @@ if __name__ == "__main__":
     title = f"Class Models with dilation factor of {args.dilation}.svg"
     fig.suptitle(title)
     fig.subplots_adjust(wspace=0.2)
-    plt.savefig(os.path.join(args.output_path, title))
+    plt.savefig(os.path.join(args.output_path, args.dataset, title))
